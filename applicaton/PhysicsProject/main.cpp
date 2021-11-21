@@ -2,5 +2,5 @@
 #include "front-end.h"
 int main()
 {
-    printTitles();
+    printHomeScreenAndMenu();
 }

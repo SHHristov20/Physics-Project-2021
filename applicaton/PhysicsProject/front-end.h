@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <Windows.h>
-
+#include <conio.h>
 void tittleScreen()
 {
     std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
@@ -36,8 +36,79 @@ void Menu()
 
 }
 
-void printTitles()
+void active(bool first, bool second, bool third)
+{
+	Menu(); printf("\n\n\n\n\n");
+	if (first)
+	{
+		std::cout << "-> " << "Option 1" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Option 1" << std::endl;
+	}
+
+	if (second)
+	{
+		std::cout << "-> " << "Option 2" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Option 2" << std::endl;
+	}
+
+	if (third)
+	{
+		std::cout << "-> " << "Option 3" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Option 3" << std::endl;
+	}
+	const char ch = _getch();
+
+	if (ch == 's' or ch == 'S')
+	{
+		if (first)
+		{
+			system("cls");
+			active(false, true, false);
+		}
+		if (second)
+		{
+			system("cls");
+			active(false, false, true);
+		}
+		if (third)
+		{
+			system("cls");
+			active(true, false, false);
+		}
+	}
+
+	if (ch == 'w' or ch == 'W')
+	{
+		if (first)
+		{
+			system("cls");
+			active(false, false, true);
+		}
+		if (second)
+		{
+			system("cls");
+			active(true, false, false);
+		}
+		if (third)
+		{
+			system("cls");
+			active(false, true, false);
+		}
+	}
+}
+
+
+void printHomeScreenAndMenu()
 {
     tittleScreen();
-    Menu();
+	active(true, false, false);
 }
