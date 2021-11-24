@@ -20,7 +20,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 	}
 	else
 	{
-		std::cout << "   Increasing acceleraition" << std::endl;
+		std::cout << "   Increasing acceleration" << std::endl;
 	}
 
 	if (two)
@@ -101,7 +101,118 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 	{
 		std::cout << "   Back" << std::endl;
 	}
+
+	const char option = _getch();
+
+	if (option == 's' or option == 'S')
+	{
+		if (one)
+		{
+			system("cls");
+			activeChoise(false, true, false, false, false, false, false, false, false, false);
+		}
+		if (two)
+		{
+			system("cls");
+			activeChoise(false, false, true, false, false, false, false, false, false, false);
+		}
+		if (three)
+		{
+			system("cls");
+			activeChoise(false, false, false, true, false, false, false, false, false, false);
+		}
+		if (four)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, true, false, false, false, false, false);
+		}
+		if (five)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, true, false, false, false, false);
+		}
+		if (six)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, true, false, false, false);
+		}
+		if (seven)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, true, false, false);
+		}
+		if (eight)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, false, true, false);
+		}
+		if (nine)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, false, false, true);
+		}
+		if (ten)
+		{
+			system("cls");
+			activeChoise(true, false, false, false, false, false, false, false, false, false);
+		}
+	}
+
+	if (option == 'w' or option == 'W')
+	{
+		if (one)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, false, false, true);
+		}
+		if (two)
+		{
+			system("cls");
+			activeChoise(true, false, false, false, false, false, false, false, false, false);
+		}
+		if (three)
+		{
+			system("cls");
+			activeChoise(false, true, false, false, false, false, false, false, false, false);
+		}
+		if (four)
+		{
+			system("cls");
+			activeChoise(false, false, true, false, false, false, false, false, false, false);
+		}
+		if (five)
+		{
+			system("cls");
+			activeChoise(false, false, false, true, false, false, false, false, false, false);
+		}
+		if (six)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, true, false, false, false, false, false);
+		}
+		if (seven)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, true, false, false, false, false);
+		}
+		if (eight)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, true, false, false, false);
+		}
+		if (nine)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, true, false, false);
+		}
+		if (ten)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, false, true, false);
+		}
+	}
 }
-void printCalculatorsMenu() {
+void printCalculatorsMenu()
+{
 	activeChoise(true, false, false, false, false, false, false, false, false, false);
 }
