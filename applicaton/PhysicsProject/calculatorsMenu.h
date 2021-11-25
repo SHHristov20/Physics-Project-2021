@@ -1,6 +1,7 @@
 #pragma once
 #pragma once
 #include <iostream>
+#include "accelerationCalculator.h"
 
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t   ____      _            _       _                 " << std::endl;
@@ -209,6 +210,14 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		{
 			system("cls");
 			activeChoise(false, false, false, false, false, false, false, false, true, false);
+		}
+	}
+	if (option == 13)
+	{
+		if (one)
+		{
+			system("cls");
+			accelerationCalculator();
 		}
 	}
 }
