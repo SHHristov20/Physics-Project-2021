@@ -1,7 +1,7 @@
 #pragma once
 #pragma once
 #include <iostream>
-#include "accelerationCalculator.h"
+#include "increasingAccCalc.h"
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t   ____      _            _       _                 " << std::endl;
 	std::cout << "\t\t\t\t  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ ___ " << std::endl;
