@@ -1,5 +1,5 @@
 #pragma once
-#pragma once
+
 #include <iostream>
 #include <Windows.h>
 #include <conio.h>
@@ -71,7 +71,7 @@ void active(bool first, bool second, bool third)
 	}
 	const char ch = _getch();
 
-	if (ch == 's' or ch == 'S')
+	if (ch == 's' || ch == 'S')
 	{
 		if (first)
 		{
@@ -90,7 +90,7 @@ void active(bool first, bool second, bool third)
 		}
 	}
 
-	if (ch == 'w' or ch == 'W')
+	if (ch == 'w' || ch == 'W')
 	{
 		if (first)
 		{

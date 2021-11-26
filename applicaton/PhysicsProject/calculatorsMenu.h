@@ -2,7 +2,6 @@
 #pragma once
 #include <iostream>
 #include "accelerationCalculator.h"
-
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t   ____      _            _       _                 " << std::endl;
 	std::cout << "\t\t\t\t  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ ___ " << std::endl;
@@ -14,6 +13,7 @@ void printTitle() {
 
 void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine, bool ten)
 {
+
 	printTitle();
 	if (one)
 	{
@@ -104,8 +104,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 	}
 
 	const char option = _getch();
-
-	if (option == 's' or option == 'S')
+	if (option == 's' || option == 'S')
 	{
 		if (one)
 		{
@@ -159,7 +158,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		}
 	}
 
-	if (option == 'w' or option == 'W')
+	if (option == 'w' || option == 'W')
 	{
 		if (one)
 		{
@@ -214,11 +213,8 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 	}
 	if (option == 13)
 	{
-		if (one)
-		{
-			system("cls");
-			accelerationCalculator();
-		}
+		system("cls");
+		startCalculator1();
 	}
 }
 void printCalculatorsMenu()
