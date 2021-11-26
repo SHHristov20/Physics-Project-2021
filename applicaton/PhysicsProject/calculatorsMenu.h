@@ -2,6 +2,8 @@
 #pragma once
 #include <iostream>
 #include "increasingAccCalc.h"
+#include "calculatorsMenu.h"
+#include "decreasingAccCalc.h"
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t   ____      _            _       _                 " << std::endl;
 	std::cout << "\t\t\t\t  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ ___ " << std::endl;
@@ -213,8 +215,17 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 	}
 	if (option == 13)
 	{
-		system("cls");
-		startCalculator1();
+		if(one)
+		{
+			system("cls");
+			startCalculator1();
+		}
+		if(two)
+		{
+			system("cls");
+			startCalculator2();
+		}
+		
 	}
 }
 void printCalculatorsMenu()
