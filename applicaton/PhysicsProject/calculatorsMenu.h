@@ -229,7 +229,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (three)
 		{
 			system("cls");
-			calculatorTitle();
+			startCalculator3();
 		}
 	}
 }
