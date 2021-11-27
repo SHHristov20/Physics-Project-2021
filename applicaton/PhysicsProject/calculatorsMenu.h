@@ -4,6 +4,7 @@
 #include "increasingAccCalc.h"
 #include "calculatorsMenu.h"
 #include "decreasingAccCalc.h"
+#include "freeFallCalc.h"
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t   ____      _            _       _                 " << std::endl;
 	std::cout << "\t\t\t\t  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ ___ " << std::endl;
@@ -225,7 +226,11 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 			system("cls");
 			startCalculator2();
 		}
-		
+		if (three)
+		{
+			system("cls");
+			calculatorTitle();
+		}
 	}
 }
 void printCalculatorsMenu()
