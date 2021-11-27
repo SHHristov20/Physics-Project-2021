@@ -163,8 +163,7 @@ void time()
 	std::cout << "continue...";
 	_getch();
 
-	gotoxy(3, 20)
-		;
+	gotoxy(3, 20);
 	return;
 }
 
