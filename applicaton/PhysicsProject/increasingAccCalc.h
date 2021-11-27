@@ -5,20 +5,66 @@
 #include <cmath>
 #include "calculatorsMenu.h"
 
+void printCalc() {
+	std::cout << " ______________________________" << std::endl;
+	std::cout << "|  _________________________   |" << std::endl;
+	std::cout << "| |                         |  |" << std::endl;
+	std::cout << "| |                         |  |" << std::endl;
+	std::cout << "| |                         |  |" << std::endl;
+	std::cout << "| |                         |  |" << std::endl;
+	std::cout << "| |_________________________|  |" << std::endl;
+	std::cout << "|  _____ _____ _____   _____   |" << std::endl;
+	std::cout << "| |  7  |  8  |  9  | |  t  |  |" << std::endl;
+	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
+	std::cout << "| |  4  |  5  |  6  | |  s  |  |" << std::endl;
+	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
+	std::cout << "| |  1  |  2  |  3  | |  t0 |  |" << std::endl;
+	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
+	std::cout << "| |  .  |  0  |  =  | |s-BR |  |" << std::endl;
+	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
+	std::cout << "| |  /  |  V0 |  a  | |  V  |  |" << std::endl;
+	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
+	std::cout << "|______________________________|" << std::endl;
+}
+void gotoxy(int x, int y)
+{
+	COORD coord;
+	coord.X = x;
+	coord.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
 void acceleration()
 {
 	float v0 = 0, v = 0, t = 0;
 	system("cls");
+	printCalc();
+
+	gotoxy(3, 2);
 	std::cout << "Initial speed(v0) = ";
 	std::cin >> v0;
+
+	gotoxy(3, 3);
 	std::cout << "Final speed(v) = ";
 	std::cin >> v;
+
+	gotoxy(3, 4);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
-	std::cout << std::endl << "Acceleration(a) = " << float((v - v0) / t) << "m/s" << char(253);
-	std::cout << std::endl << std::endl << std::endl;
-	std::cout << "Press any key to continue...";
+
+	gotoxy(3, 5);
+	std::cout << "Acceleration(a) = " << float((v - v0) / t) << "m/s" << char(253);
+	Sleep(3000);
+	system("cls");
+
+	printCalc();
+	gotoxy(3, 2);
+	std::cout << "Press any key to";
+
+	gotoxy(3, 3);
+	std::cout << "continue...";
 	_getch();
+
+	gotoxy(3, 20);
 	return;
 }
 
@@ -26,46 +72,99 @@ void displacement()
 {
 	float v0 = 0, a = 0, t = 0;
 	system("cls");
+	printCalc();
+
+	gotoxy(3, 2);
 	std::cout << "Initial speed(v0) = ";
 	std::cin >> v0;
+
+	gotoxy(3, 3);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
+
+	gotoxy(3, 4);
 	std::cout << "Acceleration(a) = ";
 	std::cin >> a;
-	std::cout << std::endl << "Displacement(s) = " << v0 * t + ((a * pow(t, 2)) / 2);
-	std::cout << std::endl << std::endl << std::endl;
-	std::cout << "Press any key to continue...";
+
+	gotoxy(3, 5);
+	std::cout << "Displacement(s) = " << v0 * t + ((a * pow(t, 2)) / 2);
+	Sleep(3000);
+	system("cls");
+
+	printCalc();
+	gotoxy(3, 2);
+	std::cout << "Press any key to";
+
+	gotoxy(3, 3);
+	std::cout << "continue...";
 	_getch();
+
+	gotoxy(3, 20);
 	return;
 }
 void fSpeed()
 {
 	float v0 = 0, a = 0, t = 0;
 	system("cls");
+	printCalc();
+
+	gotoxy(3, 2);
 	std::cout << "Initial speed(v0) = ";
 	std::cin >> v0;
+
+	gotoxy(3, 3);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
+
+	gotoxy(3, 4);
 	std::cout << "Acceleration(a) = ";
 	std::cin >> a;
-	std::cout << std::endl << "Final Speed(v) = " << v0 + (a * t);
-	std::cout << std::endl << std::endl << std::endl;
-	std::cout << "Press any key to continue...";
+
+	gotoxy(3, 5);
+	std::cout << "Final Speed(v) = " << v0 + (a * t);
+	Sleep(3000);
+	system("cls");
+
+	printCalc();
+	gotoxy(3, 2);
+	std::cout << "Press any key to";
+
+	gotoxy(3, 3);
+	std::cout << "continue...";
 	_getch();
+
+	gotoxy(3, 20);
 	return;
 }
 void time()
 {
 	float v = 0, a = 0;
 	system("cls");
+	printCalc();
+
+	gotoxy(3, 2);
 	std::cout << "Acceleration(a) = ";
 	std::cin >> a;
+
+	gotoxy(3, 3);
 	std::cout << "Final Speed(v) = ";
 	std::cin >> v;
-	std::cout << std::endl << "Time(t) = " << v / a;
-	std::cout << std::endl << std::endl << std::endl;
-	std::cout << "Press any key to continue...";
+
+	gotoxy(3, 4);
+	std::cout << "Time(t) = " << v / a;
+	Sleep(3000);
+	system("cls");
+
+	printCalc();
+	gotoxy(3, 2);
+	std::cout << "Press any key to";
+
+	gotoxy(3, 3);
+	std::cout << "continue...";
 	_getch();
+
+	gotoxy(3, 20)
+		;
 	return;
 }
 
