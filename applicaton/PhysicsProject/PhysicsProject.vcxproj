@@ -145,6 +145,7 @@
     <ClCompile Include="decreasingAccCalc.cpp" />
     <ClCompile Include="increasingAccCalc.cpp" />
     <ClCompile Include="freeFallCalc.cpp" />
+    <ClCompile Include="workAndPowerCalc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="front-end.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="decreasingAccCalc.h" />
     <ClInclude Include="increasingAccCalc.h" />
     <ClInclude Include="freeFallCalc.h" />
+    <ClInclude Include="workAndPowerCalc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
