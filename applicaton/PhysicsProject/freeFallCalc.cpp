@@ -4,6 +4,7 @@
 #include <cmath>
 #include <Windows.h>
 #include "freeFallCalc.h"
+#include "calculatorsMenu.h"
 void printCalc2() {
 	std::cout << " ______________________________" << std::endl;
 	std::cout << "|  _________________________   |" << std::endl;
@@ -65,8 +66,8 @@ void finalSpeed() {
 	std::cout << "continue...";
 	_getch();
 
-	gotoXy(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void street() {
 	float s, g = 10, t;
@@ -90,8 +91,8 @@ void street() {
 	std::cout << "continue...";
 	_getch();
 
-	gotoXy(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 
 void time3() {
@@ -117,10 +118,10 @@ void time3() {
 	std::cout << "continue...";
 	_getch();
 
-	gotoXy(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
-void calcMenu(bool one, bool two, bool three) {
+void calcMenu(bool one, bool two, bool three, bool four) {
 	calculatorTitle();
 
 	std::cout << "   Find" << std::endl;
@@ -150,37 +151,52 @@ void calcMenu(bool one, bool two, bool three) {
 	{
 		std::cout << "   Time" << std::endl;
 	}
-
+	if (four)
+	{
+		std::cout << "-> " << "Back" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Back" << std::endl;
+	}
 	const char option = _getch();
 
 	if (option == 's' || option == 'S')
 	{
 		if (one)
 		{
-			calcMenu(false, true, false);
+			calcMenu(false, true, false, false);
 		}
 		if (two)
 		{
-			calcMenu(false, false, true);
+			calcMenu(false, false, true, false);
 		}
 		if (three)
 		{
-			calcMenu(true, false, false);
+			calcMenu(false, false, false, true);
+		}
+		if (four)
+		{
+			calcMenu(true, false, false, false);
 		}
 	}
 	if (option == 'w' || option == 'W')
 	{
 		if (one)
 		{
-			calcMenu(true, false, false);
+			calcMenu(false, false, false, true);
 		}
 		if (two)
 		{
-			calcMenu(true, false, false);
+			calcMenu(true, false, false, false);
 		}
 		if (three)
 		{
-			calcMenu(false, true, false);
+			calcMenu(false, true, false, false);
+		}
+		if (four)
+		{
+			calcMenu(false, false, true, false);
 		}
 	}
 	if (option == 13)
@@ -197,10 +213,15 @@ void calcMenu(bool one, bool two, bool three) {
 		{
 			time3();
 		}
+		if (four)
+		{
+			system("cls");
+			printCalculatorsMenu();
+		}
 	}
 }
 
 void startCalculator3()
 {
-	calcMenu(true, false, false);
+	calcMenu(true, false, false, false);
 }

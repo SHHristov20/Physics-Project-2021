@@ -63,8 +63,8 @@ void acceleration()
 	std::cout << "continue...";
 	_getch();
 
-	gotoxy(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 
 void displacement()
@@ -98,8 +98,8 @@ void displacement()
 	std::cout << "continue...";
 	_getch();
 
-	gotoxy(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void fSpeed()
 {
@@ -132,8 +132,8 @@ void fSpeed()
 	std::cout << "continue...";
 	_getch();
 
-	gotoxy(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void time()
 {
@@ -162,9 +162,8 @@ void time()
 	std::cout << "continue...";
 	_getch();
 
-	gotoxy(3, 20)
-		;
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 
 void calcTitle() {

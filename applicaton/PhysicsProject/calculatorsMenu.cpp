@@ -230,7 +230,11 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 			system("cls");
 			startCalculator3();
 		}
-
+		if (ten)
+		{
+			system("cls");
+			active(true, false, false);
+		}
 	}
 }
 void printCalculatorsMenu()

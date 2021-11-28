@@ -2,6 +2,7 @@
 #include <iostream>
 #include <Windows.h>
 #include <conio.h>
+#include "calculatorsMenu.h"
 void printCalc1() {
 	std::cout << " ______________________________" << std::endl;
 	std::cout << "|  _________________________   |" << std::endl;
@@ -61,8 +62,8 @@ void acceleration1()
 	std::cout << "continue...";
 	_getch();
 
-	gotoXY(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void displacement1()
 {
@@ -95,8 +96,8 @@ void displacement1()
 	std::cout << "continue...";
 	_getch();
 
-	gotoXY(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void fSpeed1()
 {
@@ -129,8 +130,8 @@ void fSpeed1()
 	std::cout << "continue...";
 	_getch();
 
-	gotoXY(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void time1()
 {
@@ -163,8 +164,8 @@ void time1()
 	std::cout << "continue...";
 	_getch();
 
-	gotoXY(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void stopTime()
 {
@@ -193,8 +194,8 @@ void stopTime()
 	std::cout << "continue...";
 	_getch();
 
-	gotoXY(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void brakingDistance() {
 	float v0, a, s;
@@ -222,8 +223,8 @@ void brakingDistance() {
 	std::cout << "continue...";
 	_getch();
 
-	gotoXY(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void initialSpeed() {
 	float v, v0, a, t;
@@ -255,8 +256,8 @@ void initialSpeed() {
 	std::cout << "continue...";
 	_getch();
 
-	gotoXY(3, 20);
-	return;
+	system("cls");
+	printCalculatorsMenu();
 }
 void calcTitle1() {
 	system("cls");
@@ -451,6 +452,11 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 		{
 			system("cls");
 			initialSpeed();
+		}
+		if (eight)
+		{
+			system("cls");
+			printCalculatorsMenu();
 		}
 	}
 }
