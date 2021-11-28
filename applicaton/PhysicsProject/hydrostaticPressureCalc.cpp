@@ -4,7 +4,7 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc4() {
+void printCalc5() {
 	std::cout << " ______________________________" << std::endl;
 	std::cout << "|  _________________________   |" << std::endl;
 	std::cout << "| |                         |  |" << std::endl;
@@ -25,7 +25,7 @@ void printCalc4() {
 	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
 	std::cout << "|______________________________|" << std::endl;
 }
-void calcTtitle4()
+void calcTitle5()
 {
 	system("cls");
 	std::cout << " _   _               _                        _             _     _            ____                                                  " << std::endl;
@@ -39,7 +39,7 @@ void pressure()
 {
 		float P, p, g = 10, h;
 		system("cls");
-		printCalc4();
+		printCalc5();
 
 		gotoXY(3, 2);
 		std::cout << "Density(p) = ";
@@ -54,7 +54,7 @@ void pressure()
 		Sleep(3000);
 		system("cls");
 
-		printCalc4();
+		printCalc5();
 		gotoXY(3, 2);
 		std::cout << "Press any key to";
 
@@ -69,7 +69,7 @@ void depthPressure()
 {
 	float P, Pa, p, g = 10, h;
 	system("cls");
-	printCalc4();
+	printCalc5();
 
 	gotoXY(3, 2);
 	std::cout << "Pressure(Pa) = ";
@@ -88,7 +88,7 @@ void depthPressure()
 	Sleep(3000);
 	system("cls");
 
-	printCalc4();
+	printCalc5();
 	gotoXY(3, 2);
 	std::cout << "Press any key to";
 
@@ -103,7 +103,7 @@ void height()
 {
 	float P, p, g = 10, h;
 	system("cls");
-	printCalc4();
+	printCalc5();
 
 	gotoXY(3, 2);
 	std::cout << "Pressure(P) = ";
@@ -118,7 +118,7 @@ void height()
 	Sleep(3000);
 	system("cls");
 
-	printCalc4();
+	printCalc5();
 	gotoXY(3, 2);
 	std::cout << "Press any key to";
 
@@ -133,7 +133,7 @@ void density()
 {
 	float P, p, g = 10, h;
 	system("cls");
-	printCalc4();
+	printCalc5();
 
 	gotoXY(3, 2);
 	std::cout << "Pressure(P) = ";
@@ -148,7 +148,7 @@ void density()
 	Sleep(3000);
 	system("cls");
 
-	printCalc4();
+	printCalc5();
 	gotoXY(3, 2);
 	std::cout << "Press any key to";
 
@@ -158,4 +158,137 @@ void density()
 
 	system("cls");
 	printCalculatorsMenu();
+}
+void calcMenu5(bool one, bool two, bool three, bool four, bool five) {
+	calcTitle5();
+
+
+	std::cout << "   Find" << std::endl;
+	if (one)
+	{
+		std::cout << "-> " << "Pressure" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Pressure" << std::endl;
+	}
+
+	if (two)
+	{
+		std::cout << "-> " << "Depth pressure" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Depth pressure" << std::endl;
+	}
+
+	if (three)
+	{
+		std::cout << "-> " << "Height" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Height" << std::endl;
+	}
+
+	if (four)
+	{
+		std::cout << "-> " << "Density" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Density" << std::endl;
+	}
+
+	if (five)
+	{
+		std::cout << "-> " << "Back" << std::endl;
+	}
+	else
+	{
+		std::cout << "   Back" << std::endl;
+	}
+
+	const char option = _getch();
+	if (option == 's' || option == 'S')
+	{
+		if (one)
+		{
+			calcMenu5(false, true, false, false, false);
+		}
+		if (two)
+		{
+			calcMenu5(false, false, true, false, false);
+		}
+		if (three)
+		{
+			calcMenu5(false, false, false, true, false);
+		}
+
+		if (four)
+		{
+			calcMenu5(false, false, false, false, true);
+		}
+		if (five)
+		{
+			calcMenu5(true, false, false, false, false);
+		}
+	}
+
+	if (option == 'w' || option == 'W')
+	{
+		if (one)
+		{
+			calcMenu5(false, false, false, false, true);
+		}
+		if (two)
+		{
+			calcMenu5(true, false, false, false, false);
+		}
+		if (three)
+		{
+			calcMenu5(false, true, false, false, false);
+		}
+		if (four)
+		{
+			calcMenu5(false, false, true, false, false);
+		}
+		if (five)
+		{
+			calcMenu5(false, false, false, true, false);
+		}
+	}
+
+	if (option == 13)
+	{
+		if (one)
+		{
+			system("cls");
+			pressure();
+		}
+		if (two)
+		{
+			system("cls");
+			depthPressure();
+		}
+		if (three)
+		{
+			system("cls");
+			height();
+		}
+		if (four)
+		{
+			system("cls");
+			density();
+		}
+		if (five)
+		{
+			system("cls");
+			printCalculatorsMenu();
+		}
+	}
+}
+void startCalculator5()
+{
+	calcMenu5(true, false, false, false, false);
 }
