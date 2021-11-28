@@ -30,7 +30,7 @@ void printCalc2() {
 
 void calculatorTitle() {
 	system("cls");
-	std::cout << "  _____                           _____          _   _ " << std::endl;
+	std::cout<<std::endl << "  _____                           _____          _   _ " << std::endl;
 	std::cout << " | ___ |  _ __    ___    ___     | ___|   __ _  | | | |" << std::endl;
 	std::cout << " | |_    | '__|  / _ \\  / _ \\    | |_    / _` | | | | |" << std::endl;
 	std::cout << " |  _|   | |    |  __/ |  __/    |  _|  | (_| | | | | |" << std::endl;
