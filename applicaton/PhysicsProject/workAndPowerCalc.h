@@ -5,6 +5,7 @@
 #include <Windows.h>
 #include "calculatorsMenu.h"
 
+void calcTitle2();
 void printCalc4();
 void gotoxY(int x, int y);
 void work();

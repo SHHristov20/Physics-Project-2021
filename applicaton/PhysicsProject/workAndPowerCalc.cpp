@@ -5,6 +5,14 @@
 #include "calculatorsMenu.h"
 #include "workAndPowerCalc.h"
 
+void calcTitle2()
+{
+	system("cls");
+	std::cout << "\\ \\      / /   ___    _ __  | | __     __ _   _ __     __| |   |  _ \\    ___   __      __   ___   _ __ " << std::endl;
+	std::cout << "  \\ \\ /\\ / /   / _ \\  | '__| | |/ /    / _` | | '_ \\   / _` |   | |_) |  / _ \\  \\ \\ /\\ / /  / _ \\ | '__|" << std::endl;
+	std::cout << "  \\ V  V /   | (_) | | |    |   <    | (_| | | | | | | (_| |   |  __/  | (_) |  \\ V  V /  |  __/ | |   " << std::endl;
+	std::cout << "   \\_/\\_/     \\___/  |_|    |_|\\_\\    \\__,_| |_| |_|  \\__,_|   |_|      \\___/    \\_/\\_/    \\___| |_|   " << std::endl << std::endl << std::endl << std::endl;
+}
 void printCalc4()
 {
 	std::cout << " ______________________________" << std::endl;
@@ -215,8 +223,8 @@ void findTimeByPower()
 		printCalculatorsMenu();
 }
 void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven) {
-
-	system("cls");
+	calcTitle2();
+	
 	std::cout << "   Find" << std::endl;
 	if (one)
 	{
@@ -346,7 +354,44 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 		}
 	}
 
-	
+	if (option == 13)
+	{
+		if (one)
+		{
+			system("cls");
+			work();
+		}
+		if (two)
+		{
+			system("cls");
+			force();
+		}
+		if (three)
+		{
+			system("cls");
+			displacementByWork();
+		}
+		if (four)
+		{
+			system("cls");
+			power();
+		}
+		if (five)
+		{
+			system("cls");
+			findWorkByPower();
+		}
+		if (six)
+		{
+			system("cls");
+			findTimeByPower();
+		}
+		if (seven)
+		{
+			system("cls");
+			printCalculatorsMenu();
+		}
+	}
 }
 void startCalculator4() {
 	menu(true, false, false, false, false, false, false);
