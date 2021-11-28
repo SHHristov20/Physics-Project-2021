@@ -3,6 +3,14 @@
 #include <Windows.h>
 #include <conio.h>
 #include "calculatorsMenu.h"
+
+void gotoXY(int x, int y)
+{
+	COORD coord;
+	coord.X = x;
+	coord.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
 void tittleScreen()
 {
 	std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;

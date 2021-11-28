@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <conio.h>
 #include "calculatorsMenu.h"
+#include "front-end.h"
 void printCalc1() {
 	std::cout << " ______________________________" << std::endl;
 	std::cout << "|  _________________________   |" << std::endl;
@@ -23,13 +24,6 @@ void printCalc1() {
 	std::cout << "| |  /  |  V0 |  a  | |  V  |  |" << std::endl;
 	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
 	std::cout << "|______________________________|" << std::endl;
-}
-void gotoXY(int x, int y)
-{
-	COORD coord;
-	coord.X = x;
-	coord.Y = y;
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 void acceleration1()
 {

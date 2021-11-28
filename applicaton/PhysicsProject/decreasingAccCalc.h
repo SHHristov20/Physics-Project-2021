@@ -4,7 +4,6 @@
 #include <Windows.h>
 
 void printCalc1();
-void gotoXY(int x, int y);
 void acceleration1();
 void displacement1();
 void fSpeed1();

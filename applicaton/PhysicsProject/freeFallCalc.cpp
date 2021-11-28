@@ -5,6 +5,7 @@
 #include <Windows.h>
 #include "freeFallCalc.h"
 #include "calculatorsMenu.h"
+#include "front-end.h"
 void printCalc2() {
 	std::cout << " ______________________________" << std::endl;
 	std::cout << "|  _________________________   |" << std::endl;
@@ -36,33 +37,25 @@ void calculatorTitle() {
 	std::cout << " |_|     |_|     \\___|  \\___|    |_|     \\__,_| |_| |_|" << std::endl << std::endl << std::endl << std::endl;
 }
 
-void gotoXy(int x, int y)
-{
-	COORD coord;
-	coord.X = x;
-	coord.Y = y;
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-}
-
 void finalSpeed() {
 	float v, g = 10, t;
 	system("cls");
 	printCalc2();
 
-	gotoXy(3, 2);
+	gotoXY(3, 2);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
 
-	gotoXy(3, 3);
+	gotoXY(3, 3);
 	std::cout << "Final speed(v) = " << float(g * t) << "m/s";
 	Sleep(3000);
 	system("cls");
 
 	printCalc2();
-	gotoXy(3, 2);
+	gotoXY(3, 2);
 	std::cout << "Press any key to";
 
-	gotoXy(3, 3);
+	gotoXY(3, 3);
 	std::cout << "continue...";
 	_getch();
 
@@ -74,20 +67,20 @@ void street() {
 	system("cls");
 	printCalc2();
 
-	gotoXy(3, 2);
+	gotoXY(3, 2);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
 
-	gotoXy(3, 3);
+	gotoXY(3, 3);
 	std::cout << "Street(s) = " << float((g * pow(t, 2)) / 2);
 	Sleep(3000);
 	system("cls");
 
 	printCalc2();
-	gotoXy(3, 2);
+	gotoXY(3, 2);
 	std::cout << "Press any key to";
 
-	gotoXy(3, 3);
+	gotoXY(3, 3);
 	std::cout << "continue...";
 	_getch();
 
@@ -100,21 +93,21 @@ void time3() {
 	system("cls");
 	printCalc2();
 
-	gotoXy(3, 2);
+	gotoXY(3, 2);
 	std::cout << "Final speed(v) = ";
 	std::cin >> v;
 
-	gotoXy(3, 3);
+	gotoXY(3, 3);
 	std::cout << "Time(t) = " << float(g / v);
 	Sleep(3000);
 	system("cls");
 
 
 	printCalc2();
-	gotoXy(3, 2);
+	gotoXY(3, 2);
 	std::cout << "Press any key to";
 
-	gotoXy(3, 3);
+	gotoXY(3, 3);
 	std::cout << "continue...";
 	_getch();
 

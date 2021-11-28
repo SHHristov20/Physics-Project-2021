@@ -6,7 +6,6 @@
 #include "calculatorsMenu.h"
 
 void printCalc();
-void gotoxy(int x, int y);
 void acceleration();
 void displacement();
 void fSpeed();
