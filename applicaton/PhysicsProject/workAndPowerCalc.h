@@ -7,7 +7,6 @@
 
 void calcTitle2();
 void printCalc4();
-void gotoxY(int x, int y);
 void work();
 void force();
 void displacementByWork();

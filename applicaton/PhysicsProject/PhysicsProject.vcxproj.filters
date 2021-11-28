@@ -36,6 +36,9 @@
     <ClCompile Include="workAndPowerCalc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hydrostaticPressureCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="front-end.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="workAndPowerCalc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hydrostaticPressureCalc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

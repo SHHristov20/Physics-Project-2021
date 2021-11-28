@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="front-end.cpp" />
+    <ClCompile Include="hydrostaticPressureCalc.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="calculatorsMenu.cpp" />
     <ClCompile Include="decreasingAccCalc.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="front-end.h" />
     <ClInclude Include="calculatorsMenu.h" />
     <ClInclude Include="decreasingAccCalc.h" />
+    <ClInclude Include="hydrostaticPressureCalc.h" />
     <ClInclude Include="increasingAccCalc.h" />
     <ClInclude Include="freeFallCalc.h" />
     <ClInclude Include="workAndPowerCalc.h" />
