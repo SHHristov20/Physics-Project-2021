@@ -48,33 +48,44 @@ void active(bool first, bool second, bool third)
 	Menu(); printf("\n\n\n\n\n");
 	if (first)
 	{
-		std::cout << "-> " << "Option 1" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Option 1" << std::endl;
+		std::cout << "±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "±         |         ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "±         |         ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "±         |         ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "±----Calculators----± ±      Option 2      ± ±      Option 3      ±" << std::endl;
+		std::cout << "±         |         ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "±         |         ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "±         |         ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
 
 	if (second)
 	{
-		std::cout << "-> " << "Option 2" << std::endl;
+		std::cout << "±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "±                   ± ±          |         ± ±                    ±" << std::endl;
+		std::cout << "±                   ± ±          |         ± ±                    ±" << std::endl;
+		std::cout << "±                   ± ±          |         ± ±                    ±" << std::endl;
+		std::cout << "±    Calculators    ± ±------Option 2------± ±      Option 3      ±" << std::endl;
+		std::cout << "±                   ± ±          |         ± ±                    ±" << std::endl;
+		std::cout << "±                   ± ±          |         ± ±                    ±" << std::endl;
+		std::cout << "±                   ± ±          |         ± ±                    ±" << std::endl;
+		std::cout << "±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
-	else
-	{
-		std::cout << "   Option 2" << std::endl;
-	}
-
 	if (third)
 	{
-		std::cout << "-> " << "Option 3" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Option 3" << std::endl;
+		std::cout << "±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "±                   ± ±                    ± ±          |         ±" << std::endl;
+		std::cout << "±                   ± ±                    ± ±          |         ±" << std::endl;
+		std::cout << "±                   ± ±                    ± ±          |         ±" << std::endl;
+		std::cout << "±    Calculators    ± ±      Option 2      ± ±------Option 3------±" << std::endl;
+		std::cout << "±                   ± ±                    ± ±          |         ±" << std::endl;
+		std::cout << "±                   ± ±                    ± ±          |         ±" << std::endl;
+		std::cout << "±                   ± ±                    ± ±          |         ±" << std::endl;
+		std::cout << "±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
 	const char ch = _getch();
 
-	if (ch == 's' || ch == 'S')
+	if (ch == 'd' || ch == 'D')
 	{
 		if (first)
 		{
@@ -93,7 +104,7 @@ void active(bool first, bool second, bool third)
 		}
 	}
 
-	if (ch == 'w' || ch == 'W')
+	if (ch == 'a' || ch == 'A')
 	{
 		if (first)
 		{
