@@ -160,6 +160,7 @@
     <ClCompile Include="freeFallCalc.cpp" />
     <ClCompile Include="workAndPowerCalc.cpp" />
 	<ClCompile Include="pressure.cpp" />
+	<ClCompile Include="arhimedsLaw.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="front-end.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="freeFallCalc.h" />
     <ClInclude Include="workAndPowerCalc.h" />
 	<ClInclude Include="pressure.h" />
+	<ClCompile Include="arhimedsLaw.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

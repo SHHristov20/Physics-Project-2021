@@ -4,7 +4,7 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc6() {
+void printCalc7() {
 	std::cout << " ______________________________" << std::endl;
 	std::cout << "|  _________________________   |" << std::endl;
 	std::cout << "| |                         |  |" << std::endl;
@@ -15,106 +15,106 @@ void printCalc6() {
 	std::cout << "|  _____ _____ _____   _____   |" << std::endl;
 	std::cout << "| |  7  |  8  |  9  | |  F  |  |" << std::endl;
 	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  4  |  5  |  6  | |  S  |  |" << std::endl;
+	std::cout << "| |  4  |  5  |  6  | |  m  |  |" << std::endl;
 	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  1  |  2  |  3  | |  P  |  |" << std::endl;
+	std::cout << "| |  1  |  2  |  3  | |  p  |  |" << std::endl;
 	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  .  |  0  |  =  | |     |  |" << std::endl;
+	std::cout << "| |  .  |  0  |  =  | |  g  |  |" << std::endl;
 	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  /  |     |     | |     |  |" << std::endl;
+	std::cout << "| |  /  |     |     | |  V  |  |" << std::endl;
 	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
 	std::cout << "|______________________________|" << std::endl;
 }
-void calcTitle6()
+void calcTitle7()
 {
 	system("cls");
-	std::cout << std::endl << "\t  ____                                                  " << std::endl;
-	std::cout << "\t |  _ \\   _ __    ___   ___   ___   _   _   _ __    ___ " << std::endl;
-	std::cout << "\t | |_) | | '__|  / _ \\ / __| / __| | | | | | '__|  / _ \\" << std::endl;
-	std::cout << "\t |  __/  | |    |  __/ \\__ \\ \\__ \\ | |_| | | |    |  __/" << std::endl;
-	std::cout << "\t |_|     |_|     \\___| |___/ |___/  \\__,_| |_|     \\___|" << std::endl << std::endl << std::endl << std::endl;;
+	std::cout << std::endl << "     _             _       _                          _   _           _                    " << std::endl;
+	std::cout << "    / \\     _ __  | |__   (_)  _ __ ___     ___    __| | ( )  ___    | |   __ _  __      __" << std::endl;
+	std::cout << "   / _ \\   | '__| | '_ \\  | | | '_ ` _ \\   / _ \\  / _` | |/  / __|   | |  / _` | \\ \\ /\\ / /" << std::endl;
+	std::cout << "  / ___ \\  | |    | | | | | | | | | | | | |  __/ | (_| |     \\__ \\   | | | (_| |  \\ V  V / " << std::endl;
+	std::cout << " /_/   \\_\\ |_|    |_| |_| |_| |_| |_| |_|  \\___|  \\__,_|     |___/   |_|  \\__,_|   \\_/\\_/  " << std::endl << std::endl << std::endl << std::endl;;
 }
-void Pressure()
+void repulsiveForce()
 {
-	float S = 0, F = 0;
+	float p = 0, V = 0,g = 10;
 	system("cls");
-	printCalc6();
+	printCalc7();
 
 	gotoXY(3, 2);
-	std::cout << "Force(F) = ";
+	std::cout << "Density(p) = ";
+	std::cin >> p;
+
+	gotoXY(3, 3);
+	std::cout << "Volume(V) = ";
+	std::cin >> V;
+
+	gotoXY(3, 4);
+	std::cout << "Repulsive force(Fa) = " << float(p*V*g) << "N";
+	Sleep(3000);
+	system("cls");
+
+	printCalc7();
+	gotoXY(3, 2);
+	std::cout << "Press any key to";
+
+	gotoXY(3, 3);
+	std::cout << "continue...";
+	_getch();
+
+	system("cls");
+	printCalculatorsMenu();
+}
+void volume()
+{
+	float p = 0, F=0,g=10;
+	system("cls");
+	printCalc7();
+
+	gotoXY(3, 2);
+	std::cout << "Density(p) = ";
+	std::cin >> p;
+
+	gotoXY(3, 3);
+	std::cout << "Repulsive force(Fa) = ";
+	std::cin >> F;
+
+
+	gotoXY(3, 4);
+	std::cout << "Volume(V) = " << float(F/p/10) << "kg/m3";
+	Sleep(3000);
+	system("cls");
+
+	printCalc7();
+	gotoXY(3, 2);
+	std::cout << "Press any key to";
+
+	gotoXY(3, 3);
+	std::cout << "continue...";
+	_getch();
+
+	system("cls");
+	printCalculatorsMenu();
+}
+void Density()
+{
+	float V = 0, F = 0, g = 10;
+	system("cls");
+	printCalc7();
+
+	gotoXY(3, 2);
+	std::cout << "Repulsive force(Fa) = ";
 	std::cin >> F;
 
 	gotoXY(3, 3);
-	std::cout << "Area(S) = ";
-	std::cin >> S;
+	std::cout << "Volume(V) = ";
+	std::cin >> V;
 
 	gotoXY(3, 4);
-	std::cout << "Pressure(P) = " << float(F/S) << "Pa";
+	std::cout << "Density(p) = " << float(F/V/10) << "m3";
 	Sleep(3000);
 	system("cls");
 
-	printCalc6();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
-	_getch();
-
-	system("cls");
-	printCalculatorsMenu();
-}
-void Area()
-{
-	float P = 0, F = 0;
-	system("cls");
-	printCalc6();
-
-	gotoXY(3, 2);
-	std::cout << "Pressure(P) = ";
-	std::cin >> P;
-
-	gotoXY(3, 3);
-	std::cout << "Force(F) = ";
-	std::cin >> F;
-
-
-	gotoXY(3, 4);
-	std::cout << "Area(S) = " << float(F/P) <<"m2";
-	Sleep(3000);
-	system("cls");
-
-	printCalc6();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
-	_getch();
-
-	system("cls");
-	printCalculatorsMenu();
-}
-void Force()
-{
-	float S = 0, P = 0;
-	system("cls");
-	printCalc6();
-
-	gotoXY(3, 2);
-	std::cout << "Pressure(P) = ";
-	std::cin >> P;
-
-	gotoXY(3, 3);
-	std::cout << "Area(S) = ";
-	std::cin >> S;
-
-	gotoXY(3, 4);
-	std::cout << "Force(F) = " << float(P*S) << "N";
-	Sleep(3000);
-	system("cls");
-
-	printCalc6();
+	printCalc7();
 	gotoXY(3, 2);
 	std::cout << "Press any key to";
 
@@ -126,36 +126,36 @@ void Force()
 	printCalculatorsMenu();
 }
 
-void calcMenu6(bool one, bool two, bool three, bool four) {
-	calcTitle6();
+void calcMenu7(bool one, bool two, bool three, bool four) {
+	calcTitle7();
 
 
 	std::cout << "   Find" << std::endl;
 	if (one)
 	{
-		std::cout << "-> " << "Pressure" << std::endl;
+		std::cout << "-> " << "Repulsive Force" << std::endl;
 	}
 	else
 	{
-		std::cout << "   Pressure" << std::endl;
+		std::cout << "   Repulsive Force" << std::endl;
 	}
 
 	if (two)
 	{
-		std::cout << "-> " << "Area" << std::endl;
+		std::cout << "-> " << "Volume" << std::endl;
 	}
 	else
 	{
-		std::cout << "   Area" << std::endl;
+		std::cout << "   Volume" << std::endl;
 	}
 
 	if (three)
 	{
-		std::cout << "-> " << "Force" << std::endl;
+		std::cout << "-> " << "Density" << std::endl;
 	}
 	else
 	{
-		std::cout << "   Force" << std::endl;
+		std::cout << "   Density" << std::endl;
 	}
 
 	if (four)
@@ -172,20 +172,20 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			calcMenu6(false, true, false, false);
+			calcMenu7(false, true, false, false);
 		}
 		if (two)
 		{
-			calcMenu6(false, false, true, false);
+			calcMenu7(false, false, true, false);
 		}
 		if (three)
 		{
-			calcMenu6(false, false, false, true);
+			calcMenu7(false, false, false, true);
 		}
 
 		if (four)
 		{
-			calcMenu6(true, false, false, false);
+			calcMenu7(true, false, false, false);
 		}
 	}
 
@@ -193,19 +193,19 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			calcMenu6(false, false, false, true);
+			calcMenu7(false, false, false, true);
 		}
 		if (two)
 		{
-			calcMenu6(true, false, false, false);
+			calcMenu7(true, false, false, false);
 		}
 		if (three)
 		{
-			calcMenu6(false, true, false, false);
+			calcMenu7(false, true, false, false);
 		}
 		if (four)
 		{
-			calcMenu6(false, false, true, false);
+			calcMenu7(false, false, true, false);
 		}
 	}
 
@@ -214,17 +214,17 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 		if (one)
 		{
 			system("cls");
-			Pressure();
+			repulsiveForce();
 		}
 		if (two)
 		{
 			system("cls");
-			Area();
+			volume();
 		}
 		if (three)
 		{
 			system("cls");
-			Force();
+			Density();
 		}
 		if (four)
 		{
@@ -233,7 +233,7 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 		}
 	}
 }
-void startCalculator6()
+void startCalculator7()
 {
-	calcMenu6(true, false, false, false);
+	calcMenu7(true, false, false, false);
 }
