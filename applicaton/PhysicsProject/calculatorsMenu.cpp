@@ -17,100 +17,163 @@ void printTitle() {
 	std::cout << "\t\t\t\t | |__| (_| | | (__| |_| | | (_| | || (_) | |  \\__ \\" << std::endl;
 	std::cout << "\t\t\t\t  \\____\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|  |___/" << std::endl << std::endl << std::endl << std::endl;
 }
+
+void design() {
+	std::cout << " _______________________________________________" << std::endl;
+	std::cout << "|  ___________________________________________  |" << std::endl;
+	std::cout << "| |  Welcome to our Physics calculator!       | |" << std::endl;
+	std::cout << "| |  Choose yours and press ENTER!            | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |  (Navigate using W, A, S, D)              | |" << std::endl;
+	std::cout << "| |___________________________________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    Increasing   |       |   Hydrostatic   | |" << std::endl;
+	std::cout << "| |   Acceleration  |       |    Pressure     | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    Decreasing   |       |     Pressure    | |" << std::endl;
+	std::cout << "| |   Acceleration  |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |	 Free       |       |     Arhimed's   | |" << std::endl;
+	std::cout << "| |      Fall       |       |       law       | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |      Work       |       |     Convert     | |" << std::endl;
+	std::cout << "| |      Power      |       |      Units      | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________        __________________  |" << std::endl;
+	std::cout << "| |    Formulas     |       |       Back      | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|_______________________________________________|" << std::endl;
+}
 void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine, bool ten)
 {
 
 	printTitle();
 	if (one)
 	{
-		std::cout << "-> " << "Increasing acceleration" << std::endl;
+		design();
+		gotoXY(9, 19);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   Increasing acceleration" << std::endl;
-	}
-
 	if (two)
 	{
-		std::cout << "-> " << "Decreasing acceleration" << std::endl;
+		design();
+		gotoXY(9, 24);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   Decreasing acceleration" << std::endl;
-	}
-
 	if (three)
 	{
-		std::cout << "-> " << "Free fall" << std::endl;
+		design();
+		gotoXY(9, 29);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   Free fall" << std::endl;
-	}
-
 	if (four)
 	{
-		std::cout << "-> " << "Mechanical work and power" << std::endl;
+		design();
+		gotoXY(9, 34);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   Mechanical work and power" << std::endl;
-	}
-
 	if (five)
 	{
-		std::cout << "-> " << "Hydrostatic pressure" << std::endl;
+		design();
+		gotoXY(9, 39);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   Hydrostatic pressure" << std::endl;
-	}
-
 	if (six)
 	{
-		std::cout << "-> " << "Pressure" << std::endl;
+		design();
+		gotoXY(35, 19);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   Pressure" << std::endl;
-	}
-
 	if (seven)
 	{
-		std::cout << "-> " << "Arhimed's law" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Arhimed's law" << std::endl;
+		design();
+		gotoXY(35, 24);
+		std::cout << "±±±±±";
 	}
 	if (eight)
 	{
-		std::cout << "-> " << "Convert units of measurement" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Convert units of measurement" << std::endl;
+		design();
+		gotoXY(35, 29);
+		std::cout << "±±±±±";
 	}
 	if (nine)
 	{
-		std::cout << "-> " << "Formulas" << std::endl;
+		design();
+		gotoXY(35, 34);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   Formulas" << std::endl;
-	}
-
-	if (ten)
-	{
-		std::cout << "-> " << "Back" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Back" << std::endl;
+	if (ten) {
+		design();
+		gotoXY(35, 39);
+		std::cout << "±±±±±";
 	}
 
 	const char option = _getch();
-	if (option == 's' || option == 'S')
+
+	if (option == 'w' or option == 'W')
+	{
+		if (one)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, false, false, true);
+		}
+		if (two)
+		{
+			system("cls");
+			activeChoise(true, false, false, false, false, false, false, false, false, false);
+		}
+		if (three)
+		{
+			system("cls");
+			activeChoise(false, true, false, false, false, false, false, false, false, false);
+		}
+		if (four)
+		{
+			system("cls");
+			activeChoise(false, false, true, false, false, false, false, false, false, false);
+		}
+		if (five)
+		{
+			system("cls");
+			activeChoise(false, false, false, true, false, false, false, false, false, false);
+		}
+		if (six)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, true, false, false, false, false, false);
+		}
+		if (seven)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, true, false, false, false, false);
+		}
+		if (eight)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, true, false, false, false);
+		}
+		if (nine)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, true, false, false);
+		}
+		if (ten)
+		{
+			system("cls");
+			activeChoise(false, false, false, false, false, false, false, false, true, false);
+		}
+	}
+
+	if (option == 's' or option == 'S')
 	{
 		if (one)
 		{
@@ -164,57 +227,57 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		}
 	}
 
-	if (option == 'w' || option == 'W')
+	if (option == 'a' or option == 'A' or option == 'd' or option == 'D')
 	{
 		if (one)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, false, true);
+			activeChoise(false, false, false, false, false, true, false, false, false, false);
 		}
 		if (two)
 		{
 			system("cls");
-			activeChoise(true, false, false, false, false, false, false, false, false, false);
+			activeChoise(false, false, false, false, false, false, true, false, false, false);
 		}
 		if (three)
 		{
 			system("cls");
-			activeChoise(false, true, false, false, false, false, false, false, false, false);
+			activeChoise(false, false, false, false, false, false, false, true, false, false);
 		}
 		if (four)
 		{
 			system("cls");
-			activeChoise(false, false, true, false, false, false, false, false, false, false);
+			activeChoise(false, false, false, false, false, false, false, false, true, false);
 		}
 		if (five)
 		{
 			system("cls");
-			activeChoise(false, false, false, true, false, false, false, false, false, false);
+			activeChoise(false, false, false, false, false, false, false, false, false, true);
 		}
 		if (six)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, true, false, false, false, false, false);
+			activeChoise(true, false, false, false, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, true, false, false, false, false);
+			activeChoise(false, true, false, false, false, false, false, false, false, false);
 		}
 		if (eight)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, true, false, false, false);
+			activeChoise(false, false, true, false, false, false, false, false, false, false);
 		}
 		if (nine)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, true, false, false);
+			activeChoise(false, false, false, true, false, false, false, false, false, false);
 		}
 		if (ten)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, true, false);
+			activeChoise(false, false, false, false, true, false, false, false, false, false);
 		}
 	}
 	if (option == 13)
