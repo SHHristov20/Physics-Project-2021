@@ -53,6 +53,42 @@ void design() {
 	std::cout << "| |_________________|       |_________________| |" << std::endl;
 	std::cout << "|_______________________________________________|" << std::endl;
 }
+
+void enteredChoice() {
+	std::cout << " _______________________________________________" << std::endl;
+	std::cout << "|  ___________________________________________  |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |___________________________________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    Increasing   |       |   Hydrostatic   | |" << std::endl;
+	std::cout << "| |   Acceleration  |       |    Pressure     | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    Decreasing   |       |     Pressure    | |" << std::endl;
+	std::cout << "| |   Acceleration  |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |	 Free       |       |     Arhimed's   | |" << std::endl;
+	std::cout << "| |      Fall       |       |       law       | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |      Work       |       |     Convert     | |" << std::endl;
+	std::cout << "| |      Power      |       |      Units      | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________        __________________  |" << std::endl;
+	std::cout << "| |    Formulas     |       |       Back      | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|_______________________________________________|" << std::endl;
+}
 void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine, bool ten)
 {
 
@@ -285,35 +321,91 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (one)
 		{
 			system("cls");
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Increasing Acceleration Calculator...";
+
+			Sleep(3000);
+			system("cls");
 			startCalculator1();
 		}
 		if (two)
 		{
+			system("cls");
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Decreasing Acceleration Calculator...";
+
+			Sleep(3000);
 			system("cls");
 			startCalculator2();
 		}
 		if (three)
 		{
 			system("cls");
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Free Fall Calculator...";
+
+			Sleep(3000);
+			system("cls");
 			startCalculator3();
 		}
 		if (four)
 		{
 			system("cls");
-			startCalculator4();
-		}
-		if (five)
-		{
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Work and Power Calculator...";
+
+			Sleep(3000);
 			system("cls");
-			startCalculator5();
+			startCalculator4();
 		}
 		if (six)
 		{
 			system("cls");
-			startCalculator6();
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Hydrostatic Pressure Calculator...";
+
+			Sleep(3000);
+			system("cls");
+			startCalculator5();
 		}
 		if (seven)
 		{
+			system("cls");
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Pressure Calculator...";
+
+			Sleep(3000);
+			system("cls");
+			startCalculator6();
+		}
+		if (eight)
+		{
+			system("cls");
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Arhimed's law Calculator...";
+
+			Sleep(3000);
 			system("cls");
 			startCalculator7();
 		}

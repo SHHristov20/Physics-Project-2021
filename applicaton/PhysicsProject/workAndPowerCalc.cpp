@@ -172,7 +172,7 @@ void findWorkByPower()
 		std::cout << "Force(P) = ";
 		std::cin >> P;
 
-		gotoXY(4, 4);
+		gotoXY(3, 4);
 		std::cout << "Work(A) = " << float(P / t) << "J";
 		Sleep(3000);
 		system("cls");
