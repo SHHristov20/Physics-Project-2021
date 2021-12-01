@@ -72,6 +72,8 @@ height(static_cast<T>(rectangle.height))
 
 
 ////////////////////////////////////////////////////////////
+#undef max
+#undef min
 template <typename T>
 bool Rect<T>::contains(T x, T y) const
 {
@@ -105,6 +107,8 @@ bool Rect<T>::intersects(const Rect<T>& rectangle) const
 
 
 ////////////////////////////////////////////////////////////
+#undef max
+#undef min
 template <typename T>
 bool Rect<T>::intersects(const Rect<T>& rectangle, Rect<T>& intersection) const
 {
