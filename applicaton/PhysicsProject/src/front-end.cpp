@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <conio.h>
 #include "calculatorsMenu.h"
-
+#include "Game2.h"
 void gotoXY(int x, int y)
 {
 	COORD coord;
@@ -128,6 +128,11 @@ void active(bool first, bool second, bool third)
 		{
 			system("cls");
 			printCalculatorsMenu();
+		}
+		if (second)
+		{
+			system("cls");
+			startGame2();
 		}
 	}
 }

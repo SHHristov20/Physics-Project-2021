@@ -89,6 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\sfml\include;$(ProjectDir);$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,6 +107,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\sfml\include;$(ProjectDir);$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -161,7 +163,8 @@
     <ClCompile Include="src\increasingAccCalc.cpp" />
     <ClCompile Include="src\pressure.cpp" />
     <ClCompile Include="src\workAndPowerCalc.cpp" />
-	<ClCompile Include="src\convertUnits.cpp" />
+    <ClCompile Include="src\convertUnits.cpp" />
+    <ClCompile Include="src\Game2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\ArhimedsLaw.h" />
@@ -173,7 +176,8 @@
     <ClInclude Include="Include\increasingAccCalc.h" />
     <ClInclude Include="Include\pressure.h" />
     <ClInclude Include="Include\workAndPowerCalc.h" />
-	<ClInclude Include="Include\convertUnits.h" />
+    <ClInclude Include="Include\convertUnits.h" />
+    <ClInclude Include="Include\Game2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
