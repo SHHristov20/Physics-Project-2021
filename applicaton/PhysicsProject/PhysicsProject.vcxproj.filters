@@ -18,48 +18,60 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="front-end.cpp">
+    <ClCompile Include="src\ArhimedsLaw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="freeFallCalc.cpp">
+    <ClCompile Include="src\calculatorsMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="decreasingAccCalc.cpp">
+    <ClCompile Include="src\decreasingAccCalc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="increasingAccCalc.cpp">
+    <ClCompile Include="src\freeFallCalc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="calculatorsMenu.cpp">
+    <ClCompile Include="src\front-end.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="workAndPowerCalc.cpp">
+    <ClCompile Include="src\hydrostaticPressureCalc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hydrostaticPressureCalc.cpp">
+    <ClCompile Include="src\increasingAccCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pressure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\workAndPowerCalc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="front-end.h">
+    <ClInclude Include="Include\ArhimedsLaw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="calculatorsMenu.h">
+    <ClInclude Include="Include\calculatorsMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="decreasingAccCalc.h">
+    <ClInclude Include="Include\decreasingAccCalc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="increasingAccCalc.h">
+    <ClInclude Include="Include\freeFallCalc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="freeFallCalc.h">
+    <ClInclude Include="Include\front-end.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="workAndPowerCalc.h">
+    <ClInclude Include="Include\hydrostaticPressureCalc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="hydrostaticPressureCalc.h">
+    <ClInclude Include="Include\increasingAccCalc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\workAndPowerCalc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

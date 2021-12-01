@@ -36,7 +36,7 @@ void calcTitle7()
 }
 void repulsiveForce()
 {
-	float p = 0, V = 0,g = 10;
+	float p = 0, V = 0, g = 10;
 	system("cls");
 	printCalc7();
 
@@ -49,7 +49,7 @@ void repulsiveForce()
 	std::cin >> V;
 
 	gotoXY(3, 4);
-	std::cout << "Repulsive force(Fa) = " << float(p*V*g) << "N";
+	std::cout << "Repulsive force(Fa) = " << float(p * V * g) << "N";
 	Sleep(3000);
 	system("cls");
 
@@ -66,7 +66,7 @@ void repulsiveForce()
 }
 void volume()
 {
-	float p = 0, F=0,g=10;
+	float p = 0, F = 0, g = 10;
 	system("cls");
 	printCalc7();
 
@@ -80,7 +80,7 @@ void volume()
 
 
 	gotoXY(3, 4);
-	std::cout << "Volume(V) = " << float(F/p/10) << "kg/m3";
+	std::cout << "Volume(V) = " << float(F / p / 10) << "kg/m3";
 	Sleep(3000);
 	system("cls");
 
@@ -110,7 +110,7 @@ void Density()
 	std::cin >> V;
 
 	gotoXY(3, 4);
-	std::cout << "Density(p) = " << float(F/V/10) << "m3";
+	std::cout << "Density(p) = " << float(F / V / 10) << "m3";
 	Sleep(3000);
 	system("cls");
 

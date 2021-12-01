@@ -1,5 +1,5 @@
 #include <iostream>
-#include "front-end.h"
+#include "../PhysicsProject/Include/front-end.h"
 int main()
 {
     start();

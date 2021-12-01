@@ -49,7 +49,7 @@ void Pressure()
 	std::cin >> S;
 
 	gotoXY(3, 4);
-	std::cout << "Pressure(P) = " << float(F/S) << "Pa";
+	std::cout << "Pressure(P) = " << float(F / S) << "Pa";
 	Sleep(3000);
 	system("cls");
 
@@ -80,7 +80,7 @@ void Area()
 
 
 	gotoXY(3, 4);
-	std::cout << "Area(S) = " << float(F/P) <<"m2";
+	std::cout << "Area(S) = " << float(F / P) << "m2";
 	Sleep(3000);
 	system("cls");
 
@@ -110,7 +110,7 @@ void Force()
 	std::cin >> S;
 
 	gotoXY(3, 4);
-	std::cout << "Force(F) = " << float(P*S) << "N";
+	std::cout << "Force(F) = " << float(P * S) << "N";
 	Sleep(3000);
 	system("cls");
 

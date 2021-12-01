@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -88,12 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\sfml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\sfml\include;$(ProjectDir);$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)\sfml\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\sfml\lib;$(ProjectDir);$(ProjectDir)include;$(ProjectDir)src;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -105,14 +105,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\sfml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\sfml\include;$(ProjectDir);$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)\sfml\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\sfml\lib;$(ProjectDir);$(ProjectDir)include;$(ProjectDir)src;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -151,27 +151,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="front-end.cpp" />
-    <ClCompile Include="hydrostaticPressureCalc.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="calculatorsMenu.cpp" />
-    <ClCompile Include="decreasingAccCalc.cpp" />
-    <ClCompile Include="increasingAccCalc.cpp" />
-    <ClCompile Include="freeFallCalc.cpp" />
-    <ClCompile Include="workAndPowerCalc.cpp" />
-	<ClCompile Include="pressure.cpp" />
-	<ClCompile Include="arhimedsLaw.cpp" />
+    <ClCompile Include="src\ArhimedsLaw.cpp" />
+    <ClCompile Include="src\calculatorsMenu.cpp" />
+    <ClCompile Include="src\decreasingAccCalc.cpp" />
+    <ClCompile Include="src\freeFallCalc.cpp" />
+    <ClCompile Include="src\front-end.cpp" />
+    <ClCompile Include="src\hydrostaticPressureCalc.cpp" />
+    <ClCompile Include="src\increasingAccCalc.cpp" />
+    <ClCompile Include="src\pressure.cpp" />
+    <ClCompile Include="src\workAndPowerCalc.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="front-end.h" />
-    <ClInclude Include="calculatorsMenu.h" />
-    <ClInclude Include="decreasingAccCalc.h" />
-    <ClInclude Include="hydrostaticPressureCalc.h" />
-    <ClInclude Include="increasingAccCalc.h" />
-    <ClInclude Include="freeFallCalc.h" />
-    <ClInclude Include="workAndPowerCalc.h" />
-	<ClInclude Include="pressure.h" />
-	<ClCompile Include="arhimedsLaw.h" />
+    <ClInclude Include="Include\ArhimedsLaw.h" />
+    <ClInclude Include="Include\calculatorsMenu.h" />
+    <ClInclude Include="Include\decreasingAccCalc.h" />
+    <ClInclude Include="Include\freeFallCalc.h" />
+    <ClInclude Include="Include\front-end.h" />
+    <ClInclude Include="Include\hydrostaticPressureCalc.h" />
+    <ClInclude Include="Include\increasingAccCalc.h" />
+    <ClInclude Include="Include\pressure.h" />
+    <ClInclude Include="Include\workAndPowerCalc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

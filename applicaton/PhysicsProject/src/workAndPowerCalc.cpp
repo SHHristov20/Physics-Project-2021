@@ -9,7 +9,7 @@
 void calcTitle2()
 {
 	system("cls");
-	std::cout <<std::endl<< "" << std::endl;
+	std::cout << std::endl << "" << std::endl;
 	std::cout << "\t __        __                 _                            _     ____                                   " << std::endl;
 	std::cout << "\t \\ \\      / /   ___    _ __  | | __     __ _   _ __     __| |   |  _ \\    ___   __      __   ___   _ __ " << std::endl;
 	std::cout << "\t  \\ \\ /\\ / /   / _ \\  | '__| | |/ /    / _` | | '_ \\   / _` |   | |_) |  / _ \\  \\ \\ /\\ / /  / _ \\ | '__|" << std::endl;
@@ -130,97 +130,97 @@ void displacementByWork()
 }
 void power()
 {
-		float P, A, t;
-		system("cls");
-		printCalc4();
+	float P, A, t;
+	system("cls");
+	printCalc4();
 
-		gotoXY(3, 2);
-		std::cout << "Work(A) = ";
-		std::cin >> A;
+	gotoXY(3, 2);
+	std::cout << "Work(A) = ";
+	std::cin >> A;
 
-		gotoXY(3, 3);
-		std::cout << "time(t) = ";
-		std::cin >> t;
+	gotoXY(3, 3);
+	std::cout << "time(t) = ";
+	std::cin >> t;
 
-		gotoXY(4, 4);
-		std::cout << "Power(P) = " << float(A / t) << "W";
-		Sleep(3000);
-		system("cls");
+	gotoXY(4, 4);
+	std::cout << "Power(P) = " << float(A / t) << "W";
+	Sleep(3000);
+	system("cls");
 
-		printCalc4();
-		gotoXY(3, 2);
-		std::cout << "Press any key to";
+	printCalc4();
+	gotoXY(3, 2);
+	std::cout << "Press any key to";
 
-		gotoXY(3, 3);
-		std::cout << "continue...";
-		_getch();
+	gotoXY(3, 3);
+	std::cout << "continue...";
+	_getch();
 
-		system("cls");
-		printCalculatorsMenu();
+	system("cls");
+	printCalculatorsMenu();
 }
 void findWorkByPower()
 {
-		float A, P, t;
-		system("cls");
-		printCalc4();
+	float A, P, t;
+	system("cls");
+	printCalc4();
 
-		gotoXY(3, 2);
-		std::cout << "Time(t) = ";
-		std::cin >> t;
+	gotoXY(3, 2);
+	std::cout << "Time(t) = ";
+	std::cin >> t;
 
-		gotoXY(3, 3);
-		std::cout << "Force(P) = ";
-		std::cin >> P;
+	gotoXY(3, 3);
+	std::cout << "Force(P) = ";
+	std::cin >> P;
 
-		gotoXY(3, 4);
-		std::cout << "Work(A) = " << float(P / t) << "J";
-		Sleep(3000);
-		system("cls");
+	gotoXY(3, 4);
+	std::cout << "Work(A) = " << float(P / t) << "J";
+	Sleep(3000);
+	system("cls");
 
-		printCalc4();
-		gotoXY(3, 2);
-		std::cout << "Press any key to";
+	printCalc4();
+	gotoXY(3, 2);
+	std::cout << "Press any key to";
 
-		gotoXY(3, 3);
-		std::cout << "continue...";
-		_getch();
+	gotoXY(3, 3);
+	std::cout << "continue...";
+	_getch();
 
-		system("cls");
-		printCalculatorsMenu();
+	system("cls");
+	printCalculatorsMenu();
 }
 void findTimeByPower()
 {
-		float A, P, t;
-		system("cls");
-		printCalc4();
+	float A, P, t;
+	system("cls");
+	printCalc4();
 
-		gotoXY(3, 2);
-		std::cout << "Work(A) = ";
-		std::cin >> A;
+	gotoXY(3, 2);
+	std::cout << "Work(A) = ";
+	std::cin >> A;
 
-		gotoXY(3, 3);
-		std::cout << "Power(P) = ";
-		std::cin >> P;
+	gotoXY(3, 3);
+	std::cout << "Power(P) = ";
+	std::cin >> P;
 
-		gotoXY(4, 4);
-		std::cout << "Time(t) = " << float(A / P) << "s";
-		Sleep(3000);
-		system("cls");
+	gotoXY(4, 4);
+	std::cout << "Time(t) = " << float(A / P) << "s";
+	Sleep(3000);
+	system("cls");
 
-		printCalc4();
-		gotoXY(3, 2);
-		std::cout << "Press any key to";
+	printCalc4();
+	gotoXY(3, 2);
+	std::cout << "Press any key to";
 
-		gotoXY(3, 3);
-		std::cout << "continue...";
-		_getch();
+	gotoXY(3, 3);
+	std::cout << "continue...";
+	_getch();
 
-		system("cls");
-		printCalculatorsMenu();
+	system("cls");
+	printCalculatorsMenu();
 }
 void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven) {
 	calcTitle2();
-	
+
 	std::cout << "   Find" << std::endl;
 	if (one)
 	{
