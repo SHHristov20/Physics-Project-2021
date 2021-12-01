@@ -46,6 +46,7 @@ void convert1()
 	std::cin >> kmh;
 	gotoXY(3, 3);
 	std::cout << kmh << "km/h = " << kmh/3.6 <<"m/s";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
@@ -71,6 +72,7 @@ void convert2()
 	std::cin >> ms;
 	gotoXY(3, 3);
 	std::cout << ms << "m/s = " << ms * 3.6 << "km/h";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
@@ -96,6 +98,7 @@ void convert3()
 	std::cin >> s;
 	gotoXY(3, 3);
 	std::cout << s << "s = " << s / 60 << "min";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
@@ -121,6 +124,7 @@ void convert4()
 	std::cin >> min;
 	gotoXY(3, 3);
 	std::cout << min << "min = " << min * 60 << "s";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
@@ -146,6 +150,7 @@ void convert5()
 	std::cin >> kgm;
 	gotoXY(3, 3);
 	std::cout << kgm << "kg/m3 = " << kgm * 1000 << "g/cm3";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
@@ -170,6 +175,7 @@ void convert6()
 	std::cin >> gcm;
 	gotoXY(3, 3);
 	std::cout << gcm << "g/cm3 = " << gcm / 1000 << "kg/m3";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
@@ -195,6 +201,7 @@ void convert7()
 	std::cin >> m3;
 	gotoXY(3, 3);
 	std::cout << m3 << "m3 = " << m3 * 1000000 << "cm3";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
@@ -220,6 +227,7 @@ void convert8()
 	std::cin >> cm3;
 	gotoXY(3, 3);
 	std::cout << cm3 << "cm3 = " << cm3 / 1000000 << "m3";
+	Sleep(3000);
 	system("cls");
 
 	printCalc8();
