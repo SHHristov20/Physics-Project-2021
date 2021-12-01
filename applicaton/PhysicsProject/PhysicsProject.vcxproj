@@ -161,6 +161,7 @@
     <ClCompile Include="src\increasingAccCalc.cpp" />
     <ClCompile Include="src\pressure.cpp" />
     <ClCompile Include="src\workAndPowerCalc.cpp" />
+	<ClCompile Include="src\convertUnits.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\ArhimedsLaw.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="Include\increasingAccCalc.h" />
     <ClInclude Include="Include\pressure.h" />
     <ClInclude Include="Include\workAndPowerCalc.h" />
+	<ClInclude Include="Include\convertUnits.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

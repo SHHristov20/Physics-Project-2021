@@ -10,6 +10,7 @@
 #include "hydrostaticPressureCalc.h"
 #include "pressure.h"
 #include "ArhimedsLaw.h"
+#include "convertUnits.h"
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t   ____      _            _       _                 " << std::endl;
 	std::cout << "\t\t\t\t  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ ___ " << std::endl;
@@ -408,6 +409,19 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 			Sleep(3000);
 			system("cls");
 			startCalculator7();
+		}
+		if (nine)
+		{
+			system("cls");
+			enteredChoice();
+			gotoXY(4, 2);
+			std::cout << "Loading";
+			gotoXY(4, 3);
+			std::cout << "Conversion of units Calculator...";
+
+			Sleep(3000);
+			system("cls");
+			startCalculator8();
 		}
 		if (ten)
 		{
