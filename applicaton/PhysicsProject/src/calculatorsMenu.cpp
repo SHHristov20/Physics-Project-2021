@@ -83,7 +83,7 @@ void enteredChoice() {
 	std::cout << "| |      Power      |       |      Units      | |" << std::endl;
 	std::cout << "| |                 |       |                 | |" << std::endl;
 	std::cout << "| |_________________|       |_________________| |" << std::endl;
-	std::cout << "|  _________________        __________________  |" << std::endl;
+	std::cout << "|  _________________         _________________ |" << std::endl;
 	std::cout << "| |    Formulas     |       |       Back      | |" << std::endl;
 	std::cout << "| |                 |       |                 | |" << std::endl;
 	std::cout << "| |                 |       |                 | |" << std::endl;
