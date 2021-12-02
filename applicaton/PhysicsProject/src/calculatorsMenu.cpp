@@ -56,39 +56,39 @@ void design() {
 }
 
 void enteredChoice() {
-	std::cout << " _______________________________________________" << std::endl;
-	std::cout << "|  ___________________________________________  |" << std::endl;
-	std::cout << "| |                                           | |" << std::endl;
-	std::cout << "| |                                           | |" << std::endl;
-	std::cout << "| |                                           | |" << std::endl;
-	std::cout << "| |                                           | |" << std::endl;
-	std::cout << "| |___________________________________________| |" << std::endl;
-	std::cout << "|  _________________         _________________  |" << std::endl;
-	std::cout << "| |    Increasing   |       |   Hydrostatic   | |" << std::endl;
-	std::cout << "| |   Acceleration  |       |    Pressure     | |" << std::endl;
-	std::cout << "| |                 |       |                 | |" << std::endl;
-	std::cout << "| |_________________|       |_________________| |" << std::endl;
-	std::cout << "|  _________________         _________________  |" << std::endl;
-	std::cout << "| |    Decreasing   |       |     Pressure    | |" << std::endl;
-	std::cout << "| |   Acceleration  |       |                 | |" << std::endl;
-	std::cout << "| |                 |       |                 | |" << std::endl;
-	std::cout << "| |_________________|       |_________________| |" << std::endl;
-	std::cout << "|  _________________         _________________  |" << std::endl;
-	std::cout << "| |	 Free       |       |     Arhimed's   | |" << std::endl;
-	std::cout << "| |      Fall       |       |       law       | |" << std::endl;
-	std::cout << "| |                 |       |                 | |" << std::endl;
-	std::cout << "| |_________________|       |_________________| |" << std::endl;
-	std::cout << "|  _________________         _________________  |" << std::endl;
-	std::cout << "| |      Work       |       |     Convert     | |" << std::endl;
-	std::cout << "| |      Power      |       |      Units      | |" << std::endl;
-	std::cout << "| |                 |       |                 | |" << std::endl;
-	std::cout << "| |_________________|       |_________________| |" << std::endl;
-	std::cout << "|  _________________         _________________ |" << std::endl;
-	std::cout << "| |    Formulas     |       |       Back      | |" << std::endl;
-	std::cout << "| |                 |       |                 | |" << std::endl;
-	std::cout << "| |                 |       |                 | |" << std::endl;
-	std::cout << "| |_________________|       |_________________| |" << std::endl;
-	std::cout << "|_______________________________________________|" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t   _______________________________________________" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  ___________________________________________  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                                           | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                                           | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                                           | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                                           | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |___________________________________________| |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |    Increasing   |       |   Hydrostatic   | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |   Acceleration  |       |    Pressure     | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |    Decreasing   |       |     Pressure    | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |   Acceleration  |       |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |	   Free       |       |     Arhimed's   | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Fall       |       |       law       | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Work       |       |     Convert     | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Power      |       |      Units      | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |    Formulas     |       |       Back      | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |_______________________________________________|" << std::endl;
 }
 void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine, bool ten)
 {
@@ -322,11 +322,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (one)
 		{
 			system("cls");
+			printTitle();
 			enteredChoice();
-			gotoXY(4, 2);
+			gotoXY(95, 11);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Increasing Acceleration Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -335,11 +344,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (two)
 		{
 			system("cls");
+			printTitle();
 			enteredChoice();
-			gotoXY(4, 2);
+			gotoXY(95, 11);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Decreasing Acceleration Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -348,11 +366,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (three)
 		{
 			system("cls");
+			printTitle();
+			gotoXY(95, 11);
 			enteredChoice();
-			gotoXY(4, 2);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Free Fall Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -361,11 +388,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (four)
 		{
 			system("cls");
+			printTitle();
 			enteredChoice();
-			gotoXY(4, 2);
+			gotoXY(95, 11);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Work and Power Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -374,11 +410,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (six)
 		{
 			system("cls");
+			printTitle();
 			enteredChoice();
-			gotoXY(4, 2);
+			gotoXY(95, 11);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Hydrostatic Pressure Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -387,11 +432,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (seven)
 		{
 			system("cls");
+			printTitle();
 			enteredChoice();
-			gotoXY(4, 2);
+			gotoXY(95, 11);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Pressure Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -400,11 +454,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (eight)
 		{
 			system("cls");
+			printTitle();
 			enteredChoice();
-			gotoXY(4, 2);
+			gotoXY(95, 11);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Arhimed's law Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -413,11 +476,20 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (nine)
 		{
 			system("cls");
+			printTitle();
 			enteredChoice();
-			gotoXY(4, 2);
+			gotoXY(95, 11);
 			std::cout << "Loading";
-			gotoXY(4, 3);
+			gotoXY(95, 12);
 			std::cout << "Conversion of units Calculator...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
 
 			Sleep(3000);
 			system("cls");
@@ -425,6 +497,21 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		}
 		if (ten)
 		{
+			system("cls");
+			printTitle();
+			enteredChoice();
+			gotoXY(95, 11);
+			std::cout << "Redirecting to menu";
+			gotoXY(95, 13);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
+
+			Sleep(3000);
 			system("cls");
 			active(true, false, false);
 		}
