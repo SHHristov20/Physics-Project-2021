@@ -161,6 +161,7 @@
     <ClCompile Include="src\decreasingAccCalc.cpp" />
     <ClCompile Include="src\freeFallCalc.cpp" />
     <ClCompile Include="src\front-end.cpp" />
+    <ClCompile Include="src\Game1.cpp" />
     <ClCompile Include="src\hydrostaticPressureCalc.cpp" />
     <ClCompile Include="src\increasingAccCalc.cpp" />
     <ClCompile Include="src\pressure.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="Include\decreasingAccCalc.h" />
     <ClInclude Include="Include\freeFallCalc.h" />
     <ClInclude Include="Include\front-end.h" />
+    <ClInclude Include="Include\Game1.h" />
     <ClInclude Include="Include\hydrostaticPressureCalc.h" />
     <ClInclude Include="Include\increasingAccCalc.h" />
     <ClInclude Include="Include\pressure.h" />

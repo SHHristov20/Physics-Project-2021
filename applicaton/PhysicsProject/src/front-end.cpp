@@ -4,6 +4,7 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 #include "Game2.h"
+#include "Game1.h"
 void gotoXY(int x, int y)
 {
 	COORD coord;
@@ -175,6 +176,11 @@ void active(bool first, bool second, bool third)
 		{
 			system("cls");
 			startGame2();
+		}
+		if (third)
+		{
+			system("cls");
+			startGame1();
 		}
 	}
 }
