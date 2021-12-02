@@ -5,62 +5,84 @@
 #include "calculatorsMenu.h"
 
 void printCalc7() {
-	std::cout << " ______________________________" << std::endl;
-	std::cout << "|  _________________________   |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |_________________________|  |" << std::endl;
-	std::cout << "|  _____ _____ _____   _____   |" << std::endl;
-	std::cout << "| |  7  |  8  |  9  | |  F  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  4  |  5  |  6  | |  m  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  1  |  2  |  3  | |  p  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  .  |  0  |  =  | |  g  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  /  |     |     | |  V  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "|______________________________|" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_________________________________|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _______ ______  _______   _______   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   F   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   m   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   p   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   g   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |   V   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
 void calcTitle7()
 {
 	system("cls");
-	std::cout << std::endl << "     _             _       _                          _   _           _                    " << std::endl;
-	std::cout << "    / \\     _ __  | |__   (_)  _ __ ___     ___    __| | ( )  ___    | |   __ _  __      __" << std::endl;
-	std::cout << "   / _ \\   | '__| | '_ \\  | | | '_ ` _ \\   / _ \\  / _` | |/  / __|   | |  / _` | \\ \\ /\\ / /" << std::endl;
-	std::cout << "  / ___ \\  | |    | | | | | | | | | | | | |  __/ | (_| |     \\__ \\   | | | (_| |  \\ V  V / " << std::endl;
-	std::cout << " /_/   \\_\\ |_|    |_| |_| |_| |_| |_| |_|  \\___|  \\__,_|     |___/   |_|  \\__,_|   \\_/\\_/  " << std::endl << std::endl << std::endl << std::endl;;
+	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t     _             _       _                          _   _           _                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t    / \\     _ __  | |__   (_)  _ __ ___     ___    __| | ( )  ___    | |   __ _  __      __" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t   / _ \\   | '__| | '_ \\  | | | '_ ` _ \\   / _ \\  / _` | |/  / __|   | |  / _` | \\ \\ /\\ / /" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t  / ___ \\  | |    | | | | | | | | | | | | |  __/ | (_| |     \\__ \\   | | | (_| |  \\ V  V / " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t /_/   \\_\\ |_|    |_| |_| |_| |_| |_| |_|  \\___|  \\__,_|     |___/   |_|  \\__,_|   \\_/\\_/  " << std::endl << std::endl << std::endl << std::endl;;
 }
 void repulsiveForce()
 {
 	float p = 0, V = 0, g = 10;
 	system("cls");
+	calcTitle7();
 	printCalc7();
 
-	gotoXY(3, 2);
+	gotoXY(100, 11);
 	std::cout << "Density(p) = ";
 	std::cin >> p;
 
-	gotoXY(3, 3);
+	gotoXY(100, 12);
 	std::cout << "Volume(V) = ";
 	std::cin >> V;
 
-	gotoXY(3, 4);
+	gotoXY(100, 13);
 	std::cout << "Repulsive force(Fa) = " << float(p * V * g) << "N";
 	Sleep(3000);
 	system("cls");
 
+	calcTitle7();
 	printCalc7();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
+	gotoXY(100, 11);
+	std::cout << "Press any key to continue...";
 	_getch();
+	system("cls");
 
+	calcTitle7();
+	printCalc7();
+	gotoXY(100, 11);
+	std::cout << "Redirecting";
+
+	gotoXY(100, 12);
+	std::cout << "to calculators menu...";
+
+	gotoXY(100, 14);
+	for (int i = 0; i < 13; i++)
+	{
+		std::cout << "± ";
+		Sleep(100);
+	}
+
+	std::cout << "100%";
+	Sleep(3000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -68,30 +90,47 @@ void volume()
 {
 	float p = 0, F = 0, g = 10;
 	system("cls");
+	calcTitle7();
 	printCalc7();
 
-	gotoXY(3, 2);
+	gotoXY(100,11);
 	std::cout << "Density(p) = ";
 	std::cin >> p;
 
-	gotoXY(3, 3);
+	gotoXY(100, 12);
 	std::cout << "Repulsive force(Fa) = ";
 	std::cin >> F;
 
 
-	gotoXY(3, 4);
+	gotoXY(100, 13);
 	std::cout << "Volume(V) = " << float(F / p / 10) << "kg/m3";
 	Sleep(3000);
 	system("cls");
 
+	calcTitle7();
 	printCalc7();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
+	gotoXY(100, 11);
+	std::cout << "Press any key to continue...";
 	_getch();
+	system("cls");
 
+	calcTitle7();
+	printCalc7();
+	gotoXY(100, 11);
+	std::cout << "Redirecting";
+
+	gotoXY(100, 12);
+	std::cout << "to calculators menu...";
+
+	gotoXY(100, 14);
+	for (int i = 0; i < 13; i++)
+	{
+		std::cout << "± ";
+		Sleep(100);
+	}
+
+	std::cout << "100%";
+	Sleep(3000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -99,28 +138,46 @@ void Density()
 {
 	float V = 0, F = 0, g = 10;
 	system("cls");
+	calcTitle7();
 	printCalc7();
 
-	gotoXY(3, 2);
+	gotoXY(100, 11);
 	std::cout << "Repulsive force(Fa) = ";
 	std::cin >> F;
 
-	gotoXY(3, 3);
+	gotoXY(100, 12);
 	std::cout << "Volume(V) = ";
 	std::cin >> V;
 
-	gotoXY(3, 4);
+	gotoXY(100, 13);
 	std::cout << "Density(p) = " << float(F / V / 10) << "m3";
 	Sleep(3000);
 	system("cls");
 
+	calcTitle7();
 	printCalc7();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
+	gotoXY(100, 11);
+	std::cout << "Press any key to continue...";
 	_getch();
+	system("cls");
+
+	calcTitle7();
+	printCalc7();
+	gotoXY(100, 11);
+	std::cout << "Redirecting";
+
+	gotoXY(100, 12);
+	std::cout << "to calculators menu...";
+
+	gotoXY(100, 14);
+	for (int i = 0; i < 13; i++)
+	{
+		std::cout << "± ";
+		Sleep(100);
+	}
+
+	std::cout << "100%";
+	Sleep(3000);
 
 	system("cls");
 	printCalculatorsMenu();
