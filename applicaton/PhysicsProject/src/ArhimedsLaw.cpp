@@ -25,7 +25,33 @@ void printCalc7() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   g   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |   V   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |   B   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
+}
+void calcDesign() {
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Arhimed's law Calculator       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  (Navigate using W, A, Enter)   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_________________________________|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _______ ______  _______   _______   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   F   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   m   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   p   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   g   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |   B   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
@@ -183,45 +209,41 @@ void Density()
 	printCalculatorsMenu();
 }
 
-void calcMenu7(bool one, bool two, bool three, bool four) {
+void calcMenu7(bool one, bool two, bool three, bool four, bool five) {
 	calcTitle7();
 
 
-	std::cout << "   Find" << std::endl;
 	if (one)
 	{
-		std::cout << "-> " << "Repulsive Force" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Repulsive Force" << std::endl;
+		calcDesign();
+		gotoXY(128, 18);
+		std::cout << "± ";
 	}
 
 	if (two)
 	{
-		std::cout << "-> " << "Volume" << std::endl;
+		calcDesign();
+		gotoXY(128, 21);
+		std::cout << "± ";
 	}
-	else
-	{
-		std::cout << "   Volume" << std::endl;
-	}
-
 	if (three)
 	{
-		std::cout << "-> " << "Density" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Density" << std::endl;
+		calcDesign();
+		gotoXY(128, 24);
+		std::cout << "± ";
 	}
 
 	if (four)
 	{
-		std::cout << "-> " << "Back" << std::endl;
+		calcDesign();
+		gotoXY(128, 27);
+		std::cout << "± ";
 	}
-	else
+	if (five)
 	{
-		std::cout << "   Back" << std::endl;
+		calcDesign();
+		gotoXY(128, 30);
+		std::cout << "± ";
 	}
 
 	const char option = _getch();
@@ -229,20 +251,24 @@ void calcMenu7(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			calcMenu7(false, true, false, false);
+			calcMenu7(false, true, false, false, false);
 		}
 		if (two)
 		{
-			calcMenu7(false, false, true, false);
+			calcMenu7(false, false, true, false, false);
 		}
 		if (three)
 		{
-			calcMenu7(false, false, false, true);
+			calcMenu7(false, false, false, true, false);
 		}
 
 		if (four)
 		{
-			calcMenu7(true, false, false, false);
+			calcMenu7(false, false, false, false, true);
+		}
+		if (five)
+		{
+			calcMenu7(true, false, false, false, false);
 		}
 	}
 
@@ -250,19 +276,23 @@ void calcMenu7(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			calcMenu7(false, false, false, true);
+			calcMenu7(false, false, false, false, true);
 		}
 		if (two)
 		{
-			calcMenu7(true, false, false, false);
+			calcMenu7(true, false, false, false, false);
 		}
 		if (three)
 		{
-			calcMenu7(false, true, false, false);
+			calcMenu7(false, true, false, false, false);
 		}
 		if (four)
 		{
-			calcMenu7(false, false, true, false);
+			calcMenu7(false, false, true, false, false);
+		}
+		if (five)
+		{
+			calcMenu7(false, false, false, true, false);
 		}
 	}
 
@@ -292,5 +322,5 @@ void calcMenu7(bool one, bool two, bool three, bool four) {
 }
 void startCalculator7()
 {
-	calcMenu7(true, false, false, false);
+	calcMenu7(true, false, false, false, false);
 }
