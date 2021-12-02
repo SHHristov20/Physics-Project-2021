@@ -27,47 +27,47 @@ void tittleScreen()
 {
 	maxSizedScreen();
 	textcolor(9);
-	std::cout << "\t" << "                                                  //////                        " << std::endl;
-	std::cout << "\t" << "                        .*////.                .///.   ///,                     " << std::endl;
-	std::cout << "\t" << "                      .///.  ////            .///        .///                   " << std::endl;
-	std::cout << "\t" << "                    *//*  ,//*  ///.       ,   .///         *//                 " << std::endl;
-	std::cout << "\t" << "                 .///.        ///..//   ,//*      ///,       .//                " << std::endl;
-	std::cout << "\t" << "                //*                   ///           .///    ///                 " << std::endl;
-	std::cout << "\t" << "                //*                   ///           .///    ///                 " << std::endl;
-	std::cout << "\t" << "                    ///.         ///        ///.                                " << std::endl;
-	std::cout << "\t" << "                      ,///    *//*       *//*       ,//,                        " << std::endl;
-	std::cout << "\t" << "                            ///.       ///.       ///.                          " << std::endl;
-	std::cout << "\t" << "                        .,//*       *//*       ,//*.                            " << std::endl;
-	std::cout << "\t" << "                       ///        ///        ///.   .//.                        " << std::endl;
-	std::cout << "\t" << "                    ,//*       ,//*       ,//*       .///*                      " << std::endl;
-	std::cout << "\t" << "                   ///.      ///.       ///.       *//.  ///.                   " << std::endl;
-	std::cout << "\t" << "                  .//.//* ,//*       ,//*             ,//* ,//*                 " << std::endl;
-	std::cout << "\t" << "                  //*   ///.       ///.   /.              ///,                  " << std::endl;
-	std::cout << "\t" << "                  //.     .///  .///      ,//*         ,///                     " << std::endl;
-	std::cout << "\t" << "                 .//     .***////.           ///.    ///,                       " << std::endl;
-	std::cout << "\t" << "                 */////*,.                     ,//*///                          " << std::endl;
-	std::cout << "\t" << "                                                 .*,                            " << std::endl;
-	std::cout << "\t" << "                                                                                " << std::endl;
-	std::cout << "\t" << "                                                                                " << std::endl;
-	std::cout << "\t" << "                           .         .*((*.                .                    " << std::endl;
-	std::cout << "\t" << "                        ,##(      ###(   ,###*           ###                    " << std::endl;
-	std::cout << "\t" << "                      ,#(##(     ##          ##        #####                    " << std::endl;
-	std::cout << "\t" << "                    ,#, /##(    ,#           .#      ##  ###                    " << std::endl;
-	std::cout << "\t" << "                  ,#*   /##(    .#           .#    ##    ###                    " << std::endl;
-	std::cout << "\t" << "                .##/////(##(///. ##         .#(  ##//////###////                " << std::endl;
-	std::cout << "\t" << "                        /##(      *###(//####.           ###                    " << std::endl;
-	std::cout << "\t" << "                        /##(                             ###                    " << std::endl;
-	std::cout << "\t" << "                        /##(                             ###                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                                                  //////                        " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                        .*////.                .///.   ///,                     " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                      .///.  ////            .///        .///                   " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                    *//*  ,//*  ///.       ,   .///         *//                 " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                 .///.        ///..//   ,//*      ///,       .//                " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                //*                   ///           .///    ///                 " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                //*                   ///           .///    ///                 " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                    ///.         ///        ///.                                " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                      ,///    *//*       *//*       ,//,                        " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                            ///.       ///.       ///.                          " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                        .,//*       *//*       ,//*.                            " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                       ///        ///        ///.   .//.                        " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                    ,//*       ,//*       ,//*       .///*                      " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                   ///.      ///.       ///.       *//.  ///.                   " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                  .//.//* ,//*       ,//*             ,//* ,//*                 " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                  //*   ///.       ///.   /.              ///,                  " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                  //.     .///  .///      ,//*         ,///                     " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                 .//     .***////.           ///.    ///,                       " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                 */////*,.                     ,//*///                          " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                                                 .*,                            " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                                                                                " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                                                                                " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                           .         .*((*.                .                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                        ,##(      ###(   ,###*           ###                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                      ,#(##(     ##          ##        #####                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                    ,#, /##(    ,#           .#      ##  ###                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                  ,#*   /##(    .#           .#    ##    ###                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                .##/////(##(///. ##         .#(  ##//////###////                " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                        /##(      *###(//####.           ###                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                        /##(                             ###                    " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t" << "                        /##(                             ###                    " << std::endl;
 
 	std::cout << "\n\n\n\n";
 	textcolor(15);
-	std::cout << "\t\t\t\t\t LOADING..." << std::endl << std::endl;;
-	std::cout << "\t\t\t\t";
-	for (int i = 0; i < 13; i++)
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t\t  LOADING..." << std::endl << std::endl;;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t ";
+	for (int i = 0; i < 20; i++)
 	{
 		textcolor(3);
 		std::cout << "± ";
-		Sleep(500);
+		Sleep(100);
 	}
 
 	std::cout << "  100%";
