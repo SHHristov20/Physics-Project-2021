@@ -43,8 +43,8 @@ void design() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Work       |       |     Convert     | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Power      |       |      Units      | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Work       |       |       Unit      | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Power      |       |     Convertor   | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________        __________________  |" << std::endl;
@@ -79,8 +79,8 @@ void enteredChoice() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Work       |       |     Convert     | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Power      |       |      Units      | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Work       |       |       Unit      | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Power      |       |     Convertor   | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |       |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|       |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________         _________________  |" << std::endl;
@@ -481,7 +481,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 			gotoXY(95, 11);
 			std::cout << "Loading";
 			gotoXY(95, 12);
-			std::cout << "Conversion of units Calculator...";
+			std::cout << "Unit converter...";
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{

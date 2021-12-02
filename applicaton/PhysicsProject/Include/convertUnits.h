@@ -6,7 +6,9 @@
 #include "calculatorsMenu.h"
 
 void printCalc8();
+void convertorDesign();
 void calcTitle8();
+void enteredChoice8();
 void convert1();
 void convert2();
 void convert3();
