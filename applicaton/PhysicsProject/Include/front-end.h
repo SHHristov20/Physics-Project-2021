@@ -5,6 +5,7 @@
 //#include "calculatorsMenu.h"
 
 void gotoXY(int x, int y);
+void textcolor(int color);
 void tittleScreen();
 void Menu();
 void active(bool first, bool second, bool third);
