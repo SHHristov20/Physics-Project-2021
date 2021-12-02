@@ -15,8 +15,17 @@ void textcolor(int color)
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
+void maxSizedScreen() {
+	COORD ScreenBufferSize{ 1000, 50 };
+	HANDLE ConsoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+	HWND ConsoleWindow = GetConsoleWindow();
+
+	SetConsoleScreenBufferSize(ConsoleHandle, ScreenBufferSize);
+	ShowWindow(ConsoleWindow, SW_MAXIMIZE);
+}
 void tittleScreen()
 {
+	maxSizedScreen();
 	textcolor(9);
 	std::cout << "\t" << "                                                  //////                        " << std::endl;
 	std::cout << "\t" << "                        .*////.                .///.   ///,                     " << std::endl;
