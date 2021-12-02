@@ -10,7 +10,7 @@ void printCalc8() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our Unit Convertor  |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  (Navigate using W, A, Enter)   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  (Navigate using W, S, Enter)   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_________________________________|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _______ ______  _______   _______   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   m3  |  |" << std::endl;
