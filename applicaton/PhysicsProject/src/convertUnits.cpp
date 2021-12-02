@@ -34,6 +34,77 @@ void calcTitle8()
 	std::cout << " | |___  | (_) | | | | |  \\ V /  |  __/ | |    | |_    | |_| | | | | | | | | |_  \\__ \\" << std::endl;
 	std::cout << "  \\____|  \\___/  |_| |_|   \\_/    \\___| |_|     \\__|    \\___/  |_| |_| |_|  \\__| |___/" << std::endl << std::endl << std::endl << std::endl;;
 }
+void calcDesign8() {
+	std::cout << " _______________________________________________" << std::endl;
+	std::cout << "|  ___________________________________________  |" << std::endl;
+	std::cout << "| |  Welcome to our Physics calculator!       | |" << std::endl;
+	std::cout << "| |  Choose yours and press ENTER!            | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |  (Navigate using W, A, S, D)              | |" << std::endl;
+	std::cout << "| |___________________________________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |   km/h to m/s   |       |  kg/m3 to g/cm3 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |   m/s to km/h   |       |  g/cm3 to kg/m3 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    seconds to   |       |    m3 to cm3    | |" << std::endl;
+	std::cout << "| |     minutes     |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    minutes to   |       |    cm3 to m3    | |" << std::endl;
+	std::cout << "| |     seconds     |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|               _________________               |" << std::endl;
+	std::cout << "|              |       Back      |              |" << std::endl;
+	std::cout << "|              |                 |              |" << std::endl;
+	std::cout << "|              |                 |              |" << std::endl;
+	std::cout << "|              |_________________|              |" << std::endl;
+	std::cout << "|_______________________________________________|" << std::endl;
+}
+
+void enteredChoice8() {
+	std::cout << " _______________________________________________" << std::endl;
+	std::cout << "|  ___________________________________________  |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |                                           | |" << std::endl;
+	std::cout << "| |___________________________________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |   km/h to m/s   |       |  kg/m3 to g/cm3 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |   m/s to km/h   |       |  g/cm3 to kg/m3 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    seconds to   |       |    m3 to cm3    | |" << std::endl;
+	std::cout << "| |     minutes     |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|  _________________         _________________  |" << std::endl;
+	std::cout << "| |    minutes to   |       |    cm3 to m3    | |" << std::endl;
+	std::cout << "| |     seconds     |       |                 | |" << std::endl;
+	std::cout << "| |                 |       |                 | |" << std::endl;
+	std::cout << "| |_________________|       |_________________| |" << std::endl;
+	std::cout << "|               _________________               |" << std::endl;
+	std::cout << "|              |       Back      |              |" << std::endl;
+	std::cout << "|              |                 |              |" << std::endl;
+	std::cout << "|              |                 |              |" << std::endl;
+	std::cout << "|              |_________________|              |" << std::endl;
+	std::cout << "|_______________________________________________|" << std::endl;
+}
 
 void convert1()
 {
@@ -242,209 +313,300 @@ void convert8()
 	printCalculatorsMenu();
 }
 
-void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine) {
+
+void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine)
+{
 	calcTitle8();
-
-
-	std::cout << "   Convert" << std::endl;
 	if (one)
 	{
-		std::cout << "-> " << "km/h to m/s" << std::endl;
+		calcDesign8();
+		gotoXY(9, 19);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   km/h to m/s" << std::endl;
-	}
-
 	if (two)
 	{
-		std::cout << "-> " << "m/s to km/h" << std::endl << std::endl;
+		calcDesign8();
+		gotoXY(9, 24);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   m/s to km/h" << std::endl << std::endl;
-	}
-
 	if (three)
 	{
-		std::cout << "-> " << "seconds to minutes" << std::endl;
+		calcDesign8();
+		gotoXY(9, 29);
+		std::cout << "±±±±±";
 	}
-	else
-	{
-		std::cout << "   seconds to minutes" << std::endl;
-	}
-
 	if (four)
 	{
-		std::cout << "-> " << "minutes to seconds" << std::endl << std::endl;
-	}
-	else
-	{
-		std::cout << "   minutes to seconds" << std::endl << std::endl;
+		calcDesign8();
+		gotoXY(9, 34);
+		std::cout << "±±±±±";
 	}
 	if (five)
 	{
-		std::cout << "-> " << "kg/m3 to g/cm3" << std::endl;
-	}
-	else
-	{
-		std::cout << "   kg/m3 to g/cm3" << std::endl;
+		calcDesign8();
+		gotoXY(35, 19);
+		std::cout << "±±±±±";
 	}
 	if (six)
 	{
-		std::cout << "-> " << "g/cm3 to kg/m3" << std::endl << std::endl;
-	}
-	else
-	{
-		std::cout << "   g/cm3 to kg/m3" << std::endl << std::endl;
+		calcDesign8();
+		gotoXY(35, 24);
+		std::cout << "±±±±±";
 	}
 	if (seven)
 	{
-		std::cout << "-> " << "m3 to cm3" << std::endl;
-	}
-	else
-	{
-		std::cout << "   m3 to cm3" << std::endl;
+		calcDesign8();
+		gotoXY(35, 29);
+		std::cout << "±±±±±";
 	}
 	if (eight)
 	{
-		std::cout << "-> " << "cm3 to m3" << std::endl << std::endl;
-	}
-	else
-	{
-		std::cout << "   cm3 to m3" << std::endl << std::endl;
+		calcDesign8();
+		gotoXY(35, 34);
+		std::cout << "±±±±±";
 	}
 	if (nine)
 	{
-		std::cout << "-> " << "Back" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Back" << std::endl;
+		calcDesign8();
+		gotoXY(22, 39);
+		std::cout << "±±±±±";
 	}
 
 	const char option = _getch();
-	if (option == 's' || option == 'S')
+
+	if (option == 'w' or option == 'W')
 	{
 		if (one)
 		{
-			calcMenu8(false, true, false, false, false, false, false, false, false);
-		}
-		if (two)
-		{
-			calcMenu8(false, false, true, false, false, false, false, false, false);
-		}
-		if (three)
-		{
+			system("cls");
 			calcMenu8(false, false, false, true, false, false, false, false, false);
 		}
-
-		if (four)
-		{
-			calcMenu8(false, false, false, false, true, false, false, false, false);
-		}
-		if (five)
-		{
-			calcMenu8(false, false, false, false, false, true, false, false, false);
-		}
-		if (six)
-		{
-			calcMenu8(false, false, false, false, false, false, true, false, false);
-		}
-		if (seven)
-		{
-			calcMenu8(false, false, false, false, false, false, false, true, false);
-		}
-
-		if (eight)
-		{
-			calcMenu8(false, false, false, false, false, false, false, false, true);
-		}
-		if (nine)
-		{
-			calcMenu8(true, false, false, false, false, false, false, false, false);
-		}
-	}
-
-	if (option == 'w' || option == 'W')
-	{
-		if (one)
-		{
-			calcMenu8(false, false, false, false, false, false, false, false, true);
-		}
 		if (two)
 		{
+			system("cls");
 			calcMenu8(true, false, false, false, false, false, false, false, false);
 		}
 		if (three)
 		{
+			system("cls");
 			calcMenu8(false, true, false, false, false, false, false, false, false);
 		}
 		if (four)
 		{
+			system("cls");
 			calcMenu8(false, false, true, false, false, false, false, false, false);
 		}
 		if (five)
 		{
-			calcMenu8(false, false, false, true, false, false, false, false, false);
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, false, true, false);
 		}
 		if (six)
 		{
+			system("cls");
 			calcMenu8(false, false, false, false, true, false, false, false, false);
-		}		
+		}
 		if (seven)
 		{
+			system("cls");
 			calcMenu8(false, false, false, false, false, true, false, false, false);
 		}
 		if (eight)
 		{
+			system("cls");
 			calcMenu8(false, false, false, false, false, false, true, false, false);
 		}
 		if (nine)
 		{
+			system("cls");
 			calcMenu8(false, false, false, false, false, false, false, true, false);
 		}
 	}
 
+	if (option == 's' or option == 'S')
+	{
+		if (one)
+		{
+			system("cls");
+			calcMenu8(false, true, false, false, false, false, false, false, false);
+		}
+		if (two)
+		{
+			system("cls");
+			calcMenu8(false, false, true, false, false, false, false, false, false);
+		}
+		if (three)
+		{
+			system("cls");
+			calcMenu8(false, false, false, true, false, false, false, false, false);
+		}
+		if (four)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, false, false, true);
+		}
+		if (five)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, true, false, false, false);
+		}
+		if (six)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, true, false, false);
+		}
+		if (seven)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, false, true, false);
+		}
+		if (eight)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, false, false, true);
+		}
+		if (nine)
+		{
+			system("cls");
+			calcMenu8(true, false, false, false, false, false, false, false, false);
+		}
+	}
+
+	if (option == 'a' or option == 'A' or option == 'd' or option == 'D')
+	{
+		if (one)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, true, false, false, false, false);
+		}
+		if (two)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, true, false, false, false);
+		}
+		if (three)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, true, false, false);
+		}
+		if (four)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, false, true, false);
+		}
+		if (five)
+		{
+			system("cls");
+			calcMenu8(true, false, false, false, false, false, false, false, false);
+		}
+		if (six)
+		{
+			system("cls");
+			calcMenu8(false, true, false, false, false, false, false, false, false);
+		}
+		if (seven)
+		{
+			system("cls");
+			calcMenu8(false, false, true, false, false, false, false, false, false);
+		}
+		if (eight)
+		{
+			system("cls");
+			calcMenu8(false, false, false, true, false, false, false, false, false);
+		}
+		if (nine)
+		{
+			system("cls");
+			calcMenu8(false, false, false, false, false, false, false, false, true);
+		}
+	}
 	if (option == 13)
 	{
 		if (one)
 		{
+			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
 			system("cls");
 			convert1();
 		}
 		if (two)
 		{
 			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
+			system("cls");
 			convert2();
 		}
 		if (three)
 		{
+			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
 			system("cls");
 			convert3();
 		}
 		if (four)
 		{
 			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
+			system("cls");
 			convert4();
 		}
 		if (five)
 		{
+			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
 			system("cls");
 			convert5();
 		}
 		if (six)
 		{
 			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
+			system("cls");
 			convert6();
 		}
 		if (seven)
 		{
 			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
+			system("cls");
 			convert7();
 		}
 		if (eight)
 		{
+			system("cls");
+			enteredChoice8();
+			gotoXY(4, 2);
+			std::cout << "Loading...";
+
+			Sleep(3000);
 			system("cls");
 			convert8();
 		}
@@ -453,8 +615,10 @@ void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, b
 			system("cls");
 			printCalculatorsMenu();
 		}
+
 	}
 }
+
 void startCalculator8()
 {
 	calcMenu8(true, false, false, false, false, false, false, false, false);
