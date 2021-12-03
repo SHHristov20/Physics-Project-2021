@@ -6,6 +6,7 @@
 #include "calculatorsMenu.h"
 
 void printCalc5();
+void calcDesign3();
 void calcTitle5();
 void pressure();
 void depthPressure();
