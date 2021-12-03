@@ -80,9 +80,54 @@ void work()
 	std::cout << "Force(F) = ";
 	std::cin >> F;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Force(F) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> F;
+	}
+
 	gotoXY(100, 13);
-	std::cout << "Displacement = ";
+	std::cout << "Displacement(s) = ";
 	std::cin >> s;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Force(F) = " << F;
+
+		gotoXY(100, 13);
+		std::cout << "Displacement(s) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> s;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Work(A) = " << float(F * s) << "J";
@@ -127,9 +172,54 @@ void force()
 	std::cout << "Work(A) = ";
 	std::cin >> A;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> A;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Displacement(s) = ";
 	std::cin >> s;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = " << A;
+
+		gotoXY(100, 13);
+		std::cout << "Displacement(s) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> s;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Force(F) = " << float(s / A);
@@ -174,9 +264,53 @@ void displacementByWork()
 	std::cout << "Work(A) = ";
 	std::cin >> A;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> A;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Force(F) = ";
 	std::cin >> F;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = " << A;
+
+		gotoXY(100, 13);
+		std::cout << "Force(F) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> F;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Displacement(s) = " << float(F / A) << "m/s";
@@ -221,9 +355,53 @@ void power()
 	std::cout << "Work(A) = ";
 	std::cin >> A;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> A;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "time(t) = ";
 	std::cin >> t;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = " << A;
+
+		gotoXY(100, 13);
+		std::cout << "time(t) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Power(P) = " << float(A / t) << "W";
@@ -268,9 +446,54 @@ void findWorkByPower()
 	std::cout << "Time(t) = ";
 	std::cin >> t;
 
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Time(t) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
 	gotoXY(100, 13);
 	std::cout << "Force(P) = ";
 	std::cin >> P;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Time(t) = " << t;
+
+		gotoXY(100, 13);
+		std::cout << "Force(P) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> P;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Work(A) = " << float(P / t) << "J";
@@ -315,9 +538,54 @@ void findTimeByPower()
 	std::cout << "Work(A) = ";
 	std::cin >> A;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> A;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Power(P) = ";
 	std::cin >> P;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle2();
+		printCalc4();
+
+		gotoXY(100, 12);
+		std::cout << "Work(A) = " << A;
+
+		gotoXY(100, 13);
+		std::cout << "Power(P) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> P;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Time(t) = " << float(A / P) << "s";

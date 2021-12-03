@@ -76,13 +76,83 @@ void acceleration()
 	std::cout << "Initial speed(v0) = ";
 	std::cin >> v0;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> v0;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Final speed(v) = ";
 	std::cin >> v;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = " << v0;
+
+		gotoXY(100, 12);
+		std::cout << "Final speed(v) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> v;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = " << v0;
+
+		gotoXY(100, 12);
+		std::cout << "Final speed(v) = " << v;
+
+		gotoXY(100, 13);
+
+		std::cout << "Time(t) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Acceleration(a) = " << float((v - v0) / t) << "m/s" << char(253);
@@ -128,13 +198,82 @@ void displacement()
 	std::cout << "Initial speed(v0) = ";
 	std::cin >> v0;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> v0;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = " << v0;
+
+		gotoXY(100, 12);
+		std::cout << "Time(t) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Acceleration(a) = ";
 	std::cin >> a;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = " << v0;
+
+		gotoXY(100, 12);
+		std::cout << "Time(t) = " << t;
+
+		gotoXY(100, 13);
+		std::cout << "Acceleration(a) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Displacement(s) = " << v0 * t + ((a * pow(t, 2)) / 2);
@@ -179,13 +318,84 @@ void fSpeed()
 	std::cout << "Initial speed(v0) = ";
 	std::cin >> v0;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = ";;
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> v0;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = " << v0;
+
+		gotoXY(100, 12);
+		std::cout << "Time(t) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Acceleration(a) = ";
 	std::cin >> a;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Initial speed(v0) = " << v0;
+
+		gotoXY(100, 12);
+		std::cout << "Time(t) = " << t;
+
+		gotoXY(100, 13);
+		std::cout << "Acceleration(a) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> a;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Final Speed(v) = " << v0 + (a * t);
@@ -230,9 +440,53 @@ void time()
 	std::cout << "Acceleration(a) = ";
 	std::cin >> a;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Acceleration(a) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> a;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Final Speed(v) = ";
 	std::cin >> v;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle();
+		printCalc();
+
+		gotoXY(100, 11);
+		std::cout << "Acceleration(a) = " << a;
+
+		gotoXY(100, 12);
+		std::cout << "Final Speed(v) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> v;
+	}
 
 	gotoXY(100, 13);
 	std::cout << "Time(t) = " << v / a;

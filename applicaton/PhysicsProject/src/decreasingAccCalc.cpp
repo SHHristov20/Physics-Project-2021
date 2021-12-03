@@ -460,7 +460,7 @@ void time1()
 	}
 
 	gotoXY(100, 12);
-	std::cout << "Initial sppeed(v0) = ";
+	std::cout << "Initial speed(v0) = ";
 	std::cin >> v0;
 
 	if (!std::cin)

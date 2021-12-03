@@ -76,9 +76,53 @@ void Pressure()
 	std::cout << "Force(F) = ";
 	std::cin >> F;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Force(F) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> F;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Area(S) = ";
 	std::cin >> S;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Force(F) = " << F;
+
+		gotoXY(100, 12);
+		std::cout << "Area(S) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> S;
+	}
 
 	gotoXY(100, 13);
 	std::cout << "Pressure(P) = " << float(F / S) << "Pa";
@@ -123,10 +167,54 @@ void Area()
 	std::cout << "Pressure(P) = ";
 	std::cin >> P;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Pressure(P) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> P;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Force(F) = ";
 	std::cin >> F;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Pressure(P) = " << P;
+
+		gotoXY(100, 12);
+		std::cout << "Force(F) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> F;
+	}
 
 	gotoXY(100, 13);
 	std::cout << "Area(S) = " << float(F / P) << "m2";
@@ -171,9 +259,53 @@ void Force()
 	std::cout << "Pressure(P) = ";
 	std::cin >> P;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Pressure(P) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> P;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Area(S) = ";
 	std::cin >> S;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle6();
+		printCalc6();
+
+		gotoXY(100, 11);
+		std::cout << "Pressure(P) = " << P;
+
+		gotoXY(100, 12);
+		std::cout << "Area(S) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> S;
+	}
 
 	gotoXY(100, 13);
 	std::cout << "Force(F) = " << float(P * S) << "N";
