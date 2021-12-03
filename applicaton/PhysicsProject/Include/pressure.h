@@ -6,6 +6,7 @@
 #include "calculatorsMenu.h"
 
 void printCalc6();
+void calcDesign6();
 void calcTitle6();
 void Pressure();
 void Area();

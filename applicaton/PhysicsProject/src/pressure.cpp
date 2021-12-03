@@ -5,62 +5,110 @@
 #include "calculatorsMenu.h"
 
 void printCalc6() {
-	std::cout << " ______________________________" << std::endl;
-	std::cout << "|  _________________________   |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |                         |  |" << std::endl;
-	std::cout << "| |_________________________|  |" << std::endl;
-	std::cout << "|  _____ _____ _____   _____   |" << std::endl;
-	std::cout << "| |  7  |  8  |  9  | |  F  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  4  |  5  |  6  | |  S  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  1  |  2  |  3  | |  P  |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  .  |  0  |  =  | |     |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "| |  /  |     |     | |     |  |" << std::endl;
-	std::cout << "| |_____|_____|_____| |_____|  |" << std::endl;
-	std::cout << "|______________________________|" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_________________________________|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _______ ______  _______   _______   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   F   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   S   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   P   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   B   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
+}
+void calcDesign6() {
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Pressure Calculator            |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  (Navigate using W, A, S, D)    |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_________________________________|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _______ ______  _______   _______   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   F   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   S   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   P   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   B   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
 void calcTitle6()
 {
 	system("cls");
-	std::cout << std::endl << "\t  ____                                                  " << std::endl;
-	std::cout << "\t |  _ \\   _ __    ___   ___   ___   _   _   _ __    ___ " << std::endl;
-	std::cout << "\t | |_) | | '__|  / _ \\ / __| / __| | | | | | '__|  / _ \\" << std::endl;
-	std::cout << "\t |  __/  | |    |  __/ \\__ \\ \\__ \\ | |_| | | |    |  __/" << std::endl;
-	std::cout << "\t |_|     |_|     \\___| |___/ |___/  \\__,_| |_|     \\___|" << std::endl << std::endl << std::endl << std::endl;;
+	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t  ____                                                  " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |  _ \\   _ __    ___   ___   ___   _   _   _ __    ___ " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t | |_) | | '__|  / _ \\ / __| / __| | | | | | '__|  / _ \\" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |  __/  | |    |  __/ \\__ \\ \\__ \\ | |_| | | |    |  __/" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |_|     |_|     \\___| |___/ |___/  \\__,_| |_|     \\___|" << std::endl << std::endl << std::endl << std::endl;;
 }
 void Pressure()
 {
 	float S = 0, F = 0;
 	system("cls");
+	calcTitle6();
 	printCalc6();
 
-	gotoXY(3, 2);
+	gotoXY(100, 11);
 	std::cout << "Force(F) = ";
 	std::cin >> F;
 
-	gotoXY(3, 3);
+	gotoXY(100, 12);
 	std::cout << "Area(S) = ";
 	std::cin >> S;
 
-	gotoXY(3, 4);
+	gotoXY(100, 13);
 	std::cout << "Pressure(P) = " << float(F / S) << "Pa";
 	Sleep(3000);
 	system("cls");
 
+	calcTitle6();
 	printCalc6();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
+	gotoXY(100, 11);
+	std::cout << "Press any key to continue...";
 	_getch();
+	system("cls");
 
+	calcTitle6();
+	printCalc6();
+	gotoXY(100, 11);
+	std::cout << "Redirecting";
+
+	gotoXY(100, 12);
+	std::cout << "to calculators menu...";
+
+	gotoXY(100, 14);
+	for (int i = 0; i < 13; i++)
+	{
+		std::cout << "± ";
+		Sleep(100);
+	}
+
+	std::cout << "100%";
+	Sleep(3000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -68,30 +116,47 @@ void Area()
 {
 	float P = 0, F = 0;
 	system("cls");
+	calcTitle6();
 	printCalc6();
 
-	gotoXY(3, 2);
+	gotoXY(100, 11);
 	std::cout << "Pressure(P) = ";
 	std::cin >> P;
 
-	gotoXY(3, 3);
+	gotoXY(100, 12);
 	std::cout << "Force(F) = ";
 	std::cin >> F;
 
 
-	gotoXY(3, 4);
+	gotoXY(100, 13);
 	std::cout << "Area(S) = " << float(F / P) << "m2";
 	Sleep(3000);
 	system("cls");
 
+	calcTitle6();
 	printCalc6();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
+	gotoXY(100, 11);
+	std::cout << "Press any key to continue...";
 	_getch();
+	system("cls");
 
+	calcTitle6();
+	printCalc6();
+	gotoXY(100, 11);
+	std::cout << "Redirecting";
+
+	gotoXY(100, 12);
+	std::cout << "to calculators menu...";
+
+	gotoXY(100, 14);
+	for (int i = 0; i < 13; i++)
+	{
+		std::cout << "± ";
+		Sleep(100);
+	}
+
+	std::cout << "100%";
+	Sleep(3000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -99,29 +164,46 @@ void Force()
 {
 	float S = 0, P = 0;
 	system("cls");
+	calcTitle6();
 	printCalc6();
 
-	gotoXY(3, 2);
+	gotoXY(100, 11);
 	std::cout << "Pressure(P) = ";
 	std::cin >> P;
 
-	gotoXY(3, 3);
+	gotoXY(100, 12);
 	std::cout << "Area(S) = ";
 	std::cin >> S;
 
-	gotoXY(3, 4);
+	gotoXY(100, 13);
 	std::cout << "Force(F) = " << float(P * S) << "N";
 	Sleep(3000);
 	system("cls");
 
+	calcTitle6();
 	printCalc6();
-	gotoXY(3, 2);
-	std::cout << "Press any key to";
-
-	gotoXY(3, 3);
-	std::cout << "continue...";
+	gotoXY(100, 11);
+	std::cout << "Press any key to continue...";
 	_getch();
+	system("cls");
 
+	calcTitle6();
+	printCalc6();
+	gotoXY(100, 11);
+	std::cout << "Redirecting";
+
+	gotoXY(100, 12);
+	std::cout << "to calculators menu...";
+
+	gotoXY(100, 14);
+	for (int i = 0; i < 13; i++)
+	{
+		std::cout << "± ";
+		Sleep(100);
+	}
+
+	std::cout << "100%";
+	Sleep(3000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -130,41 +212,31 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 	calcTitle6();
 
 
-	std::cout << "   Find" << std::endl;
 	if (one)
 	{
-		std::cout << "-> " << "Pressure" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Pressure" << std::endl;
+		calcDesign6();
+		gotoXY(128, 18);
+		std::cout << "± ";
 	}
 
 	if (two)
 	{
-		std::cout << "-> " << "Area" << std::endl;
+		calcDesign6();
+		gotoXY(128, 21);
+		std::cout << "± ";
 	}
-	else
-	{
-		std::cout << "   Area" << std::endl;
-	}
-
 	if (three)
 	{
-		std::cout << "-> " << "Force" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Force" << std::endl;
+		calcDesign6();
+		gotoXY(128, 24);
+		std::cout << "± ";
 	}
 
 	if (four)
 	{
-		std::cout << "-> " << "Back" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Back" << std::endl;
+		calcDesign6();
+		gotoXY(128, 27);
+		std::cout << "± ";
 	}
 
 	const char option = _getch();
