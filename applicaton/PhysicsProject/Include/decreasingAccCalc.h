@@ -5,6 +5,7 @@
 
 void calcTitle1();
 void printCalc1();
+void calcDesign1();
 void acceleration1();
 void displacement1();
 void fSpeed1();

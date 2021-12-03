@@ -39,6 +39,32 @@ void printCalc1() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+void calcDesign1() {
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our Decreasing      |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Acceleration Calculator        |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  (Navigate using W, A, S, D)    |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_________________________________|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _______ ______  _______   _______   |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   t   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   s   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |  t0   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |  s-BR |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   B   |   V0  |   a   | |   V   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
+}
 void acceleration1()
 {
 	float v0 = 0, v = 0, t = 0;
@@ -390,75 +416,57 @@ void initialSpeed() {
 void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight) {
 	calcTitle1();
 
-
-	std::cout << "   Find" << std::endl;
 	if (one)
 	{
-		std::cout << "-> " << "Acceleration" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Acceleration" << std::endl;
+		calcDesign1();
+		gotoXY(128, 18);
+		std::cout << "± ";
 	}
 
 	if (two)
 	{
-		std::cout << "-> " << "Displacement" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Displacement" << std::endl;
+		calcDesign1();
+		gotoXY(128, 21);
+		std::cout << "± ";
 	}
 
 	if (three)
 	{
-		std::cout << "-> " << "Final speed" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Final speed" << std::endl;
+		calcDesign1();
+		gotoXY(128, 24);
+		std::cout << "± ";
 	}
 
 	if (four)
 	{
-		std::cout << "-> " << "Time" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Time" << std::endl;
+		calcDesign1();
+		gotoXY(128, 27);
+		std::cout << "± ";
 	}
 
 	if (five)
 	{
-		std::cout << "-> " << "Stop time" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Stop time" << std::endl;
+		calcDesign1();
+		gotoXY(128, 30);
+		std::cout << "± ";
 	}
 	if (six)
 	{
-		std::cout << "-> " << "Braking Distance" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Braking Distance" << std::endl;
+		calcDesign1();
+		gotoXY(118, 30);
+		std::cout << "± ";
 	}
 	if (seven)
 	{
-		std::cout << "-> " << "Initial Speed" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Initial Speed" << std::endl;
+		calcDesign1();
+		gotoXY(110, 30);
+		std::cout << "± ";
 	}
 	if (eight)
 	{
-		std::cout << "-> " << "Back" << std::endl;
-	}
-	else
-	{
-		std::cout << "   Back" << std::endl;
+		calcDesign1();
+		gotoXY(102, 30);
+		std::cout << "± ";
 	}
 
 
@@ -484,15 +492,15 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 		}
 		if (five)
 		{
-			menu(false, false, false, false, false, true, false, false);
+			menu(true, false, false, false, false, false, false, false);
 		}
 		if (six)
 		{
-			menu(false, false, false, false, false, false, true, false);
+			menu(true, false, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
-			menu(false, false, false, false, false, false, false, true);
+			menu(true, false, false, false, false, false, false, false);
 		}
 		if (eight)
 		{
@@ -524,11 +532,82 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 		}
 		if (six)
 		{
+			menu(true, false, false, false, false, false, false, false);
+		}
+		if (seven)
+		{
+			menu(true, false, false, false, false, false, false, false);
+		}
+		if (eight)
+		{
+			menu(true, false, false, false, false, false, false, false);
+		}
+	}
+	if (option == 'a' or option == 'A')
+	{
+		if (one)
+		{
+			menu(true, false, false, false, false, false, false, false);
+		}
+		if (two)
+		{
+			menu(false, true, false, false, false, false, false, false);
+		}
+		if (three)
+		{
+			menu(false, false , true, false, false, false, false, false);
+		}
+		if (four)
+		{
+			menu(false, false, false, true, false, false, false, false);
+		}
+		if (five)
+		{
+			menu(false, false, false, false, false, true, false, false);
+		}
+		if (six)
+		{
+			menu(false, false, false, false, false, false, true, false);
+		}
+		if (seven)
+		{
+			menu(false, false, false, false, false, false, false, true);
+		}
+		if (eight)
+		{
+			menu(false, false, false, false, true, false, false, false);
+		}
+	}
+
+	if (option == 'd' or option == 'D')
+	{
+		if (one)
+		{
+			menu(true, false, false, false, false, false, false, false);
+		}
+		if (two)
+		{
+			menu(false, true, false, false, false, false, false, false);
+		}
+		if (three)
+		{
+			menu(false, false, true, false, false, false, false, false);
+		}
+		if (four)
+		{
+			menu(false, false, false, true, false, false, false, false);
+		}
+		if (five)
+		{
+			menu(false, false, false, false, true, false, false, false);
+		}
+		if (six)
+		{
 			menu(false, false, false, false, true, false, false, false);
 		}
 		if (seven)
 		{
-			menu(false, false, false, false, false, true, false, false);
+			menu(true, false, false, false, false, true, false, false);
 		}
 		if (eight)
 		{
