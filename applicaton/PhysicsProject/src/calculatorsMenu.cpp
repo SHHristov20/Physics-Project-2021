@@ -367,8 +367,8 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		{
 			system("cls");
 			printTitle();
-			gotoXY(95, 11);
 			enteredChoice();
+			gotoXY(95, 11);
 			std::cout << "Loading";
 			gotoXY(95, 12);
 			std::cout << "Free Fall Calculator...";

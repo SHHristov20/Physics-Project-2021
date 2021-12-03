@@ -4,6 +4,7 @@
 #include <cmath>
 
 void printCalc2();
+void calcDesign2();
 void calculatorTitle();
 void finalSpeed();
 void time3();
