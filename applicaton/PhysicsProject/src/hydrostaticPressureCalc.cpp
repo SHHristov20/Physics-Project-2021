@@ -78,9 +78,52 @@ void pressure()
 	std::cout << "Density(p) = ";
 	std::cin >> p;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Density(p) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> p;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Height(h) = ";
 	std::cin >> h;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Density(p) = " << p;
+
+		gotoXY(100, 13);
+		std::cout << "Height(h) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> h;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Pressure(P) = " << float(p * g * h) << "Pa";
@@ -89,7 +132,7 @@ void pressure()
 
 	calcTitle5();
 	printCalc5();
-	gotoXY(100, 11);
+	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
@@ -125,13 +168,82 @@ void depthPressure()
 	std::cout << "Pressure(Pa) = ";
 	std::cin >> Pa;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Pressure(p) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> Pa;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Density(p) = ";
 	std::cin >> p;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Pressure(Pa) = " << Pa;
+
+		gotoXY(100, 13);
+		std::cout << "Density(p) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> p;
+	}
+
 	gotoXY(100, 14);
 	std::cout << "Height(h) = ";
 	std::cin >> h;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Pressure(Pa) = " << Pa;
+
+		gotoXY(100, 13);
+		std::cout << "Density(p) = " << p;
+
+		gotoXY(100, 14);
+		std::cout << "Height(h) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> h;
+	}
 
 	gotoXY(100, 15);
 	std::cout << "Depth pressure(P) = " << float(Pa + p * g * h);
@@ -176,9 +288,53 @@ void height()
 	std::cout << "Pressure(P) = ";
 	std::cin >> P;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Pressure(P) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> P;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Density(p) = ";
 	std::cin >> p;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Pressure(P) = " << P;
+
+		gotoXY(100, 13);
+		std::cout << "Density(p) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> p;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Height(h) = " << float((p * g) / P) << "cm";
@@ -223,9 +379,53 @@ void density()
 	std::cout << "Pressure(P) = ";
 	std::cin >> P;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Pressure(P) = ";
+
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> P;
+	}
+
 	gotoXY(100, 13);
 	std::cout << "Height(h) = ";
 	std::cin >> h;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle5();
+		printCalc5();
+
+		gotoXY(100, 12);
+		std::cout << "Pressure(P) = " << P;
+
+		gotoXY(100, 13);
+		std::cout << "Height(h) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> h;
+	}
 
 	gotoXY(100, 14);
 	std::cout << "Density(p) = " << float((h * g) / P) << "Pa";
