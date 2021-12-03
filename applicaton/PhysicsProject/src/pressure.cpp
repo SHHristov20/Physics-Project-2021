@@ -286,7 +286,7 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 		if (one)
 		{
 			system("cls");
-			Pressure();
+			Force();
 		}
 		if (two)
 		{
@@ -296,7 +296,7 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 		if (three)
 		{
 			system("cls");
-			Force();
+			Pressure();
 		}
 		if (four)
 		{
