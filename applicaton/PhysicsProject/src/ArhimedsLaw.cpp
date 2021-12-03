@@ -119,7 +119,7 @@ void volume()
 	calcTitle7();
 	printCalc7();
 
-	gotoXY(100,11);
+	gotoXY(100, 11);
 	std::cout << "Density(p) = ";
 	std::cin >> p;
 
