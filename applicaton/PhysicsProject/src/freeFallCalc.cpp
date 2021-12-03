@@ -79,6 +79,26 @@ void finalSpeed() {
 	std::cout << "Time(t) = ";
 	std::cin >> t;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calculatorTitle();
+		printCalc2();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calculatorTitle();
+		printCalc2();
+
+		gotoXY(100, 11);
+		std::cout << "Time(t) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Final speed(v) = " << float(g * t) << "m/s";
 	Sleep(3000);
@@ -120,6 +140,26 @@ void street() {
 	gotoXY(100, 11);
 	std::cout << "Time(t) = ";
 	std::cin >> t;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calculatorTitle();
+		printCalc2();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calculatorTitle();
+		printCalc2();
+
+		gotoXY(100, 11);
+		std::cout << "Time(t) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> t;
+	}
 
 	gotoXY(100, 12);
 	std::cout << "Street(s) = " << float((g * pow(t, 2)) / 2);
@@ -163,6 +203,26 @@ void time3() {
 	gotoXY(100, 11);
 	std::cout << "Final speed(v) = ";
 	std::cin >> v;
+	
+	if (!std::cin)
+	{
+		system("cls");
+		calculatorTitle();
+		printCalc2();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calculatorTitle();
+		printCalc2();
+
+		gotoXY(100, 11);
+		std::cout << "Final speed(v) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> v;
+	}
 
 	gotoXY(100, 12);
 	std::cout << "Time(t) = " << float(g / v);
