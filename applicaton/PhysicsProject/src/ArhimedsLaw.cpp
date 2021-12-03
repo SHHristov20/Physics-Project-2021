@@ -22,10 +22,10 @@ void printCalc7() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   p   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   g   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   B   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |   B   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
@@ -48,10 +48,10 @@ void calcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   p   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   g   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   B   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |   B   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
@@ -76,9 +76,51 @@ void repulsiveForce()
 	std::cout << "Density(p) = ";
 	std::cin >> p;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Density(p) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> p;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Volume(V) = ";
 	std::cin >> V;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Density(p) = " << p;
+		gotoXY(100, 12);
+		std::cout << "Volume(V) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> V;
+	}
 
 	gotoXY(100, 13);
 	std::cout << "Repulsive force(Fa) = " << float(p * V * g) << "N";
@@ -123,10 +165,51 @@ void volume()
 	std::cout << "Density(p) = ";
 	std::cin >> p;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Density(p) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> p;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Repulsive force(Fa) = ";
 	std::cin >> F;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Density(p) = " << p;
+		gotoXY(100, 12);
+		std::cout << "Repulsive force(Fa) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> p;
+	}
 
 	gotoXY(100, 13);
 	std::cout << "Volume(V) = " << float(F / p / 10) << "kg/m3";
@@ -171,9 +254,51 @@ void Density()
 	std::cout << "Repulsive force(Fa) = ";
 	std::cin >> F;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Repulsive force(Fa) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> F;
+	}
+
 	gotoXY(100, 12);
 	std::cout << "Volume(V) = ";
 	std::cin >> V;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle7();
+		printCalc7();
+
+		gotoXY(100, 11);
+		std::cout << "Repulsive force(Fa) = " << F;
+		gotoXY(100, 12);
+		std::cout << "Volume(V) = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> V;
+	}
 
 	gotoXY(100, 13);
 	std::cout << "Density(p) = " << float(F / V / 10) << "m3";

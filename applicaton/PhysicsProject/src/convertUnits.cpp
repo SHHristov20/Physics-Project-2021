@@ -148,6 +148,26 @@ void convert1()
 	std::cout << "km/h = ";
 	std::cin >> kmh;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "km/h = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> kmh;
+	}
+
 	gotoXY(100, 12);
 	std::cout << kmh << "km/h = " << kmh/3.6 <<"m/s";
 	Sleep(3000);
@@ -191,6 +211,26 @@ void convert2()
 	std::cout << "m/s = ";
 	std::cin >> ms;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "m/s = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> ms;
+	}
+
 	gotoXY(100, 12);
 	std::cout << ms << "m/s = " << ms * 3.6 << "km/h";
 	Sleep(3000);
@@ -233,6 +273,26 @@ void convert3()
 	gotoXY(100, 11);
 	std::cout << "s = ";
 	std::cin >> s;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "s = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> s;
+	}
 
 	gotoXY(100, 12);
 	std::cout << s << "s = " << s / 60 << "min";
@@ -278,6 +338,26 @@ void convert4()
 	std::cout << "min = ";
 	std::cin >> min;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "min = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> min;
+	}
+
 	gotoXY(100, 12);
 	std::cout << min << "min = " << min * 60 << "s";
 	Sleep(3000);
@@ -322,6 +402,26 @@ void convert5()
 	std::cout << "kg/m3 = ";
 	std::cin >> kgm;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "kg/m3 = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> kgm;
+	}
+
 	gotoXY(100, 12);
 	std::cout << kgm << "kg/m3 = " << kgm * 1000 << "g/cm3";
 	Sleep(3000);
@@ -364,6 +464,26 @@ void convert6()
 	gotoXY(100, 11);
 	std::cout << "g/cm3 = ";
 	std::cin >> gcm;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "g/cm = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> gcm;
+	}
 
 	gotoXY(100, 12);
 	std::cout << gcm << "g/cm3 = " << gcm / 1000 << "kg/m3";
@@ -409,6 +529,26 @@ void convert7()
 	std::cout << "m3 = ";
 	std::cin >> m3;
 
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "m3 = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> m3;
+	}
+
 	gotoXY(100, 12);
 	std::cout << m3 << "m3 = " << m3 * 1000000 << "cm3";
 	Sleep(3000);
@@ -452,6 +592,26 @@ void convert8()
 	gotoXY(100, 11);
 	std::cout << "cm3 = ";
 	std::cin >> cm3;
+
+	if (!std::cin)
+	{
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "Invalid number or symbol!";
+		Sleep(2000);
+		system("cls");
+		calcTitle8();
+		convertorDesign();
+
+		gotoXY(100, 11);
+		std::cout << "cm3 = ";
+		std::cin.clear();
+		std::cin.ignore(256, '\n');
+		std::cin >> cm3;
+	}
 
 	gotoXY(100, 12);
 	std::cout << cm3 << "cm3 = " << cm3 / 1000000 << "m3";
