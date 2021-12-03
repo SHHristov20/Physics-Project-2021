@@ -7,6 +7,7 @@
 
 void calcTitle2();
 void printCalc4();
+void calcDesign5();
 void work();
 void force();
 void displacementByWork();
