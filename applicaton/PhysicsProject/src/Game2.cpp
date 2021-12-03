@@ -8,6 +8,18 @@ void startGame2() {
 	
 	window.setFramerateLimit(60);
 
+	sf::Texture background;
+	sf::Texture platform;
+	sf::Texture character;
+
+	background.loadFromFile("../PhysicsProject/images/background.png");
+	platform.loadFromFile("../PhysicsProject/images/platform.png");
+	character.loadFromFile("../PhysicsProject/images/character.png");
+
+	sf::Sprite Background(background);
+	sf::Sprite Platform(platform);
+	sf::Sprite Character(character);
+
 	while (window.isOpen())
 	{
 		sf::Event evnt;
@@ -20,5 +32,9 @@ void startGame2() {
 				start();
 			}
 		}
+
+		window.draw(Background);
+		window.draw(Character);
+		window.display();
 	}
 }
