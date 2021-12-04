@@ -3,8 +3,13 @@
 #include <sfml\Graphics.hpp>
 #include "front-end.h"
 
+struct coords {
+	int x;
+	int y;
+};
+
 void startGame2() {
-	sf::RenderWindow window(sf::VideoMode(400, 533), "Game", sf::Style::Default);
+	sf::RenderWindow window(sf::VideoMode(400, 533), "Doodle Jump", sf::Style::Default);
 	
 	window.setFramerateLimit(60);
 
@@ -19,6 +24,14 @@ void startGame2() {
 	sf::Sprite Background(background);
 	sf::Sprite Platform(platform);
 	sf::Sprite Character(character);
+
+	coords platf[20];
+
+	for (int i = 0; i < 10; i++)
+	{
+		platf[i].x = rand() % 400;
+		platf[i].y = rand() % 533;
+	}
 
 	while (window.isOpen())
 	{
@@ -35,6 +48,13 @@ void startGame2() {
 
 		window.draw(Background);
 		window.draw(Character);
+
+		for (int i = 0; i < 10; i++)
+		{
+			Platform.setPosition(platf[i].x, platf[i].y);
+			window.draw(Platform);
+		}
+
 		window.display();
 	}
 }
