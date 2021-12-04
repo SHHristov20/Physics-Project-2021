@@ -3,10 +3,10 @@
 #include <conio.h>
 #include <cmath>
 
-void printCalc2();
-void calcDesign2();
-void calculatorTitle();
+void freeFallCalc();
+void freeFallCalcDesign();
+void freeFallCalcTitle();
 void finalSpeed();
 void time3();
-void calcMenu(bool one, bool two, bool three);
-void startCalculator3();
+void freeFallCalcMenu(bool one, bool two, bool three);
+void startFreeFallCalc();

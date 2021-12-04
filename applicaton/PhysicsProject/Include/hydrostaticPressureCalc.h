@@ -5,12 +5,12 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc5();
-void calcDesign3();
-void calcTitle5();
+void hydrostaticPressureCalc();
+void hydrostaticPressureCalcDesign();
+void hydrostaticPressureCalcTitle();
 void pressure();
 void depthPressure();
 void height();
 void density();
-void calcMenu5(bool one, bool two, bool three, bool four, bool five);
-void startCalculator5();
+void hydrostaticPressureCalcMenu(bool one, bool two, bool three, bool four, bool five);
+void startHydrostaticPressureCalc();

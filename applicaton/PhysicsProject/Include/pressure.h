@@ -5,11 +5,11 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc6();
-void calcDesign6();
-void calcTitle6();
+void pressureCalc();
+void pressureCalcDesign();
+void pressureCalcTitle();
 void Pressure();
 void Area();
 void Force();
-void calcMenu6(bool one, bool two, bool three, bool four);
-void startCalculator6();
+void pressureCalcMenu(bool one, bool two, bool three, bool four);
+void startPressureCalc();

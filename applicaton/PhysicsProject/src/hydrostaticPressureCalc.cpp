@@ -4,7 +4,7 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc5() {
+void hydrostaticPressureCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
@@ -30,7 +30,7 @@ void printCalc5() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcDesign3()
+void hydrostaticPressureCalcDesign()
 {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -57,7 +57,7 @@ void calcDesign3()
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcTitle5()
+void hydrostaticPressureCalcTitle()
 {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t  _   _               _                        _             _     _            ____                                                  " << std::endl;
@@ -71,8 +71,8 @@ void pressure()
 {
 	float P, p, g = 10, h;
 	system("cls");
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Density(p) = ";
@@ -81,15 +81,15 @@ void pressure()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Density(p) = ";
@@ -105,15 +105,15 @@ void pressure()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Density(p) = " << p;
@@ -130,15 +130,15 @@ void pressure()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -161,8 +161,8 @@ void depthPressure()
 {
 	float P, Pa, p, g = 10, h;
 	system("cls");
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Pressure(Pa) = ";
@@ -171,15 +171,15 @@ void depthPressure()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Pressure(p) = ";
@@ -195,15 +195,15 @@ void depthPressure()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Pressure(Pa) = " << Pa;
@@ -222,15 +222,15 @@ void depthPressure()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Pressure(Pa) = " << Pa;
@@ -250,15 +250,15 @@ void depthPressure()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -281,8 +281,8 @@ void height()
 {
 	float P, p, g = 10, h;
 	system("cls");
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Pressure(P) = ";
@@ -291,15 +291,15 @@ void height()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Pressure(P) = ";
@@ -316,15 +316,15 @@ void height()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Pressure(P) = " << P;
@@ -341,15 +341,15 @@ void height()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -372,8 +372,8 @@ void density()
 {
 	float P, p, g = 10, h;
 	system("cls");
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Pressure(P) = ";
@@ -382,15 +382,15 @@ void density()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Pressure(P) = ";
@@ -407,15 +407,15 @@ void density()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle5();
-		printCalc5();
+		hydrostaticPressureCalcTitle();
+		hydrostaticPressureCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Pressure(P) = " << P;
@@ -432,15 +432,15 @@ void density()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle5();
-	printCalc5();
+	hydrostaticPressureCalcTitle();
+	hydrostaticPressureCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -459,40 +459,40 @@ void density()
 	system("cls");
 	printCalculatorsMenu();
 }
-void calcMenu5(bool one, bool two, bool three, bool four, bool five) {
-	calcTitle5();
+void hydrostaticPressureCalcMenu(bool one, bool two, bool three, bool four, bool five) {
+	hydrostaticPressureCalcTitle();
 
 
 	if (one)
 	{
-		calcDesign3();
+		hydrostaticPressureCalcDesign();
 		gotoXY(128, 19);
 		std::cout << "± ";
 	}
 	if (two)
 	{
-		calcDesign3();
+		hydrostaticPressureCalcDesign();
 		gotoXY(128, 22);
 		std::cout << "± ";
 	}
 
 	if (three)
 	{
-		calcDesign3();
+		hydrostaticPressureCalcDesign();
 		gotoXY(128, 25);
 		std::cout << "± ";
 	}
 
 	if (four)
 	{
-		calcDesign3();
+		hydrostaticPressureCalcDesign();
 		gotoXY(128, 28);
 		std::cout << "± ";
 	}
 
 	if (five)
 	{
-		calcDesign3();
+		hydrostaticPressureCalcDesign();
 		gotoXY(128, 31);
 		std::cout << "± ";
 	}
@@ -502,24 +502,24 @@ void calcMenu5(bool one, bool two, bool three, bool four, bool five) {
 	{
 		if (one)
 		{
-			calcMenu5(false, true, false, false, false);
+			hydrostaticPressureCalcMenu(false, true, false, false, false);
 		}
 		if (two)
 		{
-			calcMenu5(false, false, true, false, false);
+			hydrostaticPressureCalcMenu(false, false, true, false, false);
 		}
 		if (three)
 		{
-			calcMenu5(false, false, false, true, false);
+			hydrostaticPressureCalcMenu(false, false, false, true, false);
 		}
 
 		if (four)
 		{
-			calcMenu5(false, false, false, false, true);
+			hydrostaticPressureCalcMenu(false, false, false, false, true);
 		}
 		if (five)
 		{
-			calcMenu5(true, false, false, false, false);
+			hydrostaticPressureCalcMenu(true, false, false, false, false);
 		}
 	}
 
@@ -527,23 +527,23 @@ void calcMenu5(bool one, bool two, bool three, bool four, bool five) {
 	{
 		if (one)
 		{
-			calcMenu5(false, false, false, false, true);
+			hydrostaticPressureCalcMenu(false, false, false, false, true);
 		}
 		if (two)
 		{
-			calcMenu5(true, false, false, false, false);
+			hydrostaticPressureCalcMenu(true, false, false, false, false);
 		}
 		if (three)
 		{
-			calcMenu5(false, true, false, false, false);
+			hydrostaticPressureCalcMenu(false, true, false, false, false);
 		}
 		if (four)
 		{
-			calcMenu5(false, false, true, false, false);
+			hydrostaticPressureCalcMenu(false, false, true, false, false);
 		}
 		if (five)
 		{
-			calcMenu5(false, false, false, true, false);
+			hydrostaticPressureCalcMenu(false, false, false, true, false);
 		}
 	}
 
@@ -576,7 +576,7 @@ void calcMenu5(bool one, bool two, bool three, bool four, bool five) {
 		}
 	}
 }
-void startCalculator5()
+void startHydrostaticPressureCalc()
 {
-	calcMenu5(true, false, false, false, false);
+	hydrostaticPressureCalcMenu(true, false, false, false, false);
 }

@@ -5,7 +5,7 @@
 #include "calculatorsMenu.h"
 #include "front-end.h"
 
-void calcTitle1() {
+void decreasingAccCalcTitle() {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t     _                _                _   _                 ____      _            _       _             " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t    / \\   ___ ___ ___| | ___ _ __ __ _| |_(_) ___  _ __     / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ " << std::endl;
@@ -13,7 +13,7 @@ void calcTitle1() {
 	std::cout << "\t\t\t\t\t\t\t\t  / ___ \\ (_| (_|  __/ |  __/ | | (_| | |_| | (_) | | | |  | |__| (_| | | (__| |_| | | (_| | || (_) | |   " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t /_/   \\_\\___\\___\\___|_|\\___|_|  \\__,_|\\__|_|\\___/|_| |_|   \\____\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|   " << std::endl << std::endl << std::endl << std::endl;
 }
-void printCalc1() {
+void decreasingAccCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
@@ -69,8 +69,8 @@ void acceleration1()
 {
 	float v0 = 0, v = 0, t = 0;
 	system("cls");
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Initial speed(v0) = ";
@@ -79,15 +79,15 @@ void acceleration1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = ";
@@ -103,15 +103,15 @@ void acceleration1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -130,15 +130,15 @@ void acceleration1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -159,15 +159,15 @@ void acceleration1()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -190,8 +190,8 @@ void displacement1()
 {
 	float v0 = 0, a = 0, t = 0;
 	system("cls");
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Initial speed(v0) = ";
@@ -200,15 +200,15 @@ void displacement1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = ";
@@ -224,15 +224,15 @@ void displacement1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -251,15 +251,15 @@ void displacement1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -279,15 +279,15 @@ void displacement1()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -310,8 +310,8 @@ void fSpeed1()
 {
 	float v0 = 0, a = 0, t = 0;
 	system("cls");
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Initial speed(v0) = ";
@@ -320,15 +320,15 @@ void fSpeed1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = ";;
@@ -345,15 +345,15 @@ void fSpeed1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -371,15 +371,15 @@ void fSpeed1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -400,15 +400,15 @@ void fSpeed1()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -431,8 +431,8 @@ void time1()
 {
 	float v = 0, a = 0, v0 = 0;
 	system("cls");
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Acceleration(a) = ";
@@ -441,15 +441,15 @@ void time1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Acceleration(a) = ";
@@ -466,15 +466,15 @@ void time1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Acceleration(a) = " << a;
@@ -494,15 +494,15 @@ void time1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Acceleration(a) = " << a;
@@ -522,15 +522,15 @@ void time1()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -553,8 +553,8 @@ void stopTime()
 {
 	float t0, v0, a;
 	system("cls");
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Initial speed(v0) = ";
@@ -563,15 +563,15 @@ void stopTime()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = ";
@@ -588,15 +588,15 @@ void stopTime()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -614,15 +614,15 @@ void stopTime()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -644,8 +644,8 @@ void stopTime()
 void brakingDistance() {
 	float v0, a, s;
 	system("cls");
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Initial speed(v0) = ";
@@ -654,15 +654,15 @@ void brakingDistance() {
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = ";
@@ -679,15 +679,15 @@ void brakingDistance() {
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Initial speed(v0) = " << v0;
@@ -705,15 +705,15 @@ void brakingDistance() {
 	system("cls");
 
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -735,8 +735,8 @@ void brakingDistance() {
 void initialSpeed() {
 	float v, v0, a, t;
 	system("cls");
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Final speed(v) = ";
@@ -745,15 +745,15 @@ void initialSpeed() {
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Final speed(v) = ";
@@ -770,15 +770,15 @@ void initialSpeed() {
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Final speed(v) = " << v;
@@ -798,15 +798,15 @@ void initialSpeed() {
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle1();
-		printCalc1();
+		decreasingAccCalcTitle();
+		decreasingAccCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Final speed(v) = " << v;
@@ -826,15 +826,15 @@ void initialSpeed() {
 	Sleep(3000);
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle1();
-	printCalc1();
+	decreasingAccCalcTitle();
+	decreasingAccCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -853,8 +853,8 @@ void initialSpeed() {
 	system("cls");
 	printCalculatorsMenu();
 }
-void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight) {
-	calcTitle1();
+void decreasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight) {
+	decreasingAccCalcTitle();
 
 	if (one)
 	{
@@ -915,36 +915,36 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 	{
 		if (one)
 		{
-			menu(false, true, false, false, false, false, false, false);
+			decreasingAccCalcMenu(false, true, false, false, false, false, false, false);
 		}
 		if (two)
 		{
-			menu(false, false, true, false, false, false, false, false);
+			decreasingAccCalcMenu(false, false, true, false, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, false, false, true, false, false, false, false);
+			decreasingAccCalcMenu(false, false, false, true, false, false, false, false);
 		}
 
 		if (four)
 		{
-			menu(false, false, false, false, true, false, false, false);
+			decreasingAccCalcMenu(false, false, false, false, true, false, false, false);
 		}
 		if (five)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (six)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (eight)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 	}
 
@@ -952,70 +952,70 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 	{
 		if (one)
 		{
-			menu(false, false, false, false, false, false, false, true);
+			decreasingAccCalcMenu(false, false, false, false, false, false, false, true);
 		}
 		if (two)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, true, false, false, false, false, false, false);
+			decreasingAccCalcMenu(false, true, false, false, false, false, false, false);
 		}
 		if (four)
 		{
-			menu(false, false, true, false, false, false, false, false);
+			decreasingAccCalcMenu(false, false, true, false, false, false, false, false);
 		}
 		if (five)
 		{
-			menu(false, false, false, true, false, false, false, false);
+			decreasingAccCalcMenu(false, false, false, true, false, false, false, false);
 		}
 		if (six)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (eight)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 	}
 	if (option == 'a' or option == 'A')
 	{
 		if (one)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (two)
 		{
-			menu(false, true, false, false, false, false, false, false);
+			decreasingAccCalcMenu(false, true, false, false, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, false , true, false, false, false, false, false);
+			decreasingAccCalcMenu(false, false , true, false, false, false, false, false);
 		}
 		if (four)
 		{
-			menu(false, false, false, true, false, false, false, false);
+			decreasingAccCalcMenu(false, false, false, true, false, false, false, false);
 		}
 		if (five)
 		{
-			menu(false, false, false, false, false, true, false, false);
+			decreasingAccCalcMenu(false, false, false, false, false, true, false, false);
 		}
 		if (six)
 		{
-			menu(false, false, false, false, false, false, true, false);
+			decreasingAccCalcMenu(false, false, false, false, false, false, true, false);
 		}
 		if (seven)
 		{
-			menu(false, false, false, false, false, false, false, true);
+			decreasingAccCalcMenu(false, false, false, false, false, false, false, true);
 		}
 		if (eight)
 		{
-			menu(false, false, false, false, true, false, false, false);
+			decreasingAccCalcMenu(false, false, false, false, true, false, false, false);
 		}
 	}
 
@@ -1023,35 +1023,35 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 	{
 		if (one)
 		{
-			menu(true, false, false, false, false, false, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 		}
 		if (two)
 		{
-			menu(false, true, false, false, false, false, false, false);
+			decreasingAccCalcMenu(false, true, false, false, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, false, true, false, false, false, false, false);
+			decreasingAccCalcMenu(false, false, true, false, false, false, false, false);
 		}
 		if (four)
 		{
-			menu(false, false, false, true, false, false, false, false);
+			decreasingAccCalcMenu(false, false, false, true, false, false, false, false);
 		}
 		if (five)
 		{
-			menu(false, false, false, false, true, false, false, false);
+			decreasingAccCalcMenu(false, false, false, false, true, false, false, false);
 		}
 		if (six)
 		{
-			menu(false, false, false, false, true, false, false, false);
+			decreasingAccCalcMenu(false, false, false, false, true, false, false, false);
 		}
 		if (seven)
 		{
-			menu(true, false, false, false, false, true, false, false);
+			decreasingAccCalcMenu(true, false, false, false, false, true, false, false);
 		}
 		if (eight)
 		{
-			menu(false, false, false, false, false, false, true, false);
+			decreasingAccCalcMenu(false, false, false, false, false, false, true, false);
 		}
 	}
 
@@ -1099,6 +1099,6 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 		}
 	}
 }
-void startCalculator2() {
-	menu(true, false, false, false, false, false, false, false);
+void startDecreasingAccCalc() {
+	decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 }

@@ -9,5 +9,5 @@ void textcolor(int color);
 void maxSizedScreen();
 void tittleScreen();
 void Menu();
-void active(bool first, bool second, bool third);
+void homeMenu(bool first, bool second, bool third);
 void start();

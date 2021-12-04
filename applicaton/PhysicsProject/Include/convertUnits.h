@@ -5,17 +5,16 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc8();
-void convertorDesign();
-void calcTitle8();
-void enteredChoice8();
-void convert1();
-void convert2();
-void convert3();
-void convert4();
-void convert5();
-void convert6();
-void convert7();
-void convert8();
-void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine);
-void startCalculator8();
+void unitConverter();
+void unitConverterTitle();
+void unitConverterDesign();
+void kmhToms();
+void msTokmh();
+void secToMin();
+void minToSec();
+void kgm3ToGcm3();
+void gcm3ToKgm3();
+void m3toCm3();
+void cm3ToM3();
+void unitConvertorMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine);
+void startUnitConverter();

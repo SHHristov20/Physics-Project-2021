@@ -86,7 +86,7 @@ void Menu()
 	std::cout << "\t\t\t\t\t" << "     |_|  |_|  \\___| |_| |_|  \\__,_|" << std::endl;
 
 }
-void active(bool first, bool second, bool third)
+void homeMenu(bool first, bool second, bool third)
 {
 	Menu(); printf("\n\n\n\n\n");
 	if (first)
@@ -133,17 +133,17 @@ void active(bool first, bool second, bool third)
 		if (first)
 		{
 			system("cls");
-			active(false, true, false);
+			homeMenu(false, true, false);
 		}
 		if (second)
 		{
 			system("cls");
-			active(false, false, true);
+			homeMenu(false, false, true);
 		}
 		if (third)
 		{
 			system("cls");
-			active(true, false, false);
+			homeMenu(true, false, false);
 		}
 	}
 
@@ -152,17 +152,17 @@ void active(bool first, bool second, bool third)
 		if (first)
 		{
 			system("cls");
-			active(false, false, true);
+			homeMenu(false, false, true);
 		}
 		if (second)
 		{
 			system("cls");
-			active(true, false, false);
+			homeMenu(true, false, false);
 		}
 		if (third)
 		{
 			system("cls");
-			active(false, true, false);
+			homeMenu(false, true, false);
 		}
 	}
 	if (ch == 13)
@@ -188,5 +188,5 @@ void active(bool first, bool second, bool third)
 void start()
 {
 	tittleScreen();
-	active(true, false, false);
+	homeMenu(true, false, false);
 }

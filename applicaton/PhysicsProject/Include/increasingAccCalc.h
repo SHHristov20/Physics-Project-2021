@@ -5,12 +5,12 @@
 #include <cmath>
 #include "calculatorsMenu.h"
 
-void printCalc();
-void calcDesign4();
-void calcTitle();
+void increasingAccCalc();
+void increasingAccCalcDesign();
+void increasingAccCalcTitle();
 void acceleration();
 void displacement();
 void fSpeed();
 void time();
-void menu(bool one, bool two, bool three, bool four, bool five);
-void startCalculator1();
+void increasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five);
+void startIncreasingAccCalc();

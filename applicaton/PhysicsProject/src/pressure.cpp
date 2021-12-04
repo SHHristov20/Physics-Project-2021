@@ -4,7 +4,7 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc6() {
+void pressureCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
@@ -30,7 +30,7 @@ void printCalc6() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcDesign6() {
+void pressureCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our                 |  |" << std::endl;
@@ -56,7 +56,7 @@ void calcDesign6() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcTitle6()
+void pressureCalcTitle()
 {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t  ____                                                  " << std::endl;
@@ -69,8 +69,8 @@ void Pressure()
 {
 	float S = 0, F = 0;
 	system("cls");
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Force(F) = ";
@@ -79,15 +79,15 @@ void Pressure()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Force(F) = ";
@@ -104,15 +104,15 @@ void Pressure()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Force(F) = " << F;
@@ -129,15 +129,15 @@ void Pressure()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -160,8 +160,8 @@ void Area()
 {
 	float P = 0, F = 0;
 	system("cls");
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Pressure(P) = ";
@@ -170,15 +170,15 @@ void Area()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Pressure(P) = ";
@@ -195,15 +195,15 @@ void Area()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Pressure(P) = " << P;
@@ -221,15 +221,15 @@ void Area()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -252,8 +252,8 @@ void Force()
 {
 	float S = 0, P = 0;
 	system("cls");
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Pressure(P) = ";
@@ -262,15 +262,15 @@ void Force()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Pressure(P) = ";
@@ -287,15 +287,15 @@ void Force()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle6();
-		printCalc6();
+		pressureCalcTitle();
+		pressureCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Pressure(P) = " << P;
@@ -312,15 +312,15 @@ void Force()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle6();
-	printCalc6();
+	pressureCalcTitle();
+	pressureCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -340,33 +340,33 @@ void Force()
 	printCalculatorsMenu();
 }
 
-void calcMenu6(bool one, bool two, bool three, bool four) {
-	calcTitle6();
+void pressureCalcMenu(bool one, bool two, bool three, bool four) {
+	pressureCalcTitle();
 
 
 	if (one)
 	{
-		calcDesign6();
+		pressureCalcDesign();
 		gotoXY(128, 18);
 		std::cout << "± ";
 	}
 
 	if (two)
 	{
-		calcDesign6();
+		pressureCalcDesign();
 		gotoXY(128, 21);
 		std::cout << "± ";
 	}
 	if (three)
 	{
-		calcDesign6();
+		pressureCalcDesign();
 		gotoXY(128, 24);
 		std::cout << "± ";
 	}
 
 	if (four)
 	{
-		calcDesign6();
+		pressureCalcDesign();
 		gotoXY(128, 27);
 		std::cout << "± ";
 	}
@@ -376,20 +376,20 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			calcMenu6(false, true, false, false);
+			pressureCalcMenu(false, true, false, false);
 		}
 		if (two)
 		{
-			calcMenu6(false, false, true, false);
+			pressureCalcMenu(false, false, true, false);
 		}
 		if (three)
 		{
-			calcMenu6(false, false, false, true);
+			pressureCalcMenu(false, false, false, true);
 		}
 
 		if (four)
 		{
-			calcMenu6(true, false, false, false);
+			pressureCalcMenu(true, false, false, false);
 		}
 	}
 
@@ -397,19 +397,19 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			calcMenu6(false, false, false, true);
+			pressureCalcMenu(false, false, false, true);
 		}
 		if (two)
 		{
-			calcMenu6(true, false, false, false);
+			pressureCalcMenu(true, false, false, false);
 		}
 		if (three)
 		{
-			calcMenu6(false, true, false, false);
+			pressureCalcMenu(false, true, false, false);
 		}
 		if (four)
 		{
-			calcMenu6(false, false, true, false);
+			pressureCalcMenu(false, false, true, false);
 		}
 	}
 
@@ -437,7 +437,7 @@ void calcMenu6(bool one, bool two, bool three, bool four) {
 		}
 	}
 }
-void startCalculator6()
+void startPressureCalc()
 {
-	calcMenu6(true, false, false, false);
+	pressureCalcMenu(true, false, false, false);
 }

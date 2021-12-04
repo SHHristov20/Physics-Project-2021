@@ -90,7 +90,7 @@ void enteredChoice() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |_______________________|_______________________|" << std::endl;
 }
-void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine, bool ten)
+void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine, bool ten)
 {
 
 	printTitle();
@@ -161,52 +161,52 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (one)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, false, true);
+			calculatorsMenu(false, false, false, false, false, false, false, false, false, true);
 		}
 		if (two)
 		{
 			system("cls");
-			activeChoise(true, false, false, false, false, false, false, false, false, false);
+			calculatorsMenu(true, false, false, false, false, false, false, false, false, false);
 		}
 		if (three)
 		{
 			system("cls");
-			activeChoise(false, true, false, false, false, false, false, false, false, false);
+			calculatorsMenu(false, true, false, false, false, false, false, false, false, false);
 		}
 		if (four)
 		{
 			system("cls");
-			activeChoise(false, false, true, false, false, false, false, false, false, false);
+			calculatorsMenu(false, false, true, false, false, false, false, false, false, false);
 		}
 		if (five)
 		{
 			system("cls");
-			activeChoise(false, false, false, true, false, false, false, false, false, false);
+			calculatorsMenu(false, false, false, true, false, false, false, false, false, false);
 		}
 		if (six)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, true, false, false, false, false, false);
+			calculatorsMenu(false, false, false, false, true, false, false, false, false, false);
 		}
 		if (seven)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, true, false, false, false, false);
+			calculatorsMenu(false, false, false, false, false, true, false, false, false, false);
 		}
 		if (eight)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, true, false, false, false);
+			calculatorsMenu(false, false, false, false, false, false, true, false, false, false);
 		}
 		if (nine)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, true, false, false);
+			calculatorsMenu(false, false, false, false, false, false, false, true, false, false);
 		}
 		if (ten)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, true, false);
+			calculatorsMenu(false, false, false, false, false, false, false, false, true, false);
 		}
 	}
 
@@ -215,52 +215,52 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (one)
 		{
 			system("cls");
-			activeChoise(false, true, false, false, false, false, false, false, false, false);
+			calculatorsMenu(false, true, false, false, false, false, false, false, false, false);
 		}
 		if (two)
 		{
 			system("cls");
-			activeChoise(false, false, true, false, false, false, false, false, false, false);
+			calculatorsMenu(false, false, true, false, false, false, false, false, false, false);
 		}
 		if (three)
 		{
 			system("cls");
-			activeChoise(false, false, false, true, false, false, false, false, false, false);
+			calculatorsMenu(false, false, false, true, false, false, false, false, false, false);
 		}
 		if (four)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, true, false, false, false, false, false);
+			calculatorsMenu(false, false, false, false, true, false, false, false, false, false);
 		}
 		if (five)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, true, false, false, false, false);
+			calculatorsMenu(false, false, false, false, false, true, false, false, false, false);
 		}
 		if (six)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, true, false, false, false);
+			calculatorsMenu(false, false, false, false, false, false, true, false, false, false);
 		}
 		if (seven)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, true, false, false);
+			calculatorsMenu(false, false, false, false, false, false, false, true, false, false);
 		}
 		if (eight)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, true, false);
+			calculatorsMenu(false, false, false, false, false, false, false, false, true, false);
 		}
 		if (nine)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, false, true);
+			calculatorsMenu(false, false, false, false, false, false, false, false, false, true);
 		}
 		if (ten)
 		{
 			system("cls");
-			activeChoise(true, false, false, false, false, false, false, false, false, false);
+			calculatorsMenu(true, false, false, false, false, false, false, false, false, false);
 		}
 	}
 
@@ -269,52 +269,52 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 		if (one)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, true, false, false, false, false);
+			calculatorsMenu(false, false, false, false, false, true, false, false, false, false);
 		}
 		if (two)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, true, false, false, false);
+			calculatorsMenu(false, false, false, false, false, false, true, false, false, false);
 		}
 		if (three)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, true, false, false);
+			calculatorsMenu(false, false, false, false, false, false, false, true, false, false);
 		}
 		if (four)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, true, false);
+			calculatorsMenu(false, false, false, false, false, false, false, false, true, false);
 		}
 		if (five)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, false, false, false, false, false, true);
+			calculatorsMenu(false, false, false, false, false, false, false, false, false, true);
 		}
 		if (six)
 		{
 			system("cls");
-			activeChoise(true, false, false, false, false, false, false, false, false, false);
+			calculatorsMenu(true, false, false, false, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
 			system("cls");
-			activeChoise(false, true, false, false, false, false, false, false, false, false);
+			calculatorsMenu(false, true, false, false, false, false, false, false, false, false);
 		}
 		if (eight)
 		{
 			system("cls");
-			activeChoise(false, false, true, false, false, false, false, false, false, false);
+			calculatorsMenu(false, false, true, false, false, false, false, false, false, false);
 		}
 		if (nine)
 		{
 			system("cls");
-			activeChoise(false, false, false, true, false, false, false, false, false, false);
+			calculatorsMenu(false, false, false, true, false, false, false, false, false, false);
 		}
 		if (ten)
 		{
 			system("cls");
-			activeChoise(false, false, false, false, true, false, false, false, false, false);
+			calculatorsMenu(false, false, false, false, true, false, false, false, false, false);
 		}
 	}
 	if (option == 13)
@@ -339,7 +339,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator1();
+			startIncreasingAccCalc();
 		}
 		if (two)
 		{
@@ -361,7 +361,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator2();
+			startDecreasingAccCalc();
 		}
 		if (three)
 		{
@@ -383,7 +383,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator3();
+			startFreeFallCalc();
 		}
 		if (four)
 		{
@@ -405,7 +405,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator4();
+			startWorkAndPowerCalc();
 		}
 		if (six)
 		{
@@ -427,7 +427,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator5();
+			startHydrostaticPressureCalc();
 		}
 		if (seven)
 		{
@@ -449,7 +449,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator6();
+			startPressureCalc();
 		}
 		if (eight)
 		{
@@ -471,7 +471,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator7();
+			startArhimedsLawCalc();
 		}
 		if (nine)
 		{
@@ -493,7 +493,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			startCalculator8();
+			startUnitConverter();
 		}
 		if (ten)
 		{
@@ -501,7 +501,7 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 			printTitle();
 			enteredChoice();
 			gotoXY(95, 11);
-			std::cout << "Redirecting to menu";
+			std::cout << "Redirecting to menu...";
 			gotoXY(95, 13);
 			for (int i = 0; i < 17; i++)
 			{
@@ -513,11 +513,11 @@ void activeChoise(bool one, bool two, bool three, bool four, bool five, bool six
 
 			Sleep(3000);
 			system("cls");
-			active(true, false, false);
+			homeMenu(true, false, false);
 		}
 	}
 }
 void printCalculatorsMenu()
 {
-	activeChoise(true, false, false, false, false, false, false, false, false, false);
+	calculatorsMenu(true, false, false, false, false, false, false, false, false, false);
 }

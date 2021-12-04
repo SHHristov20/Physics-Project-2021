@@ -4,7 +4,7 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc7() {
+void arhimedsLawCalculator() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
@@ -30,7 +30,7 @@ void printCalc7() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcDesign() {
+void arhimedsLawCalculatorDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our                 |  |" << std::endl;
@@ -56,7 +56,7 @@ void calcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcTitle7()
+void arhimedsLawTitle()
 {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t     _             _       _                          _   _           _                    " << std::endl;
@@ -69,8 +69,8 @@ void repulsiveForce()
 {
 	float p = 0, V = 0, g = 10;
 	system("cls");
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 
 	gotoXY(100, 11);
 	std::cout << "Density(p) = ";
@@ -79,15 +79,15 @@ void repulsiveForce()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Density(p) = ";
@@ -103,15 +103,15 @@ void repulsiveForce()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Density(p) = " << p;
@@ -127,15 +127,15 @@ void repulsiveForce()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -158,8 +158,8 @@ void volume()
 {
 	float p = 0, F = 0, g = 10;
 	system("cls");
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 
 	gotoXY(100, 11);
 	std::cout << "Density(p) = ";
@@ -168,15 +168,15 @@ void volume()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Density(p) = ";
@@ -192,15 +192,15 @@ void volume()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Density(p) = " << p;
@@ -216,15 +216,15 @@ void volume()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -247,8 +247,8 @@ void Density()
 {
 	float V = 0, F = 0, g = 10;
 	system("cls");
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 
 	gotoXY(100, 11);
 	std::cout << "Repulsive force(Fa) = ";
@@ -257,15 +257,15 @@ void Density()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Repulsive force(Fa) = ";
@@ -281,15 +281,15 @@ void Density()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle7();
-		printCalc7();
+		arhimedsLawTitle();
+		arhimedsLawCalculator();
 
 		gotoXY(100, 11);
 		std::cout << "Repulsive force(Fa) = " << F;
@@ -305,15 +305,15 @@ void Density()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle7();
-	printCalc7();
+	arhimedsLawTitle();
+	arhimedsLawCalculator();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -334,39 +334,39 @@ void Density()
 	printCalculatorsMenu();
 }
 
-void calcMenu7(bool one, bool two, bool three, bool four, bool five) {
-	calcTitle7();
+void arhimedsLawMenu(bool one, bool two, bool three, bool four, bool five) {
+	arhimedsLawTitle();
 
 
 	if (one)
 	{
-		calcDesign();
+		arhimedsLawCalculatorDesign();
 		gotoXY(128, 18);
 		std::cout << "± ";
 	}
 
 	if (two)
 	{
-		calcDesign();
+		arhimedsLawCalculatorDesign();
 		gotoXY(128, 21);
 		std::cout << "± ";
 	}
 	if (three)
 	{
-		calcDesign();
+		arhimedsLawCalculatorDesign();
 		gotoXY(128, 24);
 		std::cout << "± ";
 	}
 
 	if (four)
 	{
-		calcDesign();
+		arhimedsLawCalculatorDesign();
 		gotoXY(128, 27);
 		std::cout << "± ";
 	}
 	if (five)
 	{
-		calcDesign();
+		arhimedsLawCalculatorDesign();
 		gotoXY(128, 30);
 		std::cout << "± ";
 	}
@@ -376,24 +376,24 @@ void calcMenu7(bool one, bool two, bool three, bool four, bool five) {
 	{
 		if (one)
 		{
-			calcMenu7(false, true, false, false, false);
+			arhimedsLawMenu(false, true, false, false, false);
 		}
 		if (two)
 		{
-			calcMenu7(false, false, true, false, false);
+			arhimedsLawMenu(false, false, true, false, false);
 		}
 		if (three)
 		{
-			calcMenu7(false, false, false, true, false);
+			arhimedsLawMenu(false, false, false, true, false);
 		}
 
 		if (four)
 		{
-			calcMenu7(false, false, false, false, true);
+			arhimedsLawMenu(false, false, false, false, true);
 		}
 		if (five)
 		{
-			calcMenu7(true, false, false, false, false);
+			arhimedsLawMenu(true, false, false, false, false);
 		}
 	}
 
@@ -401,23 +401,23 @@ void calcMenu7(bool one, bool two, bool three, bool four, bool five) {
 	{
 		if (one)
 		{
-			calcMenu7(false, false, false, false, true);
+			arhimedsLawMenu(false, false, false, false, true);
 		}
 		if (two)
 		{
-			calcMenu7(true, false, false, false, false);
+			arhimedsLawMenu(true, false, false, false, false);
 		}
 		if (three)
 		{
-			calcMenu7(false, true, false, false, false);
+			arhimedsLawMenu(false, true, false, false, false);
 		}
 		if (four)
 		{
-			calcMenu7(false, false, true, false, false);
+			arhimedsLawMenu(false, false, true, false, false);
 		}
 		if (five)
 		{
-			calcMenu7(false, false, false, true, false);
+			arhimedsLawMenu(false, false, false, true, false);
 		}
 	}
 
@@ -445,7 +445,7 @@ void calcMenu7(bool one, bool two, bool three, bool four, bool five) {
 		}
 	}
 }
-void startCalculator7()
+void startArhimedsLawCalc()
 {
-	calcMenu7(true, false, false, false, false);
+	arhimedsLawMenu(true, false, false, false, false);
 }

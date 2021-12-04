@@ -5,14 +5,14 @@
 #include <Windows.h>
 #include "calculatorsMenu.h"
 
-void calcTitle2();
-void printCalc4();
-void calcDesign5();
+void workAndPowerCalcTitle();
+void workAndPowerCalc();
+void workAndPowerCalcDesign();
 void work();
 void force();
 void displacementByWork();
 void power();
 void findWorkByPower();
 void findTimeByPower();
-void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven);
-void startCalculator4();
+void workAndPowerCalcMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven);
+void startWorkAndPowerCalc();

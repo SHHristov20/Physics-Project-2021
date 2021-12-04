@@ -5,11 +5,11 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc7();
-void calcDesgn();
-void calcTitle7();
+void arhimedsLawCalculator();
+void arhimedsLawCalculatorDesign();
+void arhimedsLawTitle();
 void repulsiveForce();
 void volume();
 void Density();
-void calcMenu7(bool one, bool two, bool three, bool four);
-void startCalculator7();
+void arhimedsLawMenu(bool one, bool two, bool three, bool four);
+void startArhimedsLawCalc();

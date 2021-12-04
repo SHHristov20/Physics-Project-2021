@@ -4,33 +4,7 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
-void printCalc8() {
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our Unit Convertor  |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  (Navigate using W, S, Enter)   |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_________________________________|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _______ ______  _______   _______   |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   m3  |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |  cm3  |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |  min  |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   .   |   0   |   =   | |   s   |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   /   |       | kg/m3 | | g/cm3 |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
-}
-void convertorDesign() {
+void unitConverter() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
@@ -56,7 +30,7 @@ void convertorDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcTitle8()
+void unitConverterTitle()
 {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t   ____                                         _       _   _           _   _         " << std::endl;
@@ -65,7 +39,7 @@ void calcTitle8()
 	std::cout << "\t\t\t\t\t\t\t\t\t | |___  | (_) | | | | |  \\ V /  |  __/ | |    | |_    | |_| | | | | | | | | |_  \\__ \\" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t  \\____|  \\___/  |_| |_|   \\_/    \\___| |_|     \\__|    \\___/  |_| |_| |_|  \\__| |___/" << std::endl << std::endl << std::endl << std::endl;;
 }
-void calcDesign8() {
+void unitConverterDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t _______________________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|  ___________________________________________  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our Unit Convertor!           | |" << std::endl;
@@ -101,48 +75,12 @@ void calcDesign8() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|_______________________________________________|" << std::endl;
 }
 
-void enteredChoice8() {
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t _______________________________________________" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|  ___________________________________________  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                                           | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                                           | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                                           | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                                           | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |___________________________________________| |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|  _________________         _________________  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |   km/h to m/s   |       |  kg/m3 to g/cm3 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                 |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                 |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |_________________|       |_________________| |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|  _________________         _________________  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |   m/s to km/h   |       |  g/cm3 to kg/m3 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                 |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                 |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |_________________|       |_________________| |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|  _________________         _________________  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |    seconds to   |       |    m3 to cm3    | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |     minutes     |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                 |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |_________________|       |_________________| |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|  _________________         _________________  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |    minutes to   |       |    cm3 to m3    | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |     seconds     |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |                 |       |                 | |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t| |_________________|       |_________________| |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|               _________________               |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|              |       Back      |              |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|              |                 |              |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|              |                 |              |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|              |_________________|              |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|_______________________________________________|" << std::endl;
-}
-
-void convert1()
+void kmhToMs()
 {
 	float kmh = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "km/h = ";
@@ -151,15 +89,15 @@ void convert1()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "km/h = ";
@@ -173,14 +111,14 @@ void convert1()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 
 	std::cout << "Redirecting";
@@ -200,12 +138,12 @@ void convert1()
 	printCalculatorsMenu();
 }
 
-void convert2()
+void msToKmh()
 {
 	float ms = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "m/s = ";
@@ -214,15 +152,15 @@ void convert2()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "m/s = ";
@@ -236,14 +174,14 @@ void convert2()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -263,12 +201,12 @@ void convert2()
 	printCalculatorsMenu();
 }
 
-void convert3()
+void secToMin()
 {
 	float s = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "s = ";
@@ -277,15 +215,15 @@ void convert3()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "s = ";
@@ -299,15 +237,15 @@ void convert3()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -327,12 +265,12 @@ void convert3()
 	printCalculatorsMenu();
 }
 
-void convert4()
+void minToSec()
 {
 	float min = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "min = ";
@@ -341,15 +279,15 @@ void convert4()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "min = ";
@@ -363,15 +301,15 @@ void convert4()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -391,12 +329,12 @@ void convert4()
 	printCalculatorsMenu();
 }
 
-void convert5()
+void kgm3ToGcm3()
 {
 	float kgm = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "kg/m3 = ";
@@ -405,15 +343,15 @@ void convert5()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "kg/m3 = ";
@@ -427,15 +365,15 @@ void convert5()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -454,12 +392,12 @@ void convert5()
 	system("cls");
 	printCalculatorsMenu();
 }
-void convert6()
+void gcm3ToKgm3()
 {
 	float gcm = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "g/cm3 = ";
@@ -468,15 +406,15 @@ void convert6()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "g/cm = ";
@@ -490,15 +428,15 @@ void convert6()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -518,12 +456,12 @@ void convert6()
 	printCalculatorsMenu();
 }
 
-void convert7()
+void m3toCm3()
 {
 	float m3 = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "m3 = ";
@@ -532,15 +470,15 @@ void convert7()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "m3 = ";
@@ -554,15 +492,15 @@ void convert7()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -582,12 +520,12 @@ void convert7()
 	printCalculatorsMenu();
 }
 
-void convert8()
+void cm3ToM3()
 {
 	float cm3 = 0;
 	system("cls");
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 
 	gotoXY(100, 11);
 	std::cout << "cm3 = ";
@@ -596,15 +534,15 @@ void convert8()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle8();
-		convertorDesign();
+		unitConverterTitle();
+		unitConverter();
 
 		gotoXY(100, 11);
 		std::cout << "cm3 = ";
@@ -618,15 +556,15 @@ void convert8()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle8();
-	convertorDesign();
+	unitConverterTitle();
+	unitConverter();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -647,60 +585,60 @@ void convert8()
 }
 
 
-void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine)
+void unitConvertorMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine)
 {
-	calcTitle8();
+	unitConverterTitle();
 	if (one)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(97, 19);
 		std::cout << "±±±±±";
 	}
 	if (two)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(97, 24);
 		std::cout << "±±±±±";
 	}
 	if (three)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(97, 29);
 		std::cout << "±±±±±";
 	}
 	if (four)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(97, 34);
 		std::cout << "±±±±±";
 	}
 	if (five)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(123, 19);
 		std::cout << "±±±±±";
 	}
 	if (six)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(123, 24);
 		std::cout << "±±±±±";
 	}
 	if (seven)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(123, 29);
 		std::cout << "±±±±±";
 	}
 	if (eight)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(123, 34);
 		std::cout << "±±±±±";
 	}
 	if (nine)
 	{
-		calcDesign8();
+		unitConverterDesign();
 		gotoXY(110, 39);
 		std::cout << "±±±±±";
 	}
@@ -712,47 +650,47 @@ void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, b
 		if (one)
 		{
 			system("cls");
-			calcMenu8(false, false, false, true, false, false, false, false, false);
+			unitConvertorMenu(false, false, false, true, false, false, false, false, false);
 		}
 		if (two)
 		{
 			system("cls");
-			calcMenu8(true, false, false, false, false, false, false, false, false);
+			unitConvertorMenu(true, false, false, false, false, false, false, false, false);
 		}
 		if (three)
 		{
 			system("cls");
-			calcMenu8(false, true, false, false, false, false, false, false, false);
+			unitConvertorMenu(false, true, false, false, false, false, false, false, false);
 		}
 		if (four)
 		{
 			system("cls");
-			calcMenu8(false, false, true, false, false, false, false, false, false);
+			unitConvertorMenu(false, false, true, false, false, false, false, false, false);
 		}
 		if (five)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, false, true, false);
+			unitConvertorMenu(false, false, false, false, false, false, false, true, false);
 		}
 		if (six)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, true, false, false, false, false);
+			unitConvertorMenu(false, false, false, false, true, false, false, false, false);
 		}
 		if (seven)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, true, false, false, false);
+			unitConvertorMenu(false, false, false, false, false, true, false, false, false);
 		}
 		if (eight)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, true, false, false);
+			unitConvertorMenu(false, false, false, false, false, false, true, false, false);
 		}
 		if (nine)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, false, true, false);
+			unitConvertorMenu(false, false, false, false, false, false, false, true, false);
 		}
 	}
 
@@ -761,47 +699,47 @@ void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, b
 		if (one)
 		{
 			system("cls");
-			calcMenu8(false, true, false, false, false, false, false, false, false);
+			unitConvertorMenu(false, true, false, false, false, false, false, false, false);
 		}
 		if (two)
 		{
 			system("cls");
-			calcMenu8(false, false, true, false, false, false, false, false, false);
+			unitConvertorMenu(false, false, true, false, false, false, false, false, false);
 		}
 		if (three)
 		{
 			system("cls");
-			calcMenu8(false, false, false, true, false, false, false, false, false);
+			unitConvertorMenu(false, false, false, true, false, false, false, false, false);
 		}
 		if (four)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, false, false, true);
+			unitConvertorMenu(false, false, false, false, false, false, false, false, true);
 		}
 		if (five)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, true, false, false, false);
+			unitConvertorMenu(false, false, false, false, false, true, false, false, false);
 		}
 		if (six)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, true, false, false);
+			unitConvertorMenu(false, false, false, false, false, false, true, false, false);
 		}
 		if (seven)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, false, true, false);
+			unitConvertorMenu(false, false, false, false, false, false, false, true, false);
 		}
 		if (eight)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, false, false, true);
+			unitConvertorMenu(false, false, false, false, false, false, false, false, true);
 		}
 		if (nine)
 		{
 			system("cls");
-			calcMenu8(true, false, false, false, false, false, false, false, false);
+			unitConvertorMenu(true, false, false, false, false, false, false, false, false);
 		}
 	}
 
@@ -810,47 +748,47 @@ void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, b
 		if (one)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, true, false, false, false, false);
+			unitConvertorMenu(false, false, false, false, true, false, false, false, false);
 		}
 		if (two)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, true, false, false, false);
+			unitConvertorMenu(false, false, false, false, false, true, false, false, false);
 		}
 		if (three)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, true, false, false);
+			unitConvertorMenu(false, false, false, false, false, false, true, false, false);
 		}
 		if (four)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, false, true, false);
+			unitConvertorMenu(false, false, false, false, false, false, false, true, false);
 		}
 		if (five)
 		{
 			system("cls");
-			calcMenu8(true, false, false, false, false, false, false, false, false);
+			unitConvertorMenu(true, false, false, false, false, false, false, false, false);
 		}
 		if (six)
 		{
 			system("cls");
-			calcMenu8(false, true, false, false, false, false, false, false, false);
+			unitConvertorMenu(false, true, false, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
 			system("cls");
-			calcMenu8(false, false, true, false, false, false, false, false, false);
+			unitConvertorMenu(false, false, true, false, false, false, false, false, false);
 		}
 		if (eight)
 		{
 			system("cls");
-			calcMenu8(false, false, false, true, false, false, false, false, false);
+			unitConvertorMenu(false, false, false, true, false, false, false, false, false);
 		}
 		if (nine)
 		{
 			system("cls");
-			calcMenu8(false, false, false, false, false, false, false, false, true);
+			unitConvertorMenu(false, false, false, false, false, false, false, false, true);
 		}
 	}
 	if (option == 13)
@@ -858,42 +796,42 @@ void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, b
 		if (one)
 		{
 			system("cls");
-			convert1();
+			kmhToMs();
 		}
 		if (two)
 		{
 			system("cls");
-			convert2();
+			msToKmh();
 		}
 		if (three)
 		{
 			system("cls");
-			convert3();
+			secToMin();
 		}
 		if (four)
 		{
 			system("cls");
-			convert4();
+			minToSec();
 		}
 		if (five)
 		{
 			system("cls");
-			convert5();
+			kgm3ToGcm3();
 		}
 		if (six)
 		{
 			system("cls");
-			convert6();
+			gcm3ToKgm3();
 		}
 		if (seven)
 		{
 			system("cls");
-			convert7();
+			m3toCm3();
 		}
 		if (eight)
 		{
 			system("cls");
-			convert8();
+			cm3ToM3();
 		}
 		if (nine)
 		{
@@ -904,7 +842,7 @@ void calcMenu8(bool one, bool two, bool three, bool four, bool five, bool six, b
 	}
 }
 
-void startCalculator8()
+void startUnitConverter()
 {
-	calcMenu8(true, false, false, false, false, false, false, false, false);
+	unitConvertorMenu(true, false, false, false, false, false, false, false, false);
 }

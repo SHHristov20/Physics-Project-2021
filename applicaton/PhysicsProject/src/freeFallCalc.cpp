@@ -6,7 +6,7 @@
 #include "freeFallCalc.h"
 #include "calculatorsMenu.h"
 #include "front-end.h"
-void printCalc2() {
+void freeFallCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |                                 |  |" << std::endl;
@@ -33,7 +33,7 @@ void printCalc2() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
 
-void calcDesign2() {
+void freeFallCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our                 |  |" << std::endl;
@@ -60,7 +60,7 @@ void calcDesign2() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
 
-void calculatorTitle() {
+void freeFallCalcTitle() {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t  _____                           _____          _   _ " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t | ___ |  _ __    ___    ___     | ___|   __ _  | | | |" << std::endl;
@@ -72,8 +72,8 @@ void calculatorTitle() {
 void finalSpeed() {
 	float v, g = 10, t;
 	system("cls");
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Time(t) = ";
@@ -82,15 +82,15 @@ void finalSpeed() {
 	if (!std::cin)
 	{
 		system("cls");
-		calculatorTitle();
-		printCalc2();
+		freeFallCalcTitle();
+		freeFallCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calculatorTitle();
-		printCalc2();
+		freeFallCalcTitle();
+		freeFallCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Time(t) = ";
@@ -104,15 +104,15 @@ void finalSpeed() {
 	Sleep(3000);
 	system("cls");
 
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -134,8 +134,8 @@ void finalSpeed() {
 void street() {
 	float s, g = 10, t;
 	system("cls");
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Time(t) = ";
@@ -144,15 +144,15 @@ void street() {
 	if (!std::cin)
 	{
 		system("cls");
-		calculatorTitle();
-		printCalc2();
+		freeFallCalcTitle();
+		freeFallCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calculatorTitle();
-		printCalc2();
+		freeFallCalcTitle();
+		freeFallCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Time(t) = ";
@@ -166,15 +166,15 @@ void street() {
 	Sleep(3000);
 	system("cls");
 
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -197,8 +197,8 @@ void street() {
 void time3() {
 	float v, g = 10, t;
 	system("cls");
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 
 	gotoXY(100, 11);
 	std::cout << "Final speed(v) = ";
@@ -207,15 +207,15 @@ void time3() {
 	if (!std::cin)
 	{
 		system("cls");
-		calculatorTitle();
-		printCalc2();
+		freeFallCalcTitle();
+		freeFallCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calculatorTitle();
-		printCalc2();
+		freeFallCalcTitle();
+		freeFallCalc();
 
 		gotoXY(100, 11);
 		std::cout << "Final speed(v) = ";
@@ -230,15 +230,15 @@ void time3() {
 	system("cls");
 
 
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 	gotoXY(100, 11);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calculatorTitle();
-	printCalc2();
+	freeFallCalcTitle();
+	freeFallCalc();
 	gotoXY(100, 11);
 	std::cout << "Redirecting";
 
@@ -257,32 +257,32 @@ void time3() {
 	system("cls");
 	printCalculatorsMenu();
 }
-void calcMenu(bool one, bool two, bool three, bool four) {
-	calculatorTitle();
+void freeFallCalcMenu(bool one, bool two, bool three, bool four) {
+	freeFallCalcTitle();
 
 
 	if (one)
 	{
-		calcDesign2();
+		freeFallCalcDesign();
 		gotoXY(128, 18);
 		std::cout << "± ";
 	}
 
 	if (two)
 	{
-		calcDesign2();
+		freeFallCalcDesign();
 		gotoXY(128, 21);
 		std::cout << "± ";
 	}
 	if (three)
 	{
-		calcDesign2();
+		freeFallCalcDesign();
 		gotoXY(128, 24);
 		std::cout << "± ";
 	}
 	if (four)
 	{
-		calcDesign2();
+		freeFallCalcDesign();
 		gotoXY(128, 27);
 		std::cout << "± ";
 	}
@@ -292,38 +292,38 @@ void calcMenu(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			calcMenu(false, true, false, false);
+			freeFallCalcMenu(false, true, false, false);
 		}
 		if (two)
 		{
-			calcMenu(false, false, true, false);
+			freeFallCalcMenu(false, false, true, false);
 		}
 		if (three)
 		{
-			calcMenu(false, false, false, true);
+			freeFallCalcMenu(false, false, false, true);
 		}
 		if (four)
 		{
-			calcMenu(true, false, false, false);
+			freeFallCalcMenu(true, false, false, false);
 		}
 	}
 	if (option == 'w' || option == 'W')
 	{
 		if (one)
 		{
-			calcMenu(false, false, false, true);
+			freeFallCalcMenu(false, false, false, true);
 		}
 		if (two)
 		{
-			calcMenu(true, false, false, false);
+			freeFallCalcMenu(true, false, false, false);
 		}
 		if (three)
 		{
-			calcMenu(false, true, false, false);
+			freeFallCalcMenu(false, true, false, false);
 		}
 		if (four)
 		{
-			calcMenu(false, false, true, false);
+			freeFallCalcMenu(false, false, true, false);
 		}
 	}
 	if (option == 13)
@@ -348,7 +348,7 @@ void calcMenu(bool one, bool two, bool three, bool four) {
 	}
 }
 
-void startCalculator3()
+void startFreeFallCalc()
 {
-	calcMenu(true, false, false, false);
+	freeFallCalcMenu(true, false, false, false);
 }
