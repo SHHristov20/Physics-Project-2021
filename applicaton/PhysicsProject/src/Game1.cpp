@@ -15,7 +15,6 @@ int assignDirection(int index, int Array[])
 void startGame1() 
 {
 	sf::RenderWindow window(sf::VideoMode(1500, 1000), "Catch the leaf", sf::Style::Default);
-	window.setFramerateLimit(60);
 
 	sf::RectangleShape object(sf::Vector2f(100, 100));
 	object.setOrigin(-700.0f, -450.0f);
@@ -28,12 +27,10 @@ void startGame1()
 	background.loadFromFile("../PhysicsProject/images/grass-background.jpg");
 	sf::Sprite Background(background);
 
-	
-
     while (window.isOpen())
     {
         int direction[1000] = { 0 };
-        double speed = 0.03f;
+        double speed = 0.0005f;
 
         sf::Event event;
         while (window.pollEvent(event))
@@ -78,13 +75,23 @@ void startGame1()
             }
             else if (direction[i] == 6)
             {
-                object.move(-speed, 0.0f);
+                object.move(-speed, 0.0f); 
                 assignDirection(i, direction);
             }
             else if (direction[i] == 7)
             {
                 object.move(-speed, speed);
                 assignDirection(i, direction);
+            }
+        }
+
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
+        {
+            if (object.getGlobalBounds().contains(window.mapPixelToCoords(sf::Mouse::getPosition(window))))
+            {
+                object.setOrigin(50.0f, 50.0f);
+                sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+                object.setPosition((float)mousePos.x, (float)mousePos.y);
             }
         }
 
