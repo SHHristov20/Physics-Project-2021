@@ -26,6 +26,7 @@ void maxSizedScreen() {
 }
 void tittleScreen()
 {
+	system("cls");
 	maxSizedScreen();
 	textcolor(9);
 	std::cout << "\t\t\t\t\t\t\t\t\t" << "                                                  //////                        " << std::endl;
@@ -79,11 +80,11 @@ void tittleScreen()
 void Menu()
 {
 	std::cout << std::endl << std::endl;
-	std::cout << "\t\t\t\t\t" << "      __  __                        " << std::endl;
-	std::cout << "\t\t\t\t\t" << "     |  \\/  |   ___   _ __    _   _ " << std::endl;
-	std::cout << "\t\t\t\t\t" << "     | |\\/| |  / _ \\ | '_ \\  | | | |" << std::endl;
-	std::cout << "\t\t\t\t\t" << "     | |  | | |  __/ | | | | | |_| |" << std::endl;
-	std::cout << "\t\t\t\t\t" << "     |_|  |_|  \\___| |_| |_|  \\__,_|" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t" << "       __  __                        " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t" << "      |  \\/  |   ___   _ __    _   _ " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t" << "      | |\\/| |  / _ \\ | '_ \\  | | | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t" << "      | |  | | |  __/ | | | | | |_| |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t" << "      |_|  |_|  \\___| |_| |_|  \\__,_|" << std::endl;
 
 }
 void homeMenu(bool first, bool second, bool third)
@@ -91,40 +92,40 @@ void homeMenu(bool first, bool second, bool third)
 	Menu(); printf("\n\n\n\n\n");
 	if (first)
 	{
-		std::cout << "\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±    Calculators    ± ±      Option 2      ± ±      Option 3      ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±    ±±±±±±±±±±±    ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±    Calculators    ± ±     Doodle Jump    ± ±   Catch the leaf   ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±    ±±±±±±±±±±±    ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
 
 	if (second)
 	{
-		std::cout << "\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±    Calculators    ± ±      Option 2      ± ±      Option 3      ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±      ±±±±±±±±      ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±    Calculators    ± ±     Doodle Jump    ± ±   Catch the leaf   ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±     ±±±±±±±±±±±    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
 	if (third)
 	{
-		std::cout << "\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±    Calculators    ± ±      Option 2      ± ±      Option 3      ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±      ±±±±±±±±      ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
-		std::cout << "\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±    Calculators    ± ±     Doodle Jump    ± ±   Catch the leaf   ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±   ±±±±±±±±±±±±±±   ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
+		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
 	const char ch = _getch();
 
