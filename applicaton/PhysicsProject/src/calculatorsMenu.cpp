@@ -11,6 +11,7 @@
 #include "pressure.h"
 #include "ArhimedsLaw.h"
 #include "convertUnits.h"
+#include "formulas.h"
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t   ____      _            _       _                 " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ ___ " << std::endl;
@@ -406,6 +407,28 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			Sleep(3000);
 			system("cls");
 			startWorkAndPowerCalc();
+		}
+		if (five)
+		{
+			system("cls");
+			printTitle();
+			enteredChoice();
+			gotoXY(95, 11);
+			std::cout << "Loading";
+			gotoXY(95, 12);
+			std::cout << "Formulas menu...";
+			gotoXY(95, 14);
+			for (int i = 0; i < 17; i++)
+			{
+				std::cout << "± ";
+				Sleep(100);
+			}
+
+			std::cout << "100%";
+
+			Sleep(3000);
+			system("cls");
+			startFormulasMenu();
 		}
 		if (six)
 		{
