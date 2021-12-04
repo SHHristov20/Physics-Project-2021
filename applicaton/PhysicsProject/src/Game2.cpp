@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Game2.h"
 #include <sfml\Graphics.hpp>
+#include <time.h>
 #include "front-end.h"
 
 struct coords { //platform coordinates
@@ -9,6 +10,8 @@ struct coords { //platform coordinates
 };
 
 void startGame2() {
+	srand(time(0));
+
 	sf::RenderWindow window(sf::VideoMode(400, 533), "Doodle Jump", sf::Style::Default); // window creation
 	
 	window.setFramerateLimit(60); // FPS
@@ -36,8 +39,8 @@ void startGame2() {
 	int x = 100; // character coordinates
 	int y = 100;
 	int h = 200;
-	double dx = 0;
-	double dy = 0;
+	float cx = 0;
+	float cy = 0;
 	while (window.isOpen())
 	{
 		sf::Event evnt;
@@ -59,12 +62,36 @@ void startGame2() {
 		{
 			x = x - 3;
 		}
-		dy = dy + 0.2;
-		y = y + dy; // character movment
+		cy = cy + 0.2;
+		y = y + cy; // character movment
 
 		if (y > 500) // if the character touches the border, bounce back
 		{
-			dy = dy - 10;
+			cy = cy - 10;
+		}
+	
+		if (y < h)
+		{
+			for (int i = 0; i < 10; i++)
+			{
+				y = h;
+				platf[i].y = platf[i].y - cy;
+
+				if (platf[i].y > 533) // if a platform spawns out out of the y, respawn it
+				{
+					platf[i].y = 0;
+					platf[i].x = rand() % 400;
+				}
+			}
+		}
+
+		for (int i = 0; i < 10; i++)
+		{
+			if ((x + 50 > platf[i].x) && (x + 20 < platf[i].x + 68) && (y + 70 > platf[i].y) && (y + 70 < platf[i].y + 14) && (cy > 0)) // if the character steps on the platform, he bounces
+			{
+				cy = -10;
+			}
+
 		}
 
 		Character.setPosition(x, y);
