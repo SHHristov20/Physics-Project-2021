@@ -127,7 +127,7 @@ void finalSpeed() {
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -189,7 +189,7 @@ void street() {
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -253,7 +253,7 @@ void time3() {
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }

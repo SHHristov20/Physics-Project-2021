@@ -152,7 +152,7 @@ void Pressure()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -244,7 +244,7 @@ void Area()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -335,7 +335,7 @@ void Force()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }

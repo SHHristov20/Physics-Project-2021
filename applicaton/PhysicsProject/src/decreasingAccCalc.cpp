@@ -182,7 +182,7 @@ void acceleration1()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -302,7 +302,7 @@ void displacement1()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -423,7 +423,7 @@ void fSpeed1()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -545,7 +545,7 @@ void time1()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -637,7 +637,7 @@ void stopTime()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -728,7 +728,7 @@ void brakingDistance() {
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -849,7 +849,7 @@ void initialSpeed() {
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }

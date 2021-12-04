@@ -133,7 +133,7 @@ void kmhToMs()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -196,7 +196,7 @@ void msToKmh()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -260,7 +260,7 @@ void secToMin()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -324,7 +324,7 @@ void minToSec()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -388,7 +388,7 @@ void kgm3ToGcm3()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -451,7 +451,7 @@ void gcm3ToKgm3()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -515,7 +515,7 @@ void m3toCm3()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -579,7 +579,7 @@ void cm3ToM3()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }

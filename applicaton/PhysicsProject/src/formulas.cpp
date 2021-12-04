@@ -105,7 +105,7 @@ void incAccelerationFormulas()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -145,7 +145,7 @@ void decAccelerationFormulas()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -185,7 +185,7 @@ void freeFallFormulas()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -226,7 +226,7 @@ void workPowerFormulas()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -260,7 +260,7 @@ void hydroPressureFormulas()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -294,7 +294,7 @@ void pressureFormulas()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -328,7 +328,7 @@ void arhimedLawFormulas()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }

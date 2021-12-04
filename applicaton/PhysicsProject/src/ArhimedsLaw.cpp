@@ -150,7 +150,7 @@ void repulsiveForce()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -239,7 +239,7 @@ void volume()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 	system("cls");
 	printCalculatorsMenu();
 }
@@ -328,7 +328,7 @@ void Density()
 	}
 
 	std::cout << "100%";
-	Sleep(3000);
+	Sleep(2000);
 
 	system("cls");
 	printCalculatorsMenu();

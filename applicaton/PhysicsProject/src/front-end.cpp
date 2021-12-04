@@ -63,9 +63,9 @@ void tittleScreen()
 
 	std::cout << "\n\n\n\n";
 	textcolor(15);
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t\t  LOADING..." << std::endl << std::endl;;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t\t    LOADING..." << std::endl << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t ";
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < 23; i++)
 	{
 		textcolor(3);
 		std::cout << "± ";
@@ -73,6 +73,7 @@ void tittleScreen()
 	}
 
 	std::cout << "  100%";
+	textcolor(14);
 	Sleep(3000);
 	system("cls");
 }
