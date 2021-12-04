@@ -6,7 +6,7 @@
 #include "workAndPowerCalc.h"
 #include "front-end.h"
 
-void calcTitle2()
+void workAndPowerCalcTitle()
 {
 	system("cls");
 	std::cout << std::endl << "" << std::endl;
@@ -16,7 +16,7 @@ void calcTitle2()
 	std::cout << "\t\t\t\t\t\t\t\t   \\ V  V /   | (_) | | |    |   <    | (_| | | | | | | (_| |   |  __/  | (_) |  \\ V  V /  |  __/ | |   " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t    \\_/\\_/     \\___/  |_|    |_|\\_\\    \\__,_| |_| |_|  \\__,_|   |_|      \\___/    \\_/\\_/    \\___| |_|  " << std::endl << std::endl << std::endl << std::endl;
 }
-void printCalc4()
+void workAndPowerCalc()
 {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -43,7 +43,7 @@ void printCalc4()
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
-void calcDesign5() {
+void workAndPowerCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |  Welcome to our                 |  |" << std::endl;
@@ -73,8 +73,8 @@ void work()
 {
 	float A, F, s;
 	system("cls");
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Force(F) = ";
@@ -83,15 +83,15 @@ void work()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Force(F) = ";
@@ -108,15 +108,15 @@ void work()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Force(F) = " << F;
@@ -134,15 +134,15 @@ void work()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -165,8 +165,8 @@ void force()
 {
 	float A, F, s;
 	system("cls");
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Work(A) = ";
@@ -175,15 +175,15 @@ void force()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = ";
@@ -200,15 +200,15 @@ void force()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = " << A;
@@ -226,15 +226,15 @@ void force()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -257,8 +257,8 @@ void displacementByWork()
 {
 	float A, F, s;
 	system("cls");
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Work(A) = ";
@@ -267,15 +267,15 @@ void displacementByWork()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = ";
@@ -292,15 +292,15 @@ void displacementByWork()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = " << A;
@@ -317,15 +317,15 @@ void displacementByWork()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -348,8 +348,8 @@ void power()
 {
 	float P, A, t;
 	system("cls");
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Work(A) = ";
@@ -358,15 +358,15 @@ void power()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = ";
@@ -383,15 +383,15 @@ void power()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = " << A;
@@ -408,15 +408,15 @@ void power()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -439,8 +439,8 @@ void findWorkByPower()
 {
 	float A, P, t;
 	system("cls");
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Time(t) = ";
@@ -450,15 +450,15 @@ void findWorkByPower()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Time(t) = ";
@@ -474,15 +474,15 @@ void findWorkByPower()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Time(t) = " << t;
@@ -500,15 +500,15 @@ void findWorkByPower()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -531,8 +531,8 @@ void findTimeByPower()
 {
 	float A, P, t;
 	system("cls");
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 
 	gotoXY(100, 12);
 	std::cout << "Work(A) = ";
@@ -541,15 +541,15 @@ void findTimeByPower()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = ";
@@ -566,15 +566,15 @@ void findTimeByPower()
 	if (!std::cin)
 	{
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Invalid number or symbol!";
 		Sleep(2000);
 		system("cls");
-		calcTitle2();
-		printCalc4();
+		workAndPowerCalcTitle();
+		workAndPowerCalc();
 
 		gotoXY(100, 12);
 		std::cout << "Work(A) = " << A;
@@ -592,15 +592,15 @@ void findTimeByPower()
 	Sleep(3000);
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Press any key to continue...";
 	_getch();
 	system("cls");
 
-	calcTitle2();
-	printCalc4();
+	workAndPowerCalcTitle();
+	workAndPowerCalc();
 	gotoXY(100, 12);
 	std::cout << "Redirecting";
 
@@ -619,49 +619,49 @@ void findTimeByPower()
 	system("cls");
 	printCalculatorsMenu();
 }
-void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven) {
-	calcTitle2();
+void workAndPowerCalcMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven) {
+	workAndPowerCalcTitle();
 
 	if (one)
 	{
-		calcDesign5();
+		workAndPowerCalcDesign();
 		gotoXY(128, 19);
 		std::cout << "± ";
 	}
 	if (two)
 	{
-		calcDesign5();
+		workAndPowerCalcDesign();
 		gotoXY(128, 22);
 		std::cout << "± ";
 	}
 	if (three)
 	{
-		calcDesign5();
+		workAndPowerCalcDesign();
 		gotoXY(128, 25);
 		std::cout << "± ";
 	}
 
 	if (four)
 	{
-		calcDesign5();
+		workAndPowerCalcDesign();
 		gotoXY(128, 28);
 		std::cout << "± ";
 	}
 	if (five)
 	{
-		calcDesign5();
+		workAndPowerCalcDesign();
 		gotoXY(128, 31);
 		std::cout << "± ";
 	}
 	if (six)
 	{
-		calcDesign5();
+		workAndPowerCalcDesign();
 		gotoXY(118, 31);
 		std::cout << "± ";
 	}
 	if (seven)
 	{
-		calcDesign5();
+		workAndPowerCalcDesign();
 		gotoXY(110, 31);
 		std::cout << "± ";
 	}
@@ -671,32 +671,32 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 	{
 		if (one)
 		{
-			menu(false, true, false, false, false, false, false);
+			workAndPowerCalcMenu(false, true, false, false, false, false, false);
 		}
 		if (two)
 		{
-			menu(false, false, true, false, false, false, false);
+			workAndPowerCalcMenu(false, false, true, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, false, false, true, false, false, false);
+			workAndPowerCalcMenu(false, false, false, true, false, false, false);
 		}
 
 		if (four)
 		{
-			menu(false, false, false, false, true, false, false);
+			workAndPowerCalcMenu(false, false, false, false, true, false, false);
 		}
 		if (five)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 		if (six)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 	}
 
@@ -704,62 +704,62 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 	{
 		if (one)
 		{
-			menu(false, false, false, false, false, false, true);
+			workAndPowerCalcMenu(false, false, false, false, false, false, true);
 		}
 		if (two)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, true, false, false, false, false, false);
+			workAndPowerCalcMenu(false, true, false, false, false, false, false);
 		}
 		if (four)
 		{
-			menu(false, false, true, false, false, false, false);
+			workAndPowerCalcMenu(false, false, true, false, false, false, false);
 		}
 		if (five)
 		{
-			menu(false, false, false, true, false, false, false);
+			workAndPowerCalcMenu(false, false, false, true, false, false, false);
 		}
 		if (six)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 		if (seven)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 	}
 	if (option == 'd' || option == 'D')
 	{
 		if (one)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 		if (two)
 		{
-			menu(false , true, false, false, false, false, false);
+			workAndPowerCalcMenu(false, true, false, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, false, true, false, false, false, false);
+			workAndPowerCalcMenu(false, false, true, false, false, false, false);
 		}
 		if (four)
 		{
-			menu(false, false, false, true, false, false, false);
+			workAndPowerCalcMenu(false, false, false, true, false, false, false);
 		}
 		if (five)
 		{
-			menu(false, false, false, false, false, false, true);
+			workAndPowerCalcMenu(false, false, false, false, false, false, true);
 		}
 		if (six)
 		{
-			menu(false, false, false, false, true, false, false);
+			workAndPowerCalcMenu(false, false, false, false, true, false, false);
 		}
 		if (seven)
 		{
-			menu(false, false, false, false, false, true, false);
+			workAndPowerCalcMenu(false, false, false, false, false, true, false);
 		}
 	}
 
@@ -767,31 +767,31 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 	{
 		if (one)
 		{
-			menu(true, false, false, false, false, false, false);
+			workAndPowerCalcMenu(true, false, false, false, false, false, false);
 		}
 		if (two)
 		{
-			menu(false, true, false, false, false, false, false);
+			workAndPowerCalcMenu(false, true, false, false, false, false, false);
 		}
 		if (three)
 		{
-			menu(false, false, true, false, false, false, false);
+			workAndPowerCalcMenu(false, false, true, false, false, false, false);
 		}
 		if (four)
 		{
-			menu(false, false, false, true, false, false, false);
+			workAndPowerCalcMenu(false, false, false, true, false, false, false);
 		}
 		if (five)
 		{
-			menu(false, false, false, false, false, true, false);
+			workAndPowerCalcMenu(false, false, false, false, false, true, false);
 		}
 		if (six)
 		{
-			menu(false, false, false, false, false, false, true);
+			workAndPowerCalcMenu(false, false, false, false, false, false, true);
 		}
 		if (seven)
 		{
-			menu(false, false, false, false, true, false, false);
+			workAndPowerCalcMenu(false, false, false, false, true, false, false);
 		}
 	}
 
@@ -834,6 +834,6 @@ void menu(bool one, bool two, bool three, bool four, bool five, bool six, bool s
 		}
 	}
 }
-void startCalculator4() {
-	menu(true, false, false, false, false, false, false);
+void startWorkAndPowerCalc() {
+	workAndPowerCalcMenu(true, false, false, false, false, false, false);
 }
