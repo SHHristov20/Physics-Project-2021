@@ -94,6 +94,11 @@ void startGame2() {
 
 		}
 
+		if (Character.getPosition().y + Character.getGlobalBounds().height > 533)
+		{
+			window.close();
+		}
+
 		Character.setPosition(x, y);
 
 		window.draw(Background); // Drawing the textures
