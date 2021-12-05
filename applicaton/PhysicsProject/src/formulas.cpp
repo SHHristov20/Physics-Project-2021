@@ -433,7 +433,7 @@ void formulasMenu(bool one, bool two, bool three, bool four, bool five, bool six
 		gotoXY(125, 34);
 		std::cout << "±±±±±";
 	}
-
+	start:
 	const char option = _getch();
 
 	if (option == 'w' or option == 'W')
@@ -610,6 +610,10 @@ void formulasMenu(bool one, bool two, bool three, bool four, bool five, bool six
 			printCalculatorsMenu();
 		}
 
+	}
+	else
+	{
+		goto start;
 	}
 }
 

@@ -592,7 +592,7 @@ void increasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five)
 		gotoXY(128, 30);
 		std::cout << "± ";
 	}
-
+	start:
 	const char option = _getch();
 	if (option == 's' || option == 'S')
 	{
@@ -670,6 +670,10 @@ void increasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five)
 			system("cls");
 			printCalculatorsMenu();
 		}
+	}
+	else
+	{
+		goto start;
 	}
 }
 

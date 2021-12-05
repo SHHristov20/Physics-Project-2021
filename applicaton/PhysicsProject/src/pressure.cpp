@@ -401,7 +401,7 @@ void pressureCalcMenu(bool one, bool two, bool three, bool four) {
 		gotoXY(128, 27);
 		std::cout << "± ";
 	}
-
+	start:
 	const char option = _getch();
 	if (option == 's' || option == 'S')
 	{
@@ -466,6 +466,10 @@ void pressureCalcMenu(bool one, bool two, bool three, bool four) {
 			system("cls");
 			printCalculatorsMenu();
 		}
+	}
+	else
+	{
+		goto start;
 	}
 }
 

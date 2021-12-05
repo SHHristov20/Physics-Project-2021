@@ -157,6 +157,7 @@ void homeMenu(bool first, bool second, bool third)
 		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
 		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
+	start:
 	const char option = _getch();
 
 	if (option == 'd' || option == 'D')
@@ -213,6 +214,14 @@ void homeMenu(bool first, bool second, bool third)
 			system("cls");
 			startGame1();
 		}
+	}
+	if (option == 27)
+	{
+		system("exit");
+	}
+	else
+	{
+		goto start;
 	}
 }
 

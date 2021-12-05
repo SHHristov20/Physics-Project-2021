@@ -174,7 +174,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 		gotoXY(125, 39);
 		std::cout << "±±±±±";
 	}
-
+	start:
 	const char option = _getch();
 
 	if (option == 'w' or option == 'W')
@@ -558,6 +558,10 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			system("cls");
 			homeMenu(true, false, false);
 		}
+	}
+	else
+	{
+		goto start;
 	}
 }
 /// <summary>

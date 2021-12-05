@@ -685,7 +685,7 @@ void unitConvertorMenu(bool one, bool two, bool three, bool four, bool five, boo
 		gotoXY(110, 39);
 		std::cout << "±±±±±";
 	}
-
+	start:
 	const char option = _getch();
 
 	if (option == 'w' or option == 'W')
@@ -882,6 +882,10 @@ void unitConvertorMenu(bool one, bool two, bool three, bool four, bool five, boo
 			printCalculatorsMenu();
 		}
 
+	}
+	else
+	{
+		goto start;
 	}
 }
 

@@ -533,7 +533,7 @@ void hydrostaticPressureCalcMenu(bool one, bool two, bool three, bool four, bool
 		gotoXY(128, 31);
 		std::cout << "± ";
 	}
-
+	start:
 	const char option = _getch();
 	if (option == 's' || option == 'S')
 	{
@@ -611,6 +611,10 @@ void hydrostaticPressureCalcMenu(bool one, bool two, bool three, bool four, bool
 			system("cls");
 			printCalculatorsMenu();
 		}
+	}
+	else
+	{
+		goto start;
 	}
 }
 void startHydrostaticPressureCalc()
