@@ -6,6 +6,10 @@
 #include "workAndPowerCalc.h"
 #include "front-end.h"
 
+
+/// <summary>
+/// Title
+/// </summary>
 void workAndPowerCalcTitle()
 {
 	system("cls");
@@ -16,6 +20,10 @@ void workAndPowerCalcTitle()
 	std::cout << "\t\t\t\t\t\t\t\t   \\ V  V /   | (_) | | |    |   <    | (_| | | | | | | (_| |   |  __/  | (_) |  \\ V  V /  |  __/ | |   " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t    \\_/\\_/     \\___/  |_|    |_|\\_\\    \\__,_| |_| |_|  \\__,_|   |_|      \\___/    \\_/\\_/    \\___| |_|  " << std::endl << std::endl << std::endl << std::endl;
 }
+
+/// <summary>
+/// Calculator
+/// </summary>
 void workAndPowerCalc()
 {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
@@ -43,6 +51,10 @@ void workAndPowerCalc()
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Calculator Design
+/// </summary>
 void workAndPowerCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -69,6 +81,10 @@ void workAndPowerCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Finding the work
+/// </summary>
 void work()
 {
 	float A, F, s;
@@ -161,6 +177,10 @@ void work()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the force
+/// </summary>
 void force()
 {
 	float A, F, s;
@@ -253,6 +273,10 @@ void force()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Find the displacement by using the work formula
+/// </summary>
 void displacementByWork()
 {
 	float A, F, s;
@@ -344,6 +368,10 @@ void displacementByWork()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the power
+/// </summary>
 void power()
 {
 	float P, A, t;
@@ -435,6 +463,11 @@ void power()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+
+/// <summary>
+/// Finding the work by using the power formula
+/// </summary>
 void findWorkByPower()
 {
 	float A, P, t;
@@ -527,6 +560,10 @@ void findWorkByPower()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the time by using the power formula
+/// </summary>
 void findTimeByPower()
 {
 	float A, P, t;
@@ -619,6 +656,17 @@ void findTimeByPower()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
+/// <param name="six"></param>
+/// <param name="seven"></param>
 void workAndPowerCalcMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven) {
 	workAndPowerCalcTitle();
 
@@ -834,6 +882,10 @@ void workAndPowerCalcMenu(bool one, bool two, bool three, bool four, bool five, 
 		}
 	}
 }
+
+/// <summary>
+/// Start the calculator
+/// </summary>
 void startWorkAndPowerCalc() {
 	workAndPowerCalcMenu(true, false, false, false, false, false, false);
 }

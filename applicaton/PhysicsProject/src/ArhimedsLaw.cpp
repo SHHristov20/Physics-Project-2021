@@ -4,6 +4,9 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
+/// <summary>
+/// Calculator
+/// </summary>
 void arhimedsLawCalculator() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -30,6 +33,9 @@ void arhimedsLawCalculator() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+/// <summary>
+/// Calculator Design
+/// </summary>
 void arhimedsLawCalculatorDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -56,6 +62,9 @@ void arhimedsLawCalculatorDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+/// <summary>
+/// Title
+/// </summary>
 void arhimedsLawTitle()
 {
 	system("cls");
@@ -65,6 +74,9 @@ void arhimedsLawTitle()
 	std::cout << "\t\t\t\t\t\t\t\t\t  / ___ \\  | |    | | | | | | | | | | | | |  __/ | (_| |     \\__ \\   | | | (_| |  \\ V  V / " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t /_/   \\_\\ |_|    |_| |_| |_| |_| |_| |_|  \\___|  \\__,_|     |___/   |_|  \\__,_|   \\_/\\_/  " << std::endl << std::endl << std::endl << std::endl;;
 }
+/// <summary>
+/// Finding repulsive force
+/// </summary>
 void repulsiveForce()
 {
 	float p = 0, V = 0, g = 10;
@@ -243,6 +255,9 @@ void volume()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// Finding density
+/// </summary>
 void Density()
 {
 	float V = 0, F = 0, g = 10;
@@ -334,6 +349,15 @@ void Density()
 	printCalculatorsMenu();
 }
 
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
 void arhimedsLawMenu(bool one, bool two, bool three, bool four, bool five) {
 	arhimedsLawTitle();
 
@@ -445,6 +469,10 @@ void arhimedsLawMenu(bool one, bool two, bool three, bool four, bool five) {
 		}
 	}
 }
+
+/// <summary>
+/// Start the calculator
+/// </summary>
 void startArhimedsLawCalc()
 {
 	arhimedsLawMenu(true, false, false, false, false);

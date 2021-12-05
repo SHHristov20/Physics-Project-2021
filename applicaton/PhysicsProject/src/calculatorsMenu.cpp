@@ -12,6 +12,9 @@
 #include "ArhimedsLaw.h"
 #include "convertUnits.h"
 #include "formulas.h"
+/// <summary>
+/// Title
+/// </summary>
 void printTitle() {
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t   ____      _            _       _                 " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __ ___ " << std::endl;
@@ -19,7 +22,9 @@ void printTitle() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t | |__| (_| | | (__| |_| | | (_| | || (_) | |  \\__ \\" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  \\____\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|  |___/" << std::endl << std::endl << std::endl << std::endl;
 }
-
+/// <summary>
+/// Menu design
+/// </summary>
 void design() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t   _______________________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  ___________________________________________  |" << std::endl;
@@ -55,7 +60,9 @@ void design() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |_______________________|_______________________|" << std::endl;
 }
-
+/// <summary>
+/// Redirection design
+/// </summary>
 void enteredChoice() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t   _______________________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  ___________________________________________  |" << std::endl;
@@ -91,6 +98,19 @@ void enteredChoice() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |_______________________|_______________________|" << std::endl;
 }
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
+/// <param name="six"></param>
+/// <param name="seven"></param>
+/// <param name="eight"></param>
+/// <param name="nine"></param>
+/// <param name="ten"></param>
 void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine, bool ten)
 {
 
@@ -540,6 +560,9 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 		}
 	}
 }
+/// <summary>
+/// Print the menu
+/// </summary>
 void printCalculatorsMenu()
 {
 	calculatorsMenu(true, false, false, false, false, false, false, false, false, false);

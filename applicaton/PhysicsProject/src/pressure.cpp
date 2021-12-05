@@ -4,6 +4,9 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
+/// <summary>
+/// Calculator
+/// </summary>
 void pressureCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -30,6 +33,10 @@ void pressureCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Calculator design
+/// </summary>
 void pressureCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -56,6 +63,10 @@ void pressureCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Title
+/// </summary>
 void pressureCalcTitle()
 {
 	system("cls");
@@ -65,6 +76,10 @@ void pressureCalcTitle()
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |  __/  | |    |  __/ \\__ \\ \\__ \\ | |_| | | |    |  __/" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |_|     |_|     \\___| |___/ |___/  \\__,_| |_|     \\___|" << std::endl << std::endl << std::endl << std::endl;;
 }
+
+/// <summary>
+/// Finding the pressure
+/// </summary>
 void Pressure()
 {
 	float S = 0, F = 0;
@@ -156,6 +171,10 @@ void Pressure()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the area
+/// </summary>
 void Area()
 {
 	float P = 0, F = 0;
@@ -248,6 +267,10 @@ void Area()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the force
+/// </summary>
 void Force()
 {
 	float S = 0, P = 0;
@@ -340,6 +363,14 @@ void Force()
 	printCalculatorsMenu();
 }
 
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
 void pressureCalcMenu(bool one, bool two, bool three, bool four) {
 	pressureCalcTitle();
 
@@ -437,6 +468,10 @@ void pressureCalcMenu(bool one, bool two, bool three, bool four) {
 		}
 	}
 }
+
+/// <summary>
+/// Start the pressure calculator
+/// </summary>
 void startPressureCalc()
 {
 	pressureCalcMenu(true, false, false, false);

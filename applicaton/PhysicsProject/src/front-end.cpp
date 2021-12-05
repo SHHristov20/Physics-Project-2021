@@ -5,6 +5,12 @@
 #include "calculatorsMenu.h"
 #include "Game2.h"
 #include "Game1.h"
+
+/// <summary>
+/// go to given coords
+/// </summary>
+/// <param name="x"></param>
+/// <param name="y"></param>
 void gotoXY(int x, int y)
 {
 	COORD coord;
@@ -12,10 +18,19 @@ void gotoXY(int x, int y)
 	coord.Y = y;
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
+
+/// <summary>
+/// Changing the text color
+/// </summary>
+/// <param name="color"></param>
 void textcolor(int color)
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
+
+/// <summary>
+/// Set the screen to full screen
+/// </summary>
 void maxSizedScreen() {
 	COORD ScreenBufferSize{ 1000, 50 };
 	HANDLE ConsoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -24,6 +39,10 @@ void maxSizedScreen() {
 	SetConsoleScreenBufferSize(ConsoleHandle, ScreenBufferSize);
 	ShowWindow(ConsoleWindow, SW_MAXIMIZE);
 }
+
+/// <summary>
+/// Title
+/// </summary>
 void tittleScreen()
 {
 	system("cls");
@@ -78,6 +97,9 @@ void tittleScreen()
 	system("cls");
 }
 
+/// <summary>
+/// Menu title
+/// </summary>
 void Menu()
 {
 	std::cout << std::endl << std::endl;
@@ -88,6 +110,13 @@ void Menu()
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t" << "      |_|  |_|  \\___| |_| |_|  \\__,_|" << std::endl;
 
 }
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="first"></param>
+/// <param name="second"></param>
+/// <param name="third"></param>
 void homeMenu(bool first, bool second, bool third)
 {
 	Menu(); printf("\n\n\n\n\n");
@@ -128,9 +157,9 @@ void homeMenu(bool first, bool second, bool third)
 		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±                   ± ±                    ± ±                    ±" << std::endl;
 		std::cout << "\t\t\t\t\t\t\t\t\t\t" << "   ±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±± ±±±±±±±±±±±±±±±±±±±±±±" << std::endl;
 	}
-	const char ch = _getch();
+	const char option = _getch();
 
-	if (ch == 'd' || ch == 'D')
+	if (option == 'd' || option == 'D')
 	{
 		if (first)
 		{
@@ -149,7 +178,7 @@ void homeMenu(bool first, bool second, bool third)
 		}
 	}
 
-	if (ch == 'a' || ch == 'A')
+	if (option == 'a' || option == 'A')
 	{
 		if (first)
 		{
@@ -167,7 +196,7 @@ void homeMenu(bool first, bool second, bool third)
 			homeMenu(false, true, false);
 		}
 	}
-	if (ch == 13)
+	if (option == 13)
 	{
 		if (first)
 		{
@@ -187,6 +216,9 @@ void homeMenu(bool first, bool second, bool third)
 	}
 }
 
+/// <summary>
+/// Start the application
+/// </summary>
 void start()
 {
 	tittleScreen();

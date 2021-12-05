@@ -4,6 +4,10 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
+
+/// <summary>
+/// Calculator
+/// </summary>
 void hydrostaticPressureCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -30,6 +34,10 @@ void hydrostaticPressureCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Calculator design
+/// </summary>
 void hydrostaticPressureCalcDesign()
 {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
@@ -57,6 +65,10 @@ void hydrostaticPressureCalcDesign()
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Title
+/// </summary>
 void hydrostaticPressureCalcTitle()
 {
 	system("cls");
@@ -67,6 +79,10 @@ void hydrostaticPressureCalcTitle()
 	std::cout << "\t\t\t\t\t\t\t |_| |_|  \\__, |  \\__,_| |_|     \\___/  |___/  \\__|  \\__,_|  \\__| |_|  \\___|   |_|     |_|     \\___| |___/ |___/  \\__,_| |_|     \\___|" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t          |___/                                                                                                                       " << std::endl << std::endl << std::endl << std::endl;
 }
+
+/// <summary>
+/// Finding pressure
+/// </summary>
 void pressure()
 {
 	float P, p, g = 10, h;
@@ -157,6 +173,10 @@ void pressure()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the depth pressure
+/// </summary>
 void depthPressure()
 {
 	float P, Pa, p, g = 10, h;
@@ -277,6 +297,10 @@ void depthPressure()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Find the height
+/// </summary>
 void height()
 {
 	float P, p, g = 10, h;
@@ -368,6 +392,10 @@ void height()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the density
+/// </summary>
 void density()
 {
 	float P, p, g = 10, h;
@@ -459,6 +487,15 @@ void density()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
 void hydrostaticPressureCalcMenu(bool one, bool two, bool three, bool four, bool five) {
 	hydrostaticPressureCalcTitle();
 

@@ -5,6 +5,9 @@
 #include "calculatorsMenu.h"
 #include "front-end.h"
 
+/// <summary>
+/// Calculator
+/// </summary>
 void increasingAccCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -31,6 +34,10 @@ void increasingAccCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Calculator design
+/// </summary>
 void increasingAccCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -57,6 +64,10 @@ void increasingAccCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Title
+/// </summary>
 void increasingAccCalcTitle() {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t     _                _                _   _                 ____      _            _       _             " << std::endl;
@@ -65,6 +76,10 @@ void increasingAccCalcTitle() {
 	std::cout << "\t\t\t\t\t\t\t\t  / ___ \\ (_| (_|  __/ |  __/ | | (_| | |_| | (_) | | | |  | |__| (_| | | (__| |_| | | (_| | || (_) | |   " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t /_/   \\_\\___\\___\\___|_|\\___|_|  \\__,_|\\__|_|\\___/|_| |_|   \\____\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|   " << std::endl << std::endl << std::endl << std::endl;
 }
+
+/// <summary>
+/// Finding the acceleration
+/// </summary>
 void acceleration()
 {
 	float v0 = 0, v = 0, t = 0;
@@ -187,6 +202,9 @@ void acceleration()
 	printCalculatorsMenu();
 }
 
+/// <summary>
+/// Finding the displacement
+/// </summary>
 void displacement()
 {
 	float v0 = 0, a = 0, t = 0;
@@ -307,6 +325,10 @@ void displacement()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Final the final speed
+/// </summary>
 void fSpeed()
 {
 	float v0 = 0, a = 0, t = 0;
@@ -429,6 +451,10 @@ void fSpeed()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the time
+/// </summary>
 void time()
 {
 	float v = 0, a = 0;
@@ -520,6 +546,15 @@ void time()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
 void increasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five) {
 	increasingAccCalcTitle();
 

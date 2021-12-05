@@ -6,6 +6,10 @@
 #include "freeFallCalc.h"
 #include "calculatorsMenu.h"
 #include "front-end.h"
+
+/// <summary>
+/// Calculator
+/// </summary>
 void freeFallCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -33,6 +37,9 @@ void freeFallCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
 
+/// <summary>
+/// Calculator Design
+/// </summary>
 void freeFallCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -60,6 +67,9 @@ void freeFallCalcDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
 
+/// <summary>
+/// Title
+/// </summary>
 void freeFallCalcTitle() {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t  _____                           _____          _   _ " << std::endl;
@@ -69,6 +79,9 @@ void freeFallCalcTitle() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |_|     |_|     \\___|  \\___|    |_|     \\__,_| |_| |_|" << std::endl << std::endl << std::endl << std::endl;
 }
 
+/// <summary>
+/// Finding the final speed
+/// </summary>
 void finalSpeed() {
 	float v, g = 10, t;
 	system("cls");
@@ -131,6 +144,10 @@ void finalSpeed() {
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the displacement
+/// </summary>
 void street() {
 	float s, g = 10, t;
 	system("cls");
@@ -194,6 +211,9 @@ void street() {
 	printCalculatorsMenu();
 }
 
+/// <summary>
+/// Finding the time
+/// </summary>
 void time3() {
 	float v, g = 10, t;
 	system("cls");
@@ -257,6 +277,14 @@ void time3() {
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
 void freeFallCalcMenu(bool one, bool two, bool three, bool four) {
 	freeFallCalcTitle();
 
@@ -348,6 +376,10 @@ void freeFallCalcMenu(bool one, bool two, bool three, bool four) {
 	}
 }
 
+
+/// <summary>
+/// Start the calculator
+/// </summary>
 void startFreeFallCalc()
 {
 	freeFallCalcMenu(true, false, false, false);

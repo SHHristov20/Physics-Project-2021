@@ -5,6 +5,9 @@
 #include "calculatorsMenu.h"
 #include "front-end.h"
 
+/// <summary>
+/// Title
+/// </summary>
 void decreasingAccCalcTitle() {
 	system("cls");
 	std::cout << std::endl << "\t\t\t\t\t\t\t\t     _                _                _   _                 ____      _            _       _             " << std::endl;
@@ -13,6 +16,9 @@ void decreasingAccCalcTitle() {
 	std::cout << "\t\t\t\t\t\t\t\t  / ___ \\ (_| (_|  __/ |  __/ | | (_| | |_| | (_) | | | |  | |__| (_| | | (__| |_| | | (_| | || (_) | |   " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t /_/   \\_\\___\\___\\___|_|\\___|_|  \\__,_|\\__|_|\\___/|_| |_|   \\____\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|   " << std::endl << std::endl << std::endl << std::endl;
 }
+/// <summary>
+/// Calculator
+/// </summary>
 void decreasingAccCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -39,6 +45,9 @@ void decreasingAccCalc() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+/// <summary>
+/// Calculator Design
+/// </summary>
 void calcDesign1() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -65,6 +74,9 @@ void calcDesign1() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+/// <summary>
+/// Finding acceleration
+/// </summary>
 void acceleration1()
 {
 	float v0 = 0, v = 0, t = 0;
@@ -186,6 +198,9 @@ void acceleration1()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// Finding displacement
+/// </summary>
 void displacement1()
 {
 	float v0 = 0, a = 0, t = 0;
@@ -306,6 +321,9 @@ void displacement1()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// Finding final speed
+/// </summary>
 void fSpeed1()
 {
 	float v0 = 0, a = 0, t = 0;
@@ -427,6 +445,9 @@ void fSpeed1()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// Finding time
+/// </summary>
 void time1()
 {
 	float v = 0, a = 0, v0 = 0;
@@ -549,6 +570,10 @@ void time1()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding breaking time
+/// </summary>
 void stopTime()
 {
 	float t0, v0, a;
@@ -641,6 +666,9 @@ void stopTime()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// Finding the braking distance
+/// </summary>
 void brakingDistance() {
 	float v0, a, s;
 	system("cls");
@@ -732,6 +760,10 @@ void brakingDistance() {
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Finding the initial speed
+/// </summary>
 void initialSpeed() {
 	float v, v0, a, t;
 	system("cls");
@@ -853,6 +885,18 @@ void initialSpeed() {
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
+/// <param name="six"></param>
+/// <param name="seven"></param>
+/// <param name="eight"></param>
 void decreasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight) {
 	decreasingAccCalcTitle();
 
@@ -1099,6 +1143,10 @@ void decreasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five,
 		}
 	}
 }
+
+/// <summary>
+/// Start the calculator
+/// </summary>
 void startDecreasingAccCalc() {
 	decreasingAccCalcMenu(true, false, false, false, false, false, false, false);
 }

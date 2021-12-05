@@ -4,6 +4,9 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
+/// <summary>
+/// Calculator
+/// </summary>
 void formulas() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -30,6 +33,10 @@ void formulas() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+
+/// <summary>
+/// Title
+/// </summary>
 void formulasTitle()
 {
 	system("cls");
@@ -39,6 +46,10 @@ void formulasTitle()
 	std::cout << "\t\t\t\t\t\t\t\t\t\t    |  _|   | (_) | | |    | | | | | | | |_| | | | | (_| | \\__ \\" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t    |_|      \\___/  |_|    |_| |_| |_|  \\__,_| |_|  \\__,_| |___/" << std::endl << std::endl << std::endl << std::endl;;
 }
+
+/// <summary>
+/// Calculator design
+/// </summary>
 void formulasDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t   _______________________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  ___________________________________________  |" << std::endl;
@@ -69,6 +80,10 @@ void formulasDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |_______________________|_______________________|" << std::endl;
 }
+
+/// <summary>
+/// Increasing Accceleration formulas
+/// </summary>
 void incAccelerationFormulas()
 {
 	formulasTitle();
@@ -109,6 +124,10 @@ void incAccelerationFormulas()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Decreasing Acceleration formulas
+/// </summary>
 void decAccelerationFormulas()
 {
 	formulasTitle();
@@ -149,6 +168,9 @@ void decAccelerationFormulas()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// Free fall formulas
+/// </summary>
 void freeFallFormulas()
 {
 	formulasTitle();
@@ -189,6 +211,9 @@ void freeFallFormulas()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// Mechanical work and power formulas
+/// </summary>
 void workPowerFormulas()
 {
 	formulasTitle();
@@ -230,6 +255,10 @@ void workPowerFormulas()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Hydrostatic pressure formulas
+/// </summary>
 void hydroPressureFormulas()
 {
 	formulasTitle();
@@ -264,6 +293,10 @@ void hydroPressureFormulas()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Pressure fomulas
+/// </summary>
 void pressureFormulas()
 {
 	formulasTitle();
@@ -298,6 +331,10 @@ void pressureFormulas()
 	system("cls");
 	printCalculatorsMenu();
 }
+
+/// <summary>
+/// Arhimed's law formulas
+/// </summary>
 void arhimedLawFormulas()
 {
 	formulasTitle();
@@ -334,6 +371,17 @@ void arhimedLawFormulas()
 }
 
 
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
+/// <param name="six"></param>
+/// <param name="seven"></param>
+/// <param name="eight"></param>
 void formulasMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight)
 {
 	formulasTitle();
@@ -565,6 +613,9 @@ void formulasMenu(bool one, bool two, bool three, bool four, bool five, bool six
 	}
 }
 
+/// <summary>
+/// Start formulas menu
+/// </summary>
 void startFormulasMenu()
 {
 	formulasMenu(true, false, false, false, false, false, false, false);

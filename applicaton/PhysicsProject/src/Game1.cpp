@@ -5,6 +5,12 @@
 #include "Game1.h"
 #include "front-end.h"
 
+/// <summary>
+/// Random direction generator
+/// </summary>
+/// <param name="index"></param>
+/// <param name="Array"></param>
+/// <returns></returns>
 int assignDirection(int index, int Array[])
 {
 	srand(time(NULL));
@@ -12,6 +18,9 @@ int assignDirection(int index, int Array[])
 	return Array[index + 1];
 }
 
+/// <summary>
+/// Start "Catch the leaf" game
+/// </summary>
 void startGame1() 
 {
 	sf::RenderWindow window(sf::VideoMode(1500, 1000), "Catch the leaf", sf::Style::Default);

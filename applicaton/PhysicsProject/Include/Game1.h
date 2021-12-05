@@ -4,5 +4,6 @@
 #include <iostream>
 #include <Windows.h>
 
+int assignDirection(int index, int Array[]);
 void startGame1();
 

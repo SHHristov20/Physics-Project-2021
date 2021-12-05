@@ -4,6 +4,9 @@
 #include <conio.h>
 #include "calculatorsMenu.h"
 
+/// <summary>
+/// Calculator
+/// </summary>
 void unitConverter() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t ______________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|  _________________________________   |" << std::endl;
@@ -30,6 +33,9 @@ void unitConverter() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t|______________________________________|" << std::endl;
 }
+/// <summary>
+/// Title
+/// </summary>
 void unitConverterTitle()
 {
 	system("cls");
@@ -39,6 +45,9 @@ void unitConverterTitle()
 	std::cout << "\t\t\t\t\t\t\t\t\t | |___  | (_) | | | | |  \\ V /  |  __/ | |    | |_    | |_| | | | | | | | | |_  \\__ \\" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t  \\____|  \\___/  |_| |_|   \\_/    \\___| |_|     \\__|    \\___/  |_| |_| |_|  \\__| |___/" << std::endl << std::endl << std::endl << std::endl;;
 }
+/// <summary>
+/// Calculator Design
+/// </summary>
 void unitConverterDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t _______________________________________________" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|  ___________________________________________  |" << std::endl;
@@ -74,7 +83,9 @@ void unitConverterDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|              |_________________|              |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t|_______________________________________________|" << std::endl;
 }
-
+/// <summary>
+/// Km/h to m/s
+/// </summary>
 void kmhToMs()
 {
 	float kmh = 0;
@@ -138,6 +149,9 @@ void kmhToMs()
 	printCalculatorsMenu();
 }
 
+/// <summary>
+/// m/s to km/h
+/// </summary>
 void msToKmh()
 {
 	float ms = 0;
@@ -201,6 +215,10 @@ void msToKmh()
 	printCalculatorsMenu();
 }
 
+
+/// <summary>
+/// seconds to min
+/// </summary>
 void secToMin()
 {
 	float s = 0;
@@ -265,6 +283,9 @@ void secToMin()
 	printCalculatorsMenu();
 }
 
+/// <summary>
+/// minutes to seconds
+/// </summary>
 void minToSec()
 {
 	float min = 0;
@@ -329,6 +350,9 @@ void minToSec()
 	printCalculatorsMenu();
 }
 
+/// <summary>
+/// Kg/m3 to g/cm3
+/// </summary>
 void kgm3ToGcm3()
 {
 	float kgm = 0;
@@ -392,6 +416,9 @@ void kgm3ToGcm3()
 	system("cls");
 	printCalculatorsMenu();
 }
+/// <summary>
+/// g/cm3 to kg/m3
+/// </summary>
 void gcm3ToKgm3()
 {
 	float gcm = 0;
@@ -455,7 +482,9 @@ void gcm3ToKgm3()
 	system("cls");
 	printCalculatorsMenu();
 }
-
+/// <summary>
+/// m3 to cm3
+/// </summary>
 void m3toCm3()
 {
 	float m3 = 0;
@@ -520,6 +549,9 @@ void m3toCm3()
 	printCalculatorsMenu();
 }
 
+/// <summary>
+/// cm3 to m3
+/// </summary>
 void cm3ToM3()
 {
 	float cm3 = 0;
@@ -584,7 +616,18 @@ void cm3ToM3()
 	printCalculatorsMenu();
 }
 
-
+/// <summary>
+/// Menu
+/// </summary>
+/// <param name="one"></param>
+/// <param name="two"></param>
+/// <param name="three"></param>
+/// <param name="four"></param>
+/// <param name="five"></param>
+/// <param name="six"></param>
+/// <param name="seven"></param>
+/// <param name="eight"></param>
+/// <param name="nine"></param>
 void unitConvertorMenu(bool one, bool two, bool three, bool four, bool five, bool six, bool seven, bool eight, bool nine)
 {
 	unitConverterTitle();
@@ -842,6 +885,9 @@ void unitConvertorMenu(bool one, bool two, bool three, bool four, bool five, boo
 	}
 }
 
+/// <summary>
+/// Start the convertor
+/// </summary>
 void startUnitConverter()
 {
 	unitConvertorMenu(true, false, false, false, false, false, false, false, false);

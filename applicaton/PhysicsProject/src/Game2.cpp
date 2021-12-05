@@ -9,6 +9,9 @@ struct coords { //platform coordinates
 	int y;
 };
 
+/// <summary>
+/// Start the "Doodle Jump" game
+/// </summary>
 void startGame2() {
 	srand(time(0));
 
