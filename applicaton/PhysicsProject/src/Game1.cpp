@@ -23,23 +23,24 @@ int assignDirection(int index, int Array[])
 /// </summary>
 void startGame1() 
 {
-	sf::RenderWindow window(sf::VideoMode(1500, 1000), "Catch the leaf", sf::Style::Default);
+    sf::RenderWindow window(sf::VideoMode(1500, 1000), "Catch the leaf", sf::Style::Default);
+    window.setFramerateLimit(60);
 
-	sf::RectangleShape object(sf::Vector2f(100, 100));
-	object.setOrigin(-700.0f, -450.0f);
+    sf::RectangleShape object(sf::Vector2f(100, 100));
+    object.setOrigin(-700.0f, -450.0f);
 
-	sf::Texture objectTexture;
-	objectTexture.loadFromFile("../PhysicsProject/images/leaf.png");
-	object.setTexture(&objectTexture);
+    sf::Texture objectTexture;
+    objectTexture.loadFromFile("../PhysicsProject/images/leaf.png");
+    object.setTexture(&objectTexture);
 
-	sf::Texture background;
-	background.loadFromFile("../PhysicsProject/images/grass-background.jpg");
-	sf::Sprite Background(background);
+    sf::Texture background;
+    background.loadFromFile("../PhysicsProject/images/grass-background.jpg");
+    sf::Sprite Background(background);
 
     while (window.isOpen())
     {
         int direction[1000] = { 0 };
-        double speed = 0.0005f;
+        double speed = 0.03f;
 
         sf::Event event;
         while (window.pollEvent(event))
@@ -84,7 +85,7 @@ void startGame1()
             }
             else if (direction[i] == 6)
             {
-                object.move(-speed, 0.0f); 
+                object.move(-speed, 0.0f);
                 assignDirection(i, direction);
             }
             else if (direction[i] == 7)
@@ -102,6 +103,24 @@ void startGame1()
                 sf::Vector2i mousePos = sf::Mouse::getPosition(window);
                 object.setPosition((float)mousePos.x, (float)mousePos.y);
             }
+        }
+
+        if (object.getPosition().x < 0.f)
+        {
+            object.setPosition(0.f, object.getPosition().y);
+
+        }
+        if (object.getPosition().y < 0.f)
+        {
+            object.setPosition(object.getPosition().x, 0.f);
+        }
+        if (object.getPosition().x + object.getGlobalBounds().width > 1500)
+        {
+            object.setPosition(1500 - object.getGlobalBounds().width, object.getPosition().y);
+        }
+        if (object.getPosition().y + object.getGlobalBounds().height > 1000)
+        {
+            object.setPosition(object.getPosition().x, 1000 - object.getGlobalBounds().height);
         }
 
         window.clear();
