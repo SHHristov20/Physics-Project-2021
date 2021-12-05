@@ -8,7 +8,7 @@ void printStatus()
 {
     //First Line
     std::cout << char(218);
-    for (int i = 0; i < 19; i++)
+    for (int i = 0; i < 25; i++)
     {
         std::cout << char(196);
     }
@@ -16,7 +16,7 @@ void printStatus()
 
     //Second Line
     std::cout << char(179) << "  " << char(201);
-    for (int i = 0; i < 13; i++)
+    for (int i = 0; i < 19; i++)
     {
         std::cout << char(205);
     }
@@ -26,13 +26,13 @@ void printStatus()
     for (int i = 0; i < 4; i++)
     {
         std::cout << char(179) << "  " << char(186);
-        std::cout << "             ";
+        std::cout << "                   ";
         std::cout << char(186) << "  " << char(179) << char(177) << std::endl;
     }
 
     //Forth Line
     std::cout << char(179) << "  " << char(200) << char(203);
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 18; i++)
     {
         std::cout << char(205);
     }
@@ -40,7 +40,7 @@ void printStatus()
 
     //Fifth Line
     std::cout << char(198) << char(209) << char(205) << char(205) << char(202);
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 18; i++)
     {
         std::cout << char(205);
     }
@@ -51,7 +51,7 @@ void printStatus()
 
     //Seventh Line
     std::cout << char(179) << char(192);
-    for (int i = 0; i < 17; i++)
+    for (int i = 0; i < 23; i++)
     {
         std::cout << char(196);
     }
@@ -59,14 +59,14 @@ void printStatus()
 
     //Eighth Line
     std::cout << char(192);
-    for (int i = 0; i < 19; i++)
+    for (int i = 0; i < 25; i++)
     {
         std::cout << char(196);
     }
     std::cout << char(217) << char(177) << std::endl;
 
     //Nineth Line
-    for (int i = 0; i < 22; i++)
+    for (int i = 0; i < 28; i++)
     {
         std::cout << char(177);
     }
@@ -75,7 +75,7 @@ void printScore()
 {
     //First Line
     std::cout << char(218);
-    for (int i = 0; i < 19; i++)
+    for (int i = 0; i < 25; i++)
     {
         std::cout << char(196);
     }
@@ -83,7 +83,7 @@ void printScore()
 
     //Second Line
     std::cout << char(179) << "  " << char(201);
-    for (int i = 0; i < 13; i++)
+    for (int i = 0; i < 19; i++)
     {
         std::cout << char(205);
     }
@@ -91,12 +91,12 @@ void printScore()
 
     //Third Line  <-- Score
     std::cout << char(179) << "  " << char(186);
-    /*std::cout << "      5      ";*/
+    std::cout << "                   ";
     std::cout << char(186) << "  " << char(179) << char(177) << std::endl;
 
     //Forth Line
     std::cout << char(179) << "  " << char(200) << char(203);
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 18; i++)
     {
         std::cout << char(205);
     }
@@ -104,18 +104,18 @@ void printScore()
 
     //Fifth Line
     std::cout << char(198) << char(209) << char(205) << char(205) << char(202);
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 18; i++)
     {
         std::cout << char(205);
     }
     std::cout << char(205) << char(205) << char(209) << char(181) << char(177) << std::endl;
 
     //Sixth Line <-- Game Status
-    std::cout << char(179) << char(179) << " Status: In game " << char(179) << char(179) << char(177) << std::endl;
+    std::cout << char(179) << char(179) << " Status: In game       " << char(179) << char(179) << char(177) << std::endl;
 
     //Seventh Line
     std::cout << char(179) << char(192);
-    for (int i = 0; i < 17; i++)
+    for (int i = 0; i < 23; i++)
     {
         std::cout << char(196);
     }
@@ -123,14 +123,14 @@ void printScore()
 
     //Eighth Line
     std::cout << char(192);
-    for (int i = 0; i < 19; i++)
+    for (int i = 0; i < 25; i++)
     {
         std::cout << char(196);
     }
     std::cout << char(217) << char(177) << std::endl;
 
     //Nineth Line
-    for (int i = 0; i < 22; i++)
+    for (int i = 0; i < 28; i++)
     {
         std::cout << char(177);
     }
@@ -146,6 +146,9 @@ void controls(bool one, bool two) {
 
     gotoXY(2, 8);
     std::cout << "Status: In controls";
+
+    gotoXY(25, 8);
+    std::cout << char(179) << char(179) << char(177);
     if (one)
     {
         gotoXY(4, 4);
@@ -186,6 +189,7 @@ void controls(bool one, bool two) {
     {
         if (one)
         {
+            system("cls");
             homeMenu(true, false, false);
         }
         if (two)
@@ -219,6 +223,9 @@ void DMenu(bool one, bool two, bool three, bool four)
         gotoXY(2, 8);
 
         std::cout << "Status: In Menus";
+
+        gotoXY(25, 8);
+        std::cout << char(179) << char(179) << char(177);
     }
     if (two)
     {
@@ -241,6 +248,9 @@ void DMenu(bool one, bool two, bool three, bool four)
         gotoXY(2, 8);
 
         std::cout << "Status: In Menus";
+
+        gotoXY(25, 8);
+        std::cout << char(179) << char(179) << char(177);
     }
     if (three)
     {
@@ -263,6 +273,9 @@ void DMenu(bool one, bool two, bool three, bool four)
         gotoXY(2, 8);
 
         std::cout << "Status: In Menus";
+
+        gotoXY(25, 8);
+        std::cout << char(179) << char(179) << char(177);
     }
     if (four)
     {
@@ -285,6 +298,9 @@ void DMenu(bool one, bool two, bool three, bool four)
         gotoXY(2, 8);
 
         std::cout << "Status: In Menus";
+
+        gotoXY(25, 8);
+        std::cout << char(179) << char(179) << char(177);
     }
     const char option = _getch();
 

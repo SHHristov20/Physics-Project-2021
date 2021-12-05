@@ -102,7 +102,13 @@ void startGame2() {
 				printScore();
 				gotoXY(4, 2);
 				score += abs(y);
+				score -= 200;
 				std::cout << "Score: " << score;
+
+				gotoXY(23, 2);
+				std::cout << char(186);
+				gotoXY(26, 2);
+				std::cout << char(179) << char(177);
 			}
 
 		}
@@ -114,7 +120,10 @@ void startGame2() {
 			printScore();
 			gotoXY(4, 2);
 			std::cout << "Score: " << score;
-
+			gotoXY(23, 2);
+			std::cout << char(186);
+			gotoXY(26, 2);
+			std::cout << char(179) << char(177);
 			Sleep(3000);
 
 			system("cls");
