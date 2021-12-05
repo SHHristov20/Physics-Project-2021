@@ -3,6 +3,8 @@
 #include <sfml\Graphics.hpp>
 #include <time.h>
 #include "front-end.h"
+#include "doodleJumpMenu.h"
+#include <cmath>
 
 struct coords { //platform coordinates
 	int x;
@@ -16,7 +18,7 @@ void startGame2() {
 	srand(time(0));
 
 	sf::RenderWindow window(sf::VideoMode(400, 533), "Doodle Jump", sf::Style::Default); // window creation
-	
+
 	window.setFramerateLimit(60); // FPS
 
 	sf::Texture background; // Creating textures
@@ -33,7 +35,7 @@ void startGame2() {
 
 	coords platf[20];
 
-	for (int i = 0; i < 10; i++) // Making rndoom platform generation
+	for (int i = 0; i < 10; i++) // Making random platform generation
 	{
 		platf[i].x = rand() % 400;
 		platf[i].y = rand() % 533;
@@ -44,6 +46,7 @@ void startGame2() {
 	int h = 200;
 	float cx = 0;
 	float cy = 0;
+	int score = 0;
 	while (window.isOpen())
 	{
 		sf::Event evnt;
@@ -72,7 +75,7 @@ void startGame2() {
 		{
 			cy = cy - 10;
 		}
-	
+
 		if (y < h)
 		{
 			for (int i = 0; i < 10; i++)
@@ -93,6 +96,13 @@ void startGame2() {
 			if ((x + 50 > platf[i].x) && (x + 20 < platf[i].x + 68) && (y + 70 > platf[i].y) && (y + 70 < platf[i].y + 14) && (cy > 0)) // if the character steps on the platform, he bounces
 			{
 				cy = -10;
+				score++;
+
+				system("cls");
+				printScore();
+				gotoXY(4, 2);
+				score += abs(y);
+				std::cout << "Score: " << score;
 			}
 
 		}
@@ -100,6 +110,15 @@ void startGame2() {
 		if (Character.getPosition().y + Character.getGlobalBounds().height > 533)
 		{
 			window.close();
+			system("cls");
+			printScore();
+			gotoXY(4, 2);
+			std::cout << "Score: " << score;
+
+			Sleep(3000);
+
+			system("cls");
+			startMenu();
 		}
 
 		Character.setPosition(x, y);

@@ -159,6 +159,7 @@
     <ClCompile Include="src\ArhimedsLaw.cpp" />
     <ClCompile Include="src\calculatorsMenu.cpp" />
     <ClCompile Include="src\decreasingAccCalc.cpp" />
+    <ClCompile Include="src\doodleJumpMenu.cpp" />
     <ClCompile Include="src\freeFallCalc.cpp" />
     <ClCompile Include="src\front-end.cpp" />
     <ClCompile Include="src\Game1.cpp" />
@@ -168,12 +169,13 @@
     <ClCompile Include="src\workAndPowerCalc.cpp" />
     <ClCompile Include="src\convertUnits.cpp" />
     <ClCompile Include="src\Game2.cpp" />
-	<ClCompile Include="src\formulas.cpp" />
+    <ClCompile Include="src\formulas.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\ArhimedsLaw.h" />
     <ClInclude Include="Include\calculatorsMenu.h" />
     <ClInclude Include="Include\decreasingAccCalc.h" />
+    <ClInclude Include="Include\doodleJumpMenu.h" />
     <ClInclude Include="Include\freeFallCalc.h" />
     <ClInclude Include="Include\front-end.h" />
     <ClInclude Include="Include\Game1.h" />
@@ -183,7 +185,7 @@
     <ClInclude Include="Include\workAndPowerCalc.h" />
     <ClInclude Include="Include\convertUnits.h" />
     <ClInclude Include="Include\Game2.h" />
-	<ClInclude Include="Include\formulas.h" />
+    <ClInclude Include="Include\formulas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

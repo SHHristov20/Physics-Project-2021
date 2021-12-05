@@ -5,7 +5,7 @@
 #include "calculatorsMenu.h"
 #include "Game2.h"
 #include "Game1.h"
-
+#include "doodleJumpMenu.h"
 /// <summary>
 /// go to given coords
 /// </summary>
@@ -207,7 +207,7 @@ void homeMenu(bool first, bool second, bool third)
 		if (second)
 		{
 			system("cls");
-			startGame2();
+			startMenu();
 		}
 		if (third)
 		{
