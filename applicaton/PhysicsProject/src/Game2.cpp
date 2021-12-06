@@ -38,14 +38,8 @@ void startGame2() {
 	int temp = 10;
 	for (int i = 0; i < 6; i++) // Making random platform generation
 	{
-		platf[i].x = rand() % 360;
+		platf[i].x = rand() % 300;
 		platf[i].y = rand() % 533;
-
-		if ((platf[i].x <= platf[i - 1].x - 6) && (platf[i].y <= platf[i - 1].y - 2) && (platf[i].x >= platf[i - 1].x + 4) && (platf[i].y >= platf[i - 1].y + 2)) //Prevent platform overlap
-		{
-			platf[i].x = rand() % 360;
-			platf[i].y = rand() % 533;
-		}
 	}
 
 	int x = 100; // character coordinates
@@ -55,6 +49,7 @@ void startGame2() {
 	float cy = 0;
 	int score = 0;
 	bool flag = true;
+	bool stop = true;
 	while (window.isOpen())
 	{
 		sf::Event evnt;
@@ -70,14 +65,27 @@ void startGame2() {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) // Getting input for the movment
 		{
 			x = x + 3;
+			stop = false;
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 		{
 			x = x - 3;
+			stop = false;
 		}
-		cy = cy + 0.2;
-		y = y + cy; // character movement
+		if (stop)
+		{
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+			{
+				stop = false;
+			}
+		}
+		if (!stop)
+		{
+			cy = cy + 0.2;
+			y = y + cy; // character movement
+		}
+
 
 		if (y < h)
 		{
@@ -89,7 +97,7 @@ void startGame2() {
 				if (platf[i].y > 533) // if a platform spawns out out of the y, respawn it
 				{
 					platf[i].y = 0;
-					platf[i].x = rand() % 360;
+					platf[i].x = rand() % 300;
 				}
 			}
 		}
@@ -153,7 +161,7 @@ void startGame2() {
 			for (int i = 0; i < 2; i++) // Spawn initial platform under the character on the first iteration
 			{
 				platf[i].x = Character.getPosition().x;
-				platf[i].y = Character.getPosition().y + 60;
+				platf[i].y = Character.getPosition().y + 89;
 				flag = false;
 			}
 		}
