@@ -4,7 +4,6 @@
   </p>
   <h1 align = "center"> 『🖥』Error 404『🖥』 </h1>
   <p align = "center">
-   <img src = "https://img.shields.io/github/languages/count/SHHristov20/Physics-Project-2021?style=for-the-badge">
    <img src = "https://img.shields.io/github/contributors/SHHristov20/Physics-Project-2021?style=for-the-badge">
    <img src = "https://img.shields.io/github/repo-size/SHHristov20/Physics-Project-2021?style=for-the-badge">
    <img src = "https://img.shields.io/github/last-commit/SHHristov20/Physics-Project-2021?style=for-the-badge">
