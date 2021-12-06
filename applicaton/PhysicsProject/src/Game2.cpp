@@ -41,7 +41,7 @@ void startGame2() {
 		platf[i].x = rand() % 360;
 		platf[i].y = rand() % 533;
 
-		if ((platf[i].x <= platf[i - 1].x - 8) && (platf[i].y <= platf[i - 1].y - 10) && (platf[i].x >= platf[i - 1].x + 5) && (platf[i].y >= platf[i - 1].y + 2)) //Prevent platform overlap
+		if ((platf[i].x <= platf[i - 1].x - 6) && (platf[i].y <= platf[i - 1].y - 2) && (platf[i].x >= platf[i - 1].x + 4) && (platf[i].y >= platf[i - 1].y + 2)) //Prevent platform overlap
 		{
 			platf[i].x = rand() % 360;
 			platf[i].y = rand() % 533;
@@ -98,7 +98,7 @@ void startGame2() {
 		{
 			if ((x + 50 > platf[i].x) && (x + 20 < platf[i].x + 68) && (y + 70 > platf[i].y) && (y + 70 < platf[i].y + 14) && (cy > 0)) // if the character steps on the platform, he bounces
 			{
-				cy = -10.2;
+				cy = -11;
 				score++;
 
 				system("cls");
@@ -115,6 +115,7 @@ void startGame2() {
 			}
 
 		}
+
 
 		if (Character.getPosition().y + Character.getGlobalBounds().height > 548) //Game over
 		{
@@ -133,6 +134,18 @@ void startGame2() {
 			startMenu();
 		}
 
+		if (score > 500)
+		{
+			background.loadFromFile("../PhysicsProject/images/stage2.png");
+		}
+		if(score > 1000)
+		{
+			background.loadFromFile("../PhysicsProject/images/stage3.jpg");
+		}
+		if(score > 1500)
+		{
+			background.loadFromFile("../PhysicsProject/images/stage4.jpg");
+		}
 		Character.setPosition(x, y);
 
 		if (flag)
@@ -140,7 +153,7 @@ void startGame2() {
 			for (int i = 0; i < 2; i++) // Spawn initial platform under the character on the first iteration
 			{
 				platf[i].x = Character.getPosition().x;
-				platf[i].y = Character.getPosition().y + 40;
+				platf[i].y = Character.getPosition().y + 60;
 				flag = false;
 			}
 		}
