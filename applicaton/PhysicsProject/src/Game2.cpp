@@ -115,7 +115,7 @@ void startGame2() {
 
 		}
 
-		if (Character.getPosition().y + Character.getGlobalBounds().height > 533) //Game over
+		if (Character.getPosition().y + Character.getGlobalBounds().height > 540) //Game over
 		{
 			window.close();
 			system("cls");
