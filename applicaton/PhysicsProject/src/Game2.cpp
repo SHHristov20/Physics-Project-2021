@@ -7,7 +7,7 @@
 #include <cmath>
 
 struct coords { //platform coordinates
-	int x;
+	int x = 34;
 	int y;
 };
 
@@ -35,10 +35,16 @@ void startGame2() {
 
 	coords platf[20];
 
+	int temp = 10;
 	for (int i = 0; i < 10; i++) // Making random platform generation
 	{
-		platf[i].x = rand() % 400;
+		platf[i].x = rand() % 340;
 		platf[i].y = rand() % 533;
+
+		if (platf[i].x = platf[i - 1].x - rand() % 50) //Prevent platform overlap
+		{
+			platf[i].x = rand() % 340;
+		}
 	}
 
 	int x = 100; // character coordinates
@@ -47,6 +53,7 @@ void startGame2() {
 	float cx = 0;
 	float cy = 0;
 	int score = 0;
+	bool flag = true;
 	while (window.isOpen())
 	{
 		sf::Event evnt;
@@ -69,12 +76,7 @@ void startGame2() {
 			x = x - 3;
 		}
 		cy = cy + 0.2;
-		y = y + cy; // character movment
-
-		if (y > 500) // if the character touches the border, bounce back
-		{
-			cy = cy - 10;
-		}
+		y = y + cy; // character movement
 
 		if (y < h)
 		{
@@ -86,7 +88,7 @@ void startGame2() {
 				if (platf[i].y > 533) // if a platform spawns out out of the y, respawn it
 				{
 					platf[i].y = 0;
-					platf[i].x = rand() % 400;
+					platf[i].x = rand() % 340;
 				}
 			}
 		}
@@ -113,7 +115,7 @@ void startGame2() {
 
 		}
 
-		if (Character.getPosition().y + Character.getGlobalBounds().height > 533)
+		if (Character.getPosition().y + Character.getGlobalBounds().height > 533) //Game over
 		{
 			window.close();
 			system("cls");
@@ -131,6 +133,28 @@ void startGame2() {
 		}
 
 		Character.setPosition(x, y);
+
+		if (flag)
+		{
+			for (int i = 0; i < 2; i++) // Spawn initial platform under the character on the first iteration
+			{
+				platf[i].x = Character.getPosition().x;
+				platf[i].y = Character.getPosition().y + 10;
+				flag = false;
+			}
+		}
+
+		//Left border collision
+		if (Character.getPosition().x < 0.f)
+		{
+			Character.setPosition(0, Character.getPosition().y);
+		}
+		
+		//Right border collision
+		if (Character.getPosition().x + Character.getGlobalBounds().width > 400)
+		{
+			Character.setPosition(400 - Character.getGlobalBounds().width, Character.getPosition().y);
+		}
 
 		window.draw(Background); // Drawing the textures
 		
