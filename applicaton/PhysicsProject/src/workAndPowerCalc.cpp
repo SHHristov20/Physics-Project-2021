@@ -168,7 +168,7 @@ void work()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -242,7 +242,7 @@ void force()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Force(F) = " << float(s / A);
+	std::cout << "Force(F) = " << float(s / A) << "N";
 	Sleep(3000);
 	system("cls");
 
@@ -264,7 +264,7 @@ void force()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -337,7 +337,7 @@ void displacementByWork()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Displacement(s) = " << float(F / A) << "m/s";
+	std::cout << "Displacement(s) = " << float(F / A) << "m";
 	Sleep(3000);
 	system("cls");
 
@@ -359,7 +359,7 @@ void displacementByWork()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -454,7 +454,7 @@ void power()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -551,7 +551,7 @@ void findWorkByPower()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -647,7 +647,7 @@ void findTimeByPower()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -674,44 +674,44 @@ void workAndPowerCalcMenu(bool one, bool two, bool three, bool four, bool five, 
 	{
 		workAndPowerCalcDesign();
 		gotoXY(128, 19);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (two)
 	{
 		workAndPowerCalcDesign();
 		gotoXY(128, 22);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (three)
 	{
 		workAndPowerCalcDesign();
 		gotoXY(128, 25);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (four)
 	{
 		workAndPowerCalcDesign();
 		gotoXY(128, 28);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (five)
 	{
 		workAndPowerCalcDesign();
 		gotoXY(128, 31);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (six)
 	{
 		workAndPowerCalcDesign();
 		gotoXY(118, 31);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (seven)
 	{
 		workAndPowerCalcDesign();
 		gotoXY(110, 31);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	start:
 	const char option = _getch();

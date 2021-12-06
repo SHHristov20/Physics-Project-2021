@@ -133,13 +133,13 @@ void startGame2() {
 		Character.setPosition(x, y);
 
 		window.draw(Background); // Drawing the textures
-		window.draw(Character);
-
+		
 		for (int i = 0; i < 10; i++)
 		{
 			Platform.setPosition(platf[i].x, platf[i].y); // Setting the platform position
 			window.draw(Platform);
 		}
+		window.draw(Character);
 
 		window.display();
 	}

@@ -19,7 +19,7 @@ void arhimedsLawCalculator() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   F   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   m   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   V   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   p   |  |" << std::endl;
@@ -48,7 +48,7 @@ void arhimedsLawCalculatorDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   7   |   8   |   9   | |   F   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   m   |  |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   4   |   5   |   6   | |   V   |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |       |       |       | |       |  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |_______|_______|_______| |_______|  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t| |   1   |   2   |   3   | |   p   |  |" << std::endl;
@@ -157,7 +157,7 @@ void repulsiveForce()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -224,7 +224,7 @@ void volume()
 	}
 
 	gotoXY(100, 13);
-	std::cout << "Volume(V) = " << float(F / p / 10) << "kg/m3";
+	std::cout << "Volume(V) = " << float(F / p / 10) << "m^3";
 	Sleep(3000);
 	system("cls");
 
@@ -246,7 +246,7 @@ void volume()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -316,7 +316,7 @@ void Density()
 	}
 
 	gotoXY(100, 13);
-	std::cout << "Density(p) = " << float(F / V / 10) << "m3";
+	std::cout << "Density(p) = " << float(F / V / 10) << "kg/m^3";
 	Sleep(3000);
 	system("cls");
 
@@ -338,7 +338,7 @@ void Density()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -366,33 +366,33 @@ void arhimedsLawMenu(bool one, bool two, bool three, bool four, bool five) {
 	{
 		arhimedsLawCalculatorDesign();
 		gotoXY(128, 18);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (two)
 	{
 		arhimedsLawCalculatorDesign();
 		gotoXY(128, 21);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (three)
 	{
 		arhimedsLawCalculatorDesign();
 		gotoXY(128, 24);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (four)
 	{
 		arhimedsLawCalculatorDesign();
 		gotoXY(128, 27);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (five)
 	{
 		arhimedsLawCalculatorDesign();
 		gotoXY(128, 30);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	
 	start:

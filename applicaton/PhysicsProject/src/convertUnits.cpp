@@ -139,7 +139,7 @@ void kmhToMs()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -205,7 +205,7 @@ void msToKmh()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -273,7 +273,7 @@ void secToMin()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -340,7 +340,7 @@ void minToSec()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -361,7 +361,7 @@ void kgm3ToGcm3()
 	unitConverter();
 
 	gotoXY(100, 11);
-	std::cout << "kg/m3 = ";
+	std::cout << "kg/m^3 = ";
 	std::cin >> kgm;
 
 	if (!std::cin)
@@ -378,14 +378,14 @@ void kgm3ToGcm3()
 		unitConverter();
 
 		gotoXY(100, 11);
-		std::cout << "kg/m3 = ";
+		std::cout << "kg/m^3 = ";
 		std::cin.clear();
 		std::cin.ignore(256, '\n');
 		std::cin >> kgm;
 	}
 
 	gotoXY(100, 12);
-	std::cout << kgm << "kg/m3 = " << kgm * 1000 << "g/cm3";
+	std::cout << kgm << "kg/m^3 = " << kgm * 1000 << "g/cm^3";
 	Sleep(3000);
 	system("cls");
 
@@ -407,7 +407,7 @@ void kgm3ToGcm3()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -427,7 +427,7 @@ void gcm3ToKgm3()
 	unitConverter();
 
 	gotoXY(100, 11);
-	std::cout << "g/cm3 = ";
+	std::cout << "g/cm^3 = ";
 	std::cin >> gcm;
 
 	if (!std::cin)
@@ -444,14 +444,14 @@ void gcm3ToKgm3()
 		unitConverter();
 
 		gotoXY(100, 11);
-		std::cout << "g/cm = ";
+		std::cout << "g/cm^3 = ";
 		std::cin.clear();
 		std::cin.ignore(256, '\n');
 		std::cin >> gcm;
 	}
 
 	gotoXY(100, 12);
-	std::cout << gcm << "g/cm3 = " << gcm / 1000 << "kg/m3";
+	std::cout << gcm << "g/cm^3 = " << gcm / 1000 << "kg/m3";
 	Sleep(3000);
 	system("cls");
 
@@ -473,7 +473,7 @@ void gcm3ToKgm3()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -493,7 +493,7 @@ void m3toCm3()
 	unitConverter();
 
 	gotoXY(100, 11);
-	std::cout << "m3 = ";
+	std::cout << "m^3 = ";
 	std::cin >> m3;
 
 	if (!std::cin)
@@ -510,14 +510,14 @@ void m3toCm3()
 		unitConverter();
 
 		gotoXY(100, 11);
-		std::cout << "m3 = ";
+		std::cout << "m^3 = ";
 		std::cin.clear();
 		std::cin.ignore(256, '\n');
 		std::cin >> m3;
 	}
 
 	gotoXY(100, 12);
-	std::cout << m3 << "m3 = " << m3 * 1000000 << "cm3";
+	std::cout << m3 << "m^3 = " << m3 * 1000000 << "cm^3";
 	Sleep(3000);
 	system("cls");
 
@@ -539,7 +539,7 @@ void m3toCm3()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -560,7 +560,7 @@ void cm3ToM3()
 	unitConverter();
 
 	gotoXY(100, 11);
-	std::cout << "cm3 = ";
+	std::cout << "cm^3 = ";
 	std::cin >> cm3;
 
 	if (!std::cin)
@@ -577,14 +577,14 @@ void cm3ToM3()
 		unitConverter();
 
 		gotoXY(100, 11);
-		std::cout << "cm3 = ";
+		std::cout << "cm^3 = ";
 		std::cin.clear();
 		std::cin.ignore(256, '\n');
 		std::cin >> cm3;
 	}
 
 	gotoXY(100, 12);
-	std::cout << cm3 << "cm3 = " << cm3 / 1000000 << "m3";
+	std::cout << cm3 << "cm^3 = " << cm3 / 1000000 << "m^3";
 	Sleep(3000);
 	system("cls");
 
@@ -606,7 +606,7 @@ void cm3ToM3()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 

@@ -47,7 +47,7 @@ void tittleScreen()
 {
 	system("cls");
 	maxSizedScreen();
-	textcolor(9);
+	textcolor(3);
 	std::cout << "\t\t\t\t\t\t\t\t\t" << "                                                  //////                        " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t" << "                        .*////.                .///.   ///,                     " << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t" << "                      .///.  ////            .///        .///                   " << std::endl;
@@ -87,7 +87,7 @@ void tittleScreen()
 	for (int i = 0; i < 23; i++)
 	{
 		textcolor(3);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 

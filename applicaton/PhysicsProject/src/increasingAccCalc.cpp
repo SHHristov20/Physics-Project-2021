@@ -192,7 +192,7 @@ void acceleration()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -294,7 +294,7 @@ void displacement()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Displacement(s) = " << v0 * t + ((a * pow(t, 2)) / 2);
+	std::cout << "Displacement(s) = " << v0 * t + ((a * pow(t, 2)) / 2) << "m";
 	Sleep(3000);
 	system("cls");
 
@@ -316,7 +316,7 @@ void displacement()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -420,7 +420,7 @@ void fSpeed()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Final Speed(v) = " << v0 + (a * t);
+	std::cout << "Final Speed(v) = " << v0 + (a * t) << "m/s";
 	Sleep(3000);
 	system("cls");
 
@@ -442,7 +442,7 @@ void fSpeed()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -515,7 +515,7 @@ void time()
 	}
 
 	gotoXY(100, 13);
-	std::cout << "Time(t) = " << v / a;
+	std::cout << "Time(t) = " << v / a << "s";
 	Sleep(3000);
 	system("cls");
 
@@ -537,7 +537,7 @@ void time()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -562,35 +562,35 @@ void increasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five)
 	{
 		increasingAccCalcDesign();
 		gotoXY(128, 18);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (two)
 	{
 		increasingAccCalcDesign();
 		gotoXY(128, 21);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (three)
 	{
 		increasingAccCalcDesign();
 		gotoXY(128, 24);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (four)
 	{
 		increasingAccCalcDesign();
 		gotoXY(128, 27);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (five)
 	{
 		increasingAccCalcDesign();
 		gotoXY(128, 30);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	start:
 	const char option = _getch();

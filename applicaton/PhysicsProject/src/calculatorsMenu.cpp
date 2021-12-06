@@ -352,7 +352,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -374,7 +374,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -396,7 +396,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -418,7 +418,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -440,7 +440,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -462,7 +462,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -484,7 +484,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -506,7 +506,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -528,7 +528,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 14);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 
@@ -548,7 +548,7 @@ void calculatorsMenu(bool one, bool two, bool three, bool four, bool five, bool 
 			gotoXY(95, 13);
 			for (int i = 0; i < 17; i++)
 			{
-				std::cout << "± ";
+				std::cout << char(219) << " ";
 				Sleep(100);
 			}
 

@@ -162,7 +162,7 @@ void Pressure()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -236,7 +236,7 @@ void Area()
 	}
 
 	gotoXY(100, 13);
-	std::cout << "Area(S) = " << float(F / P) << "m2";
+	std::cout << "Area(S) = " << float(F / P) << "m^2";
 	Sleep(3000);
 	system("cls");
 
@@ -258,7 +258,7 @@ void Area()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -353,7 +353,7 @@ void Force()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -379,27 +379,27 @@ void pressureCalcMenu(bool one, bool two, bool three, bool four) {
 	{
 		pressureCalcDesign();
 		gotoXY(128, 18);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (two)
 	{
 		pressureCalcDesign();
 		gotoXY(128, 21);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (three)
 	{
 		pressureCalcDesign();
 		gotoXY(128, 24);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (four)
 	{
 		pressureCalcDesign();
 		gotoXY(128, 27);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	start:
 	const char option = _getch();

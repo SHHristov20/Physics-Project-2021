@@ -189,7 +189,7 @@ void acceleration1()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -290,7 +290,7 @@ void displacement1()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Displacement(s) = " << v0 * t - ((a * pow(t, 2)) / 2);
+	std::cout << "Displacement(s) = " << v0 * t - ((a * pow(t, 2)) / 2) << "m";
 	Sleep(3000);
 	system("cls");
 
@@ -312,7 +312,7 @@ void displacement1()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -414,7 +414,7 @@ void fSpeed1()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Final Speed(v) = " << v0 - (a * t);
+	std::cout << "Final Speed(v) = " << v0 - (a * t) << "m/s";
 	Sleep(3000);
 	system("cls");
 
@@ -436,7 +436,7 @@ void fSpeed1()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -539,7 +539,7 @@ void time1()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Time(t) = " << (v0 - v) / a;
+	std::cout << "Time(t) = " << (v0 - v) / a << "s";
 	Sleep(3000);
 	system("cls");
 
@@ -561,7 +561,7 @@ void time1()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -635,7 +635,7 @@ void stopTime()
 	}
 
 	gotoXY(100, 13);
-	std::cout << "Breaking distance(s) = " << v0 / a;
+	std::cout << "Breaking distance(s) = " << v0 / a << "m";
 	Sleep(3000);
 	system("cls");
 
@@ -657,7 +657,7 @@ void stopTime()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -728,7 +728,7 @@ void brakingDistance() {
 	}
 
 	gotoXY(100, 13);
-	std::cout << "Distance(s) = " << pow(v0, 2) / (2 * a);
+	std::cout << "Distance(s) = " << pow(v0, 2) / (2 * a) << "m";
 	Sleep(3000);
 	system("cls");
 
@@ -751,7 +751,7 @@ void brakingDistance() {
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -854,7 +854,7 @@ void initialSpeed() {
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Initial speed(v0) = " << v - (a * t);
+	std::cout << "Initial speed(v0) = " << v - (a * t) << "m/s";
 	Sleep(3000);
 	system("cls");
 
@@ -876,7 +876,7 @@ void initialSpeed() {
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -904,53 +904,53 @@ void decreasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five,
 	{
 		calcDesign1();
 		gotoXY(128, 18);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (two)
 	{
 		calcDesign1();
 		gotoXY(128, 21);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (three)
 	{
 		calcDesign1();
 		gotoXY(128, 24);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (four)
 	{
 		calcDesign1();
 		gotoXY(128, 27);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (five)
 	{
 		calcDesign1();
 		gotoXY(128, 30);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (six)
 	{
 		calcDesign1();
 		gotoXY(118, 30);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (seven)
 	{
 		calcDesign1();
 		gotoXY(110, 30);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (eight)
 	{
 		calcDesign1();
 		gotoXY(102, 30);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	start:

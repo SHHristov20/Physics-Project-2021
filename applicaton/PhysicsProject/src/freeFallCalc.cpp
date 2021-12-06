@@ -72,8 +72,8 @@ void freeFallCalcDesign() {
 /// </summary>
 void freeFallCalcTitle() {
 	system("cls");
-	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t  _____                           _____          _   _ " << std::endl;
-	std::cout << "\t\t\t\t\t\t\t\t\t\t\t | ___ |  _ __    ___    ___     | ___|   __ _  | | | |" << std::endl;
+	std::cout << std::endl << "\t\t\t\t\t\t\t\t\t\t\t  _____                           ____           _   _ " << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |  ___|  _ __    ___    ___     | ___|   __ _  | | | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t | |_    | '__|  / _ \\  / _ \\    | |_    / _` | | | | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |  _|   | |    |  __/ |  __/    |  _|  | (_| | | | | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t |_|     |_|     \\___|  \\___|    |_|     \\__,_| |_| |_|" << std::endl << std::endl << std::endl << std::endl;
@@ -135,7 +135,7 @@ void finalSpeed() {
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -179,7 +179,7 @@ void street() {
 	}
 
 	gotoXY(100, 12);
-	std::cout << "Street(s) = " << float((g * pow(t, 2)) / 2);
+	std::cout << "Street(s) = " << float((g * pow(t, 2)) / 2) << "m";
 	Sleep(3000);
 	system("cls");
 
@@ -201,7 +201,7 @@ void street() {
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -245,7 +245,7 @@ void time3() {
 	}
 
 	gotoXY(100, 12);
-	std::cout << "Time(t) = " << float(g / v);
+	std::cout << "Time(t) = " << float(g / v) << "s";
 	Sleep(3000);
 	system("cls");
 
@@ -268,7 +268,7 @@ void time3() {
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -293,26 +293,26 @@ void freeFallCalcMenu(bool one, bool two, bool three, bool four) {
 	{
 		freeFallCalcDesign();
 		gotoXY(128, 18);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (two)
 	{
 		freeFallCalcDesign();
 		gotoXY(128, 21);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (three)
 	{
 		freeFallCalcDesign();
 		gotoXY(128, 24);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (four)
 	{
 		freeFallCalcDesign();
 		gotoXY(128, 27);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	start:
 	const char option = _getch();

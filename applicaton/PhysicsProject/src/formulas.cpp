@@ -97,7 +97,7 @@ void incAccelerationFormulas()
 	std::cout << "V = V0 + at";
 	Sleep(500);
 	gotoXY(100, 13);
-	std::cout << "S = V0t + (at2)/2";
+	std::cout << "S = V0t + (at^2)/2";
 
 	Sleep(3000);
 	gotoXY(100, 14);
@@ -115,7 +115,7 @@ void incAccelerationFormulas()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -141,7 +141,7 @@ void decAccelerationFormulas()
 	std::cout << "V = V0 - at";
 	Sleep(500);
 	gotoXY(100, 13);
-	std::cout << "S = V0t - (at2)/2";
+	std::cout << "S = V0t - (at^2)/2";
 
 	Sleep(3000);
 	gotoXY(100, 14);
@@ -159,7 +159,7 @@ void decAccelerationFormulas()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -184,7 +184,7 @@ void freeFallFormulas()
 	std::cout << "V = gt";
 	Sleep(500);
 	gotoXY(100, 13);
-	std::cout << "S = (gt2)/2";
+	std::cout << "S = (gt^2)/2";
 
 	Sleep(3000);
 	gotoXY(100, 14);
@@ -202,7 +202,7 @@ void freeFallFormulas()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -246,7 +246,7 @@ void workPowerFormulas()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -284,7 +284,7 @@ void hydroPressureFormulas()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -322,7 +322,7 @@ void pressureFormulas()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -360,7 +360,7 @@ void arhimedLawFormulas()
 	gotoXY(100, 14);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 

@@ -164,7 +164,7 @@ void pressure()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -288,7 +288,7 @@ void depthPressure()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -383,7 +383,7 @@ void height()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -456,7 +456,7 @@ void density()
 	}
 
 	gotoXY(100, 14);
-	std::cout << "Density(p) = " << float((h * g) / P) << "Pa";
+	std::cout << "Density(p) = " << float((h * g) / P) << "kg/m^3";
 	Sleep(3000);
 	system("cls");
 
@@ -478,7 +478,7 @@ void density()
 	gotoXY(100, 15);
 	for (int i = 0; i < 13; i++)
 	{
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 		Sleep(100);
 	}
 
@@ -504,34 +504,34 @@ void hydrostaticPressureCalcMenu(bool one, bool two, bool three, bool four, bool
 	{
 		hydrostaticPressureCalcDesign();
 		gotoXY(128, 19);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	if (two)
 	{
 		hydrostaticPressureCalcDesign();
 		gotoXY(128, 22);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (three)
 	{
 		hydrostaticPressureCalcDesign();
 		gotoXY(128, 25);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (four)
 	{
 		hydrostaticPressureCalcDesign();
 		gotoXY(128, 28);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 
 	if (five)
 	{
 		hydrostaticPressureCalcDesign();
 		gotoXY(128, 31);
-		std::cout << "± ";
+		std::cout << char(219) << " ";
 	}
 	start:
 	const char option = _getch();
