@@ -14,21 +14,24 @@
   <hr>
   <h2>『📜』About</h2>
   <p> <big>
-    Our program delivers a full pack of physics calculators, that are user friendly and easy to use. We have also two games which are really fun and interesting - "Doodle Jump",  "Catch the Leaf".
+    Our program delivers a full pack of physics calculators, that are user friendly. We have also two games which are really fun and interesting - "Doodle Jump",  "Catch the Leaf".
    </big></p>
 
   <h2>『📋』Documentation</h2>
-   <a href = ""><h2>Our Documentation</h2></a>
-
+  <h3> ➤ 『<img src="https://1000logos.net/wp-content/uploads/2020/08/Microsoft-PowerPoint-Logo.png" alt="pp" width="30" height="20"/>』<a href="https://github.com/SHHristov20/Physics-Project-2021/raw/main/Presentation%20Error%20404.pptx">Presentation</a>『<img src="https://1000logos.net/wp-content/uploads/2020/08/Microsoft-PowerPoint-Logo.png" alt="pp" width="30" height="20"/>』
+  
+  <h3> ➤ 『<img src="https://1000logos.net/wp-content/uploads/2020/08/Microsoft-Word-Logo.png" alt="pp" width="30" height="20"/>』<a href="https://github.com/SHHristov20/Physics-Project-2021/raw/main/Error%20404%20-%20Documentation.docx">Documentation</a>『<img src="https://1000logos.net/wp-content/uploads/2020/08/Microsoft-Word-Logo.png" alt="pp" width="30" height="20"/>』
   <h2>『🎞』Demo of our project </h2>
 
-  <img src  = "?width=1323&height=676">
+  <img src  = "https://cdn.discordapp.com/attachments/879042976293195796/917373407996293150/CalculatorsMenu.png" align="center">
+  <img src  = "https://cdn.discordapp.com/attachments/908291173267951630/917371783110352896/unknown.png?width=1323&height=676" >
+    
 
 
 
   <h2>『📱』How it works</h2>
 
-  <p><big>Our work can be split into 2 main things :</p></big>
+  
   
    <h3>➤『<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="20" height="20"/>』 Vanilla C++『<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="20" height="20"/>』</h3> 
  
@@ -45,6 +48,7 @@
      3. Navigate to the debug folder:
   <pre>cd application/Debug</pre>
      4. Run the .exe file by typing:
+  <p> Note: If you are using VS, run the project in x86 mode </p>
 <pre>PhysicsProject.exe</pre>
     </p>
     <h2>『🎮』Controls</h2>
