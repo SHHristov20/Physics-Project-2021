@@ -953,7 +953,7 @@ void decreasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five,
 		std::cout << char(219) << " ";
 	}
 
-	start:
+start:
 	const char option = _getch();
 	if (option == 's' || option == 'S')
 	{
@@ -1039,7 +1039,7 @@ void decreasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five,
 		}
 		if (three)
 		{
-			decreasingAccCalcMenu(false, false , true, false, false, false, false, false);
+			decreasingAccCalcMenu(false, false, true, false, false, false, false, false);
 		}
 		if (four)
 		{
@@ -1091,7 +1091,7 @@ void decreasingAccCalcMenu(bool one, bool two, bool three, bool four, bool five,
 		}
 		if (seven)
 		{
-			decreasingAccCalcMenu(true, false, false, false, false, true, false, false);
+			decreasingAccCalcMenu(false, false, false, false, false, true, false, false);
 		}
 		if (eight)
 		{

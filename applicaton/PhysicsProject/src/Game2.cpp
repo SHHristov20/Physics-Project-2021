@@ -7,8 +7,8 @@
 #include <cmath>
 
 struct coords { //platform coordinates
-	int x = 34;
-	int y;
+	float x = 34;
+	float y;
 };
 
 /// <summary>
@@ -36,14 +36,15 @@ void startGame2() {
 	coords platf[20];
 
 	int temp = 10;
-	for (int i = 0; i < 10; i++) // Making random platform generation
+	for (int i = 0; i < 6; i++) // Making random platform generation
 	{
-		platf[i].x = rand() % 340;
+		platf[i].x = rand() % 360;
 		platf[i].y = rand() % 533;
 
-		if (platf[i].x = platf[i - 1].x - rand() % 50) //Prevent platform overlap
+		if ((platf[i].x <= platf[i - 1].x - 8) && (platf[i].y <= platf[i - 1].y - 10) && (platf[i].x >= platf[i - 1].x + 5) && (platf[i].y >= platf[i - 1].y + 2)) //Prevent platform overlap
 		{
-			platf[i].x = rand() % 340;
+			platf[i].x = rand() % 360;
+			platf[i].y = rand() % 533;
 		}
 	}
 
@@ -80,7 +81,7 @@ void startGame2() {
 
 		if (y < h)
 		{
-			for (int i = 0; i < 10; i++)
+			for (int i = 0; i < 6; i++)
 			{
 				y = h;
 				platf[i].y = platf[i].y - cy;
@@ -88,16 +89,16 @@ void startGame2() {
 				if (platf[i].y > 533) // if a platform spawns out out of the y, respawn it
 				{
 					platf[i].y = 0;
-					platf[i].x = rand() % 340;
+					platf[i].x = rand() % 360;
 				}
 			}
 		}
 
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 6; i++)
 		{
 			if ((x + 50 > platf[i].x) && (x + 20 < platf[i].x + 68) && (y + 70 > platf[i].y) && (y + 70 < platf[i].y + 14) && (cy > 0)) // if the character steps on the platform, he bounces
 			{
-				cy = -10;
+				cy = -10.2;
 				score++;
 
 				system("cls");
@@ -115,7 +116,7 @@ void startGame2() {
 
 		}
 
-		if (Character.getPosition().y + Character.getGlobalBounds().height > 540) //Game over
+		if (Character.getPosition().y + Character.getGlobalBounds().height > 548) //Game over
 		{
 			window.close();
 			system("cls");
@@ -139,7 +140,7 @@ void startGame2() {
 			for (int i = 0; i < 2; i++) // Spawn initial platform under the character on the first iteration
 			{
 				platf[i].x = Character.getPosition().x;
-				platf[i].y = Character.getPosition().y + 10;
+				platf[i].y = Character.getPosition().y + 40;
 				flag = false;
 			}
 		}
@@ -158,7 +159,7 @@ void startGame2() {
 
 		window.draw(Background); // Drawing the textures
 		
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 6; i++)
 		{
 			Platform.setPosition(platf[i].x, platf[i].y); // Setting the platform position
 			window.draw(Platform);

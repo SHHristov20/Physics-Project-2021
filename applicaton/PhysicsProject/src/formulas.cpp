@@ -62,21 +62,25 @@ void formulasDesign() {
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |    Increasing   |   |   |   Hydrostatic   | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |   Acceleration  |   |   |     Pressure    | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |     Formulas    |   |   |     Formulas    | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |   |   |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________    |    _________________  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |    Decreasing   |   |   |     Pressure    | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |   Acceleration  |   |   |     Formulas    | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |     Formulas    |   |   |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |   |   |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________    |    _________________  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |	   Free       |   |   |     Arhimed's   | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Fall       |   |   |       law       | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |    Formulas     |   |   |     Formulas    | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |   |   |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |  _________________    |    _________________  |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Work       |   |   |       Back      | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |      Power      |   |   |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |    Formulas     |   |   |                 | |" << std::endl;
+	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |                 |   |   |                 | |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  | |_________________|   |   |_________________| |" << std::endl;
 	std::cout << "\t\t\t\t\t\t\t\t\t\t\t  |_______________________|_______________________|" << std::endl;
 }
@@ -394,19 +398,19 @@ void formulasMenu(bool one, bool two, bool three, bool four, bool five, bool six
 	if (two)
 	{
 		formulasDesign();
-		gotoXY(99, 25);
+		gotoXY(99, 26);
 		std::cout << "±±±±±";
 	}
 	if (three)
 	{
 		formulasDesign();
-		gotoXY(99, 30);
+		gotoXY(99, 32);
 		std::cout << "±±±±±";
 	}
 	if (four)
 	{
 		formulasDesign();
-		gotoXY(99, 35);
+		gotoXY(99, 38);
 		std::cout << "±±±±±";
 	}
 	if (five)
@@ -418,22 +422,22 @@ void formulasMenu(bool one, bool two, bool three, bool four, bool five, bool six
 	if (six)
 	{
 		formulasDesign();
-		gotoXY(125, 24);
+		gotoXY(125, 26);
 		std::cout << "±±±±±";
 	}
 	if (seven)
 	{
 		formulasDesign();
-		gotoXY(125, 30);
+		gotoXY(125, 32);
 		std::cout << "±±±±±";
 	}
 	if (eight)
 	{
 		formulasDesign();
-		gotoXY(125, 34);
+		gotoXY(125, 38);
 		std::cout << "±±±±±";
 	}
-	start:
+start:
 	const char option = _getch();
 
 	if (option == 'w' or option == 'W')
