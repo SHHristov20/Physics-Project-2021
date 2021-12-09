@@ -359,15 +359,15 @@ void freeFallCalcMenu(bool one, bool two, bool three, bool four) {
 	{
 		if (one)
 		{
-			finalSpeed();
+			time3();
 		}
 		if (two)
 		{
-			street();
+			finalSpeed();
 		}
 		if (three)
 		{
-			time3();
+			street();
 		}
 		if (four)
 		{

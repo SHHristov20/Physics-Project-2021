@@ -635,7 +635,7 @@ void stopTime()
 	}
 
 	gotoXY(100, 13);
-	std::cout << "Breaking distance(s) = " << v0 / a << "m";
+	std::cout << "Stop time(t0) = " << v0 / a << "s";
 	Sleep(3000);
 	system("cls");
 
@@ -1104,7 +1104,7 @@ start:
 		if (one)
 		{
 			system("cls");
-			acceleration1();
+			time1();
 		}
 		if (two)
 		{
@@ -1114,22 +1114,22 @@ start:
 		if (three)
 		{
 			system("cls");
-			fSpeed1();
+			stopTime();
 		}
 		if (four)
 		{
 			system("cls");
-			time1();
+			brakingDistance();
 		}
 		if (five)
 		{
 			system("cls");
-			stopTime();
+			fSpeed1();
 		}
 		if (six)
 		{
 			system("cls");
-			brakingDistance();
+			acceleration1();
 		}
 		if (seven)
 		{
